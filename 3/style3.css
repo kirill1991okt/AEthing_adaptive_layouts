@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
 }
 
@@ -12,6 +12,7 @@ a:hover {
 }
 
 .wrapper {
+  position: relative;
   max-width: 1140px;
   margin: 0 auto;
   display: flex;
@@ -68,13 +69,30 @@ nav .list__item a.list__link_active {
 }
 
 .language::after {
-  content: ">";
+  content: '>';
   color: #ffffff;
   margin-left: 10px;
 }
 
 .main {
   background-color: #9a9a9a;
+  position: relative;
+}
+
+.main__img {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 829px;
+  height: 829px;
+  left: 644px;
+  top: -13px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.main__img img {
+  height: 100%;
 }
 
 .main-title {
@@ -340,27 +358,208 @@ main .link a {
 }
 
 .conditions__wrap_left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-right: 10px;
+}
+
+.conditions__wrap_right {
+  width: 50%;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
 }
 
-.conditions__wrap_right {
+.conditions__wrap_item {
+  background-color: #959595;
+  /* width: 50%; */
+}
+
+.conditions__wrap_item p {
+  opacity: 0.7019607843137254;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.conditions__wrap_left .conditions__wrap_item {
   display: flex;
-  flex-direction: column;
-  row-gap: 10px;
+  justify-content: flex-end;
+}
+
+.conditions__wrap_left .conditions__wrap_item:nth-child(1) p {
+  width: 450px;
+  text-align: center;
+  margin: 56px 41px 44px 0;
+}
+
+.conditions__wrap_left .conditions__wrap_item:nth-child(2) p {
+  width: 407px;
+  text-align: center;
+  margin: 48px 67px 37px 0;
+}
+
+.conditions__wrap_left .conditions__wrap_item:nth-child(3) p {
+  width: 431px;
+  text-align: center;
+  margin: 64px 49px 50px 0;
+}
+
+.conditions__wrap_right .conditions__wrap_item:nth-child(1) p {
+  width: 426px;
+  text-align: center;
+  margin: 66px 0px 66px 64px;
+}
+
+.conditions__wrap_right .conditions__wrap_item:nth-child(2) p {
+  width: 393px;
+  text-align: center;
+  margin: 57px 0px 44px 83px;
+}
+
+.conditions__wrap_right .conditions__wrap_item:nth-child(3) p {
+  width: 366px;
+  text-align: center;
+  margin: 60px 0px 42px 102px;
 }
 
 /* /conditions  */
 
+/* fillForm */
+
+.fillForm {
+  margin-bottom: 15px;
+  background: url(./img/img_parallax.jpeg);
+  position: relative;
+  background-attachment: fixed;
+  background-position-y: 60%;
+  background-size: cover;
+}
+
+.fillForm__container {
+  padding-top: 66px;
+  padding-bottom: 46px;
+  margin-left: 101px;
+}
+
+.fillForm_title {
+  color: #000000;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 26px;
+  width: 401px;
+}
+
+.fillForm__subtitle {
+  opacity: 0.8;
+  color: #000000;
+  font-size: 18px;
+  margin-bottom: 33px;
+}
+
+.fillForm__prize {
+  position: relative;
+  width: 403px;
+  height: 340px;
+}
+
+.fillForm__prize_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fillForm__prize_number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  width: 101px;
+  height: 101px;
+  text-align: center;
+  background-color: #e38522;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 90px;
+}
+
+.fillForm__prize_text {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1;
+}
+
+.fillForm__prize_item:nth-child(1) {
+  position: absolute;
+  left: 0;
+  top: 187px;
+}
+
+.fillForm__prize_item:nth-child(2) {
+  position: absolute;
+  left: 100px;
+  top: 0px;
+}
+
+.fillForm__prize_item:nth-child(3) {
+  position: absolute;
+  right: 0px;
+  top: 108px;
+}
+
+/* /fillForm */
+
+/* forma */
+
+.blockform {
+  position: absolute;
+  right: 101px;
+  bottom: -40px;
+  width: 321px;
+  background-color: #ffffff;
+  border-radius: 13px;
+  padding: 48px 32px 83px;
+  z-index: 10;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.blockform h3 {
+  color: #000000;
+  font-size: 21px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.blockform select,
+.blockform input {
+  width: 100%;
+}
+
+.blockform input[type='checkbox'] {
+  width: 24px;
+  height: 24px;
+}
+
+.blockform select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 /* footer */
 
 footer {
-  background: #999999;
+  position: relative;
+  background: rgb(153 153 153 / 40%);
   display: flex;
   justify-content: center;
   padding-top: 62px;
   padding-bottom: 47px;
+  z-index: 100;
 }
 
 footer .contact {
