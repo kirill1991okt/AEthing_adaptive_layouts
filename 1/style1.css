@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
 }
 
@@ -12,7 +12,7 @@ body {
 }
 
 body::after {
-  content: "";
+  content: '';
   background-image: url(./img/madmen.png);
   background-position: center;
   background-attachment: fixed;
@@ -41,6 +41,7 @@ a:hover {
 }
 
 .wrapper {
+  position: relative;
   max-width: 1070px;
   margin: 0 auto;
   display: flex;
@@ -94,13 +95,35 @@ nav .list__item a.list__link_active {
 }
 
 .language::after {
-  content: ">";
+  content: '>';
   color: #ffffff;
   margin-left: 10px;
 }
 
 .main {
   background-color: #191919;
+  position: relative;
+}
+
+.main__img {
+  background-image: url(./img/img1_AE.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 829px;
+  height: 818px;
+  left: 644px;
+  top: -13px;
+  overflow: hidden;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.main__img img {
+  height: 100%;
 }
 
 .main-title {
