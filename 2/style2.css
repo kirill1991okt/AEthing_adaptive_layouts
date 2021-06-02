@@ -12,14 +12,14 @@ a:hover {
 }
 
 .wrapper {
-  max-width: 1140px;
+  max-width: 1135px;
   margin: 0 auto;
   display: flex;
 }
 
 header {
-  padding-top: 4px;
-  background-color: #9a9a9a;
+  padding-top: 8px;
+  background-color: #171819;
 }
 
 .logo {
@@ -29,9 +29,6 @@ header {
 .logo img {
   width: 126px;
   height: 39px;
-}
-
-nav {
 }
 
 nav .list {
@@ -71,4 +68,232 @@ nav .list__item a.list__link_active {
   content: ">";
   color: #ffffff;
   margin-left: 10px;
+}
+
+/* /header */
+
+/* main */
+
+.main {
+  background-color: #191919;
+}
+
+.main-title {
+  width: 536px;
+  margin-top: 44px;
+  margin-bottom: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.main-title__header {
+  color: #fefefe;
+  font-size: 24px;
+  margin-bottom: 27px;
+}
+
+.main-title__first {
+  line-height: 1;
+  height: 72px;
+  color: #ffffff;
+  font-size: 72px;
+  font-weight: 900;
+
+  background: #5a40de;
+  background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+  background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+  background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-transform: uppercase;
+
+  margin-bottom: 37px;
+}
+
+.main-title__subtitle {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 57px;
+}
+
+.main-title__link {
+  color: #f98511;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.main .text1 {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 47px;
+}
+
+.main .text2 {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 107px;
+}
+
+.main__btn {
+  padding: 9px 75px;
+  height: 36px;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 1;
+  background-color: #f98511;
+  border-radius: 18px;
+  margin-bottom: 50px;
+}
+
+.main-title__link1 {
+  color: #f98511;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* /main */
+
+/* participate */
+
+.participate {
+  margin-top: 17px;
+  margin-bottom: 13px;
+  background-color: #8082d1;
+}
+
+.participate__container {
+  margin-top: 83px;
+  margin-bottom: 55px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.user .right {
+  width: 273px;
+}
+
+.right .right__title {
+  color: #161515;
+  font-size: 48px;
+  margin-bottom: 43px;
+}
+
+.right .right__subtitle {
+  color: #000000;
+  font-size: 18px;
+}
+
+.left__count {
+  width: 804px;
+  display: flex;
+}
+
+.left__count .left__count_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left__count .left__count_number {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  width: 101px;
+  height: 101px;
+  text-align: center;
+  background-color: #f1d773;
+  border-radius: 50%;
+  margin-bottom: 27px;
+}
+
+.left__count .left__count_number span {
+  position: absolute;
+  top: -41px;
+  left: 16px;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 90px;
+}
+
+.left__count .left__count_description {
+  opacity: 0.7019607843137254;
+  color: #161515;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.left__count_note {
+  color: #000000;
+  font-size: 12px;
+}
+
+/* /participate */
+
+/* footer */
+footer {
+  background: #070707;
+  display: flex;
+  justify-content: center;
+  padding-top: 62px;
+  padding-bottom: 47px;
+}
+
+footer .contact {
+  width: 223px;
+  text-align: center;
+  margin-right: 356px;
+}
+
+footer .office {
+  width: 246px;
+  text-align: center;
+}
+
+footer h3 {
+  color: #f98511;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+footer .campany {
+  color: #f98511;
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1;
+}
+
+footer .campany span:first-child {
+  color: #fafafa;
+}
+
+footer p {
+  color: #f98511;
+  font-size: 14px;
+}
+
+footer address {
+  color: #f98511;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+footer a {
+  color: #fafafa;
+  font-size: 14px;
+}
+
+footer a span:last-child {
+  color: #f98511;
 }
