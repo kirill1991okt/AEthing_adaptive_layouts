@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
 }
 
@@ -12,7 +12,7 @@ body {
 }
 
 body::after {
-  content: '';
+  content: "";
   background-image: url(./img/madmen.png);
   background-position: center;
   background-attachment: fixed;
@@ -97,7 +97,7 @@ nav .list__item a.list__link_active {
 }
 
 .language::after {
-  content: '>';
+  content: ">";
   color: #ffffff;
   margin-left: 10px;
 }
@@ -439,12 +439,6 @@ nav .list__item a.list__link_active {
   width: 105%;
 }
 
-.get .get__right {
-  margin-top: 110px;
-  margin-bottom: 90px;
-  display: flex;
-}
-
 .get__left-items {
   position: absolute;
   top: 200px;
@@ -463,6 +457,80 @@ nav .list__item a.list__link_active {
   color: #f98511;
   font-size: 18px;
   text-align: center;
+}
+
+.get .get__right {
+  margin-bottom: 92px;
+  display: flex;
+}
+
+.get__right-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 572px;
+  margin-left: 100px;
+}
+
+.get__right-items-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 205px;
+  row-gap: 46px;
+  margin-bottom: 82px;
+}
+
+.get__right-items-wrapper .get__right-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.get__right-items-wrapper .get__right-item:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 159px;
+  height: 172px;
+}
+
+.get__right-items-wrapper .get__right-item:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 205px;
+  height: 158px;
+}
+
+.get__right-items-wrapper .get__right-item:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 162px;
+  height: 111px;
+}
+
+.get__right-items-wrapper .get__right-item:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 205px;
+  height: 118px;
+}
+
+.get__right .btn {
+  padding: 9px 75px;
+  height: 36px;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 1;
+  background-color: #f98511;
+  border-radius: 18px;
 }
 
 /* /get */

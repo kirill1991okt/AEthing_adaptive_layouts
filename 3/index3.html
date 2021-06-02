@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style3.css" />
@@ -260,20 +266,22 @@
           <div class="blockform">
             <h3>I would like to be notified when AEtning App is released</h3>
             <form action="" method="POST">
-              <select name="country">
-                <option selected disabled>Please, chooze your country ></option>
-                <option value="США">США</option>
-                <option value="Канада">Канада</option>
-                <option value="Австралия">Австралия</option>
-                <option value="Англия">Англия</option>
-                <option value="Сингапур">Сингапур</option>
-                <option value="Новая Зеландия">Новая Зеландия</option>
-                <option value="Мексика">Мексика</option>
-                <option value="Испания">Испания</option>
-                <option value="Аргентина">Аргентина</option>
-                <option value="Колумбия">Колумбия</option>
-                <option value="Гонконг">Гонконг</option>
-              </select>
+              <div class="country">
+                <select name="country">
+                  <option selected disabled>Please, chooze your country</option>
+                  <option value="США">USA</option>
+                  <option value="Канада">Canada</option>
+                  <option value="Австралия">Australia</option>
+                  <option value="Англия">England</option>
+                  <option value="Сингапур">Singapore</option>
+                  <option value="Новая Зеландия">New Zealand</option>
+                  <option value="Мексика">Mexico</option>
+                  <option value="Испания">Spain</option>
+                  <option value="Аргентина">Argentina</option>
+                  <option value="Колумбия">Colombia</option>
+                  <option value="Гонконг">Hong Kong</option>
+                </select>
+              </div>
 
               <input type="email" placeholder="Your e-mail" />
 
@@ -282,14 +290,18 @@
                 <p>I want to participate in the prize draw</p>
               </div>
 
-              <select name="prize">
-                <option selected disabled>Please, chooze the prize ></option>
-                <option value="США">США</option>
-                <option value="Канада">Канада</option>
-                <option value="Австралия">Австралия</option>
-              </select>
-              <input type="text" />
-              <input type="number" name="" />
+              <div class="prize">
+                <select name="prize">
+                  <option selected disabled>Please, chooze the prize</option>
+                  <option value="США">США</option>
+                  <option value="Канада">Канада</option>
+                  <option value="Австралия">Австралия</option>
+                </select>
+              </div>
+              <input type="text" placeholder="Your name" />
+              <input type="tel" placeholder="Phone number" />
+
+              <input type="submit" value="Join Giveaway" />
             </form>
           </div>
           <!-- forma -->
