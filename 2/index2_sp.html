@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./style2.css" />
     <title>AEthing</title>
   </head>
@@ -21,13 +25,13 @@
         <nav>
           <ul class="list">
             <li class="list__item">
-              <a href="" class="list__link">Acerca de AEthing </a>
+              <a href="../1/index1.html" class="list__link">Acerca de AEthing </a>
             </li>
             <li class="list__item">
-              <a href="" class="list__link list__link_active">Sorteo </a>
+              <a href="../2/index2.html" class="list__link list__link_active">Sorteo </a>
             </li>
             <li class="list__item">
-              <a href="" class="list__link">Cómo funciona </a>
+              <a href="../3/index3.html" class="list__link">Cómo funciona </a>
             </li>
           </ul>
         </nav>
@@ -37,6 +41,9 @@
 
     <main>
       <section class="main">
+
+        <div class="main__white_square"></div>
+        <div class="main__purple_square"></div>
         <div class="wrapper">
           <div class="main__img">
             <!-- <img src="./img/girl_1_bg.jpg" alt="main" /> -->
@@ -62,7 +69,7 @@
 
             <a class="main__btn" href="">Únete al sorteo</a>
 
-            <a href="" class="main-title__link1">Descubra cómo funciona > ></a>
+            <a href="../3/index3.html" class="main-title__link1">Descubra cómo funciona ></a>
           </div>
         </div>
       </section>
@@ -77,21 +84,22 @@
             <div class="left">
               <div class="left__count">
                 <div class="left__count_wrap">
-                  <div class="left__count_number"><span>1</span></div>
-                  <p class="left__count_description">
+                  <div class="left__count_number" data-animation="participate-animate1"><span data-animation="number1">1</span>
+                  </div>
+                  <p class="left__count_description" data-animation="participate-animate-text1">
                     Elijir uno de los premios a continuación y hacer clic en el 
                     botón Sorteo
                   </p>
                 </div>
                 <div class="left__count_wrap">
-                  <div class="left__count_number"><span>2</span></div>
-                  <p class="left__count_description">
+                  <div class="left__count_number " data-animation="participate-animate2"><span data-animation="number2">2</span></div>
+                  <p class="left__count_description" data-animation="participate-animate-text2">
                     Compartir la invitación recibida por correo electrónico con tus amigos*
                   </p>
                 </div>
                 <div class="left__count_wrap">
-                  <div class="left__count_number"><span>3</spa></div>
-                  <p class="left__count_description">
+                  <div class="left__count_number " data-animation="participate-animate3"><span data-animation="number3">3</spa></div>
+                    <p class="left__count_description" data-animation="participate-animate-text3">
                     Obtenga números de membresía para cada amigo que se una y espere a que se lance la aplicación AEthing
                   </p>
                 </div>
@@ -111,7 +119,7 @@
         
         <div class="wrapper">
           <div class="prize_wrap">
-            <div class="darkblock">
+            <div < class="darkblock" data-animation="prize-animate">
               <h3 class="darkblock__title">¡El sorteo se basa en la tecnología blockchain!</h3>
               <div class="darkblock__pgh">
                   <p>Envía el enlace al sorteo que recibiste en el email a tus amigos y compártelo en las redes sociales. 
@@ -253,7 +261,7 @@
                   </p>
                 </div>
     
-                <a class="right__link" href="">Descubra cómo funciona  ></a>
+                <a class="right__link" href="../3/index3.html">Descubra cómo funciona  ></a>
               </div>
               </div>
           
@@ -276,7 +284,7 @@
               El uso de la plataforma blockchain y la invitación de nuevos participantes por parte de los propios usuarios nos dan la oportunidad de no invertir cantidades grandes, sino de centrarnos en nuestra tarea principal: el desarrollo de una nueva aplicación móvil de publicidad útil. 
             </p>
   
-            <a class="creating__link"  href="">Lee más sobre la aplicación aquí >  </a>
+            <a class="creating__link"  href="../1/index1.html">Lee más sobre la aplicación aquí >  </a>
           </div>
         </div>
       </section>
@@ -319,43 +327,46 @@
           </div>
 
           <!-- forma -->
-          <div class="blockform">
+          <div 
+          class="animate__animated blockform"
+              data-animation="animated animate__fadeInUp"
+          >
             <h3>I would like to be notified when AEtning App is released</h3>
             <form action="" method="POST">
               <div class="country">
-                <select name="country">
+                <select name="country" id="countryID" required>
                   <option selected disabled>Please, chooze your country</option>
-                  <option value="США">USA</option>
-                  <option value="Канада">Canada</option>
-                  <option value="Австралия">Australia</option>
-                  <option value="Англия">England</option>
-                  <option value="Сингапур">Singapore</option>
-                  <option value="Новая Зеландия">New Zealand</option>
-                  <option value="Мексика">Mexico</option>
-                  <option value="Испания">Spain</option>
-                  <option value="Аргентина">Argentina</option>
-                  <option value="Колумбия">Colombia</option>
-                  <option value="Гонконг">Hong Kong</option>
+                  <option value="USA">USA</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Australia">Australia</option>
+                  <option value="England">England</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="New Zealand">New Zealand</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Spain">Spain</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Colombia">Colombia</option>
+                  <option value="Hong Kong">Hong Kong</option>
                 </select>
               </div>
 
-              <input type="email" placeholder="Your e-mail" />
+              <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Your e-mail" required />
 
               <div class="checkbox_text">
                 <input type="checkbox" />
                 <p>I want to participate in the prize draw</p>
               </div>
 
-              <div class="prize">
+              <div class="prize" id="prizeID">
                 <select name="prize">
                   <option selected disabled>Please, chooze the prize</option>
-                  <option value="США">США</option>
-                  <option value="Канада">Канада</option>
-                  <option value="Австралия">Австралия</option>
+                  <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+                  <option value="Urban Electric Bike">Urban Electric Bike</option>
+                  <option value="Health insurance plan">Health insurance plan</option>
                 </select>
               </div>
-              <input type="text" placeholder="Your name" />
-              <input type="tel" placeholder="Phone number" />
+              <input type="text" id="nameID" name="name" maxlength="30" placeholder="Your name" />
+              <input type="tel" name="phone"  placeholder="Phone number" id="telID" />
 
               <input type="submit" value="Join Giveaway" />
             </form>
@@ -385,5 +396,8 @@
         >
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./form.js"></script>
+    <script src="./animate.js"></script>
   </body>
 </html>
