@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
 }
 
@@ -63,10 +63,11 @@ nav .list__item a.list__link_active {
   height: 32px;
   position: relative;
   margin-left: -15px;
+  cursor: pointer;
 }
 
 .language::after {
-  content: '>';
+  content: ">";
   color: #ffffff;
   margin-left: 10px;
 }
@@ -94,10 +95,33 @@ nav .list__item a.list__link_active {
   top: -13px;
   overflow: hidden;
   border-radius: 50%;
+  z-index: 100;
 }
 
 .main__img img {
   height: 100%;
+}
+
+.main__white_square {
+  background-color: #ffffff;
+  position: absolute;
+  width: 873px;
+  height: 870px;
+  right: 40px;
+  top: -29px;
+  border-radius: 50%;
+  z-index: 90;
+}
+
+.main__purple_square {
+  background-color: #8082d1;
+  position: absolute;
+  width: 906px;
+  height: 935px;
+  right: 29px;
+  top: -80px;
+  border-radius: 50%;
+  z-index: 80;
 }
 
 .main-title {
@@ -482,7 +506,7 @@ nav .list__item a.list__link_active {
   position: absolute;
   top: 51px;
   left: -22px;
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   border-style: solid;
@@ -494,7 +518,7 @@ nav .list__item a.list__link_active {
   position: absolute;
   top: 0px;
   right: -70px;
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   border-style: solid;
@@ -700,15 +724,15 @@ nav .list__item a.list__link_active {
 
 .section-form__img {
   background-image: url(./img/dog.jpg);
-  background-size: cover;
+  background-size: 840px 1330px;
   background-repeat: no-repeat;
-  background-position: 119px -450px;
-  display: flex;
-  justify-content: center;
+
+  background-attachment: fixed;
+  background-position: -91px -350px;
   position: absolute;
-  width: 979px;
+  width: 1119px;
   height: 977px;
-  left: -320px;
+  left: -520px;
   bottom: -10px;
   overflow: hidden;
   border-radius: 50%;
@@ -828,7 +852,7 @@ nav .list__item a.list__link_active {
   width: 100%;
 }
 
-.blockform input[type='checkbox'] {
+.blockform input[type="checkbox"] {
   width: 24px;
   height: 24px;
   margin-left: 10px;
@@ -841,7 +865,7 @@ nav .list__item a.list__link_active {
   appearance: none;
 }
 
-select[name='country'] {
+select[name="country"] {
   background-color: #7c6f3d;
   border-radius: 17px;
   color: #fefefe;
@@ -859,17 +883,17 @@ form .country::after {
   position: absolute;
   top: 11px;
   right: 15px;
-  content: '>';
+  content: ">";
   color: #fefefe;
   font-size: 14px;
   font-weight: 600;
 }
 
-select[name='country']:focus {
+select[name="country"]:focus {
   outline: none;
 }
 
-input[type='email'] {
+input[type="email"] {
   background-color: #7c6f3d;
   border-radius: 17px;
   padding-top: 11px;
@@ -881,14 +905,14 @@ input[type='email'] {
   text-align: center;
 }
 
-input[type='email']::placeholder {
+input[type="email"]::placeholder {
   color: #fefefe;
   font-size: 14px;
   text-align: center;
   line-height: 1;
 }
 
-input[type='email']:focus::-webkit-input-placeholder {
+input[type="email"]:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
@@ -906,7 +930,7 @@ form .prize {
   margin-bottom: 13px;
 }
 
-select[name='prize'] {
+select[name="prize"] {
   background-color: #7c6f3d;
   border-radius: 17px;
   color: #fefefe;
@@ -915,7 +939,7 @@ select[name='prize'] {
   cursor: pointer;
 }
 
-select[name='prize']:focus {
+select[name="prize"]:focus {
   outline: none;
 }
 
@@ -923,13 +947,13 @@ form .prize::after {
   position: absolute;
   top: 11px;
   right: 26px;
-  content: '>';
+  content: ">";
   color: #fefefe;
   font-size: 14px;
   font-weight: 600;
 }
 
-input[type='text'] {
+input[type="text"] {
   background-color: #7c6f3d;
   border-radius: 17px;
   text-align: center;
@@ -940,16 +964,16 @@ input[type='text'] {
   margin-bottom: 12px;
 }
 
-input[type='text']::placeholder {
+input[type="text"]::placeholder {
   color: #fefefe;
   font-size: 14px;
 }
 
-input[type='text']:focus::-webkit-input-placeholder {
+input[type="text"]:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input[type='tel'] {
+input[type="tel"] {
   background-color: #7c6f3d;
   border-radius: 17px;
   text-align: center;
@@ -960,16 +984,16 @@ input[type='tel'] {
   margin-bottom: 23px;
 }
 
-input[type='tel']::placeholder {
+input[type="tel"]::placeholder {
   color: #fefefe;
   font-size: 14px;
 }
 
-input[type='tel']:focus::-webkit-input-placeholder {
+input[type="tel"]:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input[type='submit'] {
+input[type="submit"] {
   background-color: #e38522;
   border-radius: 17px;
   color: #fefefe;
@@ -1035,6 +1059,7 @@ footer address {
   font-size: 14px;
   margin-top: 15px;
   margin-bottom: 15px;
+  font-style: normal;
 }
 
 footer a {

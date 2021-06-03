@@ -66,6 +66,7 @@ nav .list__item a.list__link_active {
   height: 32px;
   position: relative;
   margin-left: -15px;
+  cursor: pointer;
 }
 
 .language::after {
@@ -748,6 +749,7 @@ footer address {
   font-size: 14px;
   margin-top: 15px;
   margin-bottom: 15px;
+  font-style: normal;
 }
 
 footer a {
