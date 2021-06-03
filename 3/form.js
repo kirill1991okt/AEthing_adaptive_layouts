@@ -22,7 +22,7 @@ $('#countryID').on("change", function() {
     const codesCounry = codes[county];
    
 
-    $('#telID').attr('value', codesCounry);
+    $('#telID').attr('placeholder', codesCounry);
 })
 
 $('#prizeID').on("change", function() {
@@ -98,7 +98,7 @@ $("form").submit(function(event) {
         dataType: "json",
         data: data,
     }).done(function(response) {
-        alert('fwerf');
+        // alert('fwerf');
         
     }).fail(function(error, textStatus) {
             console.log(error, textStatus);
