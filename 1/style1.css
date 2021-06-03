@@ -181,6 +181,75 @@ nav .list__item a.list__link_active {
   -webkit-text-fill-color: transparent;
 
   text-transform: uppercase;
+  /* transition: cubic-bezier(0.19, 1, 0.22, 1); */
+}
+
+.main-title__first {
+  animation: animation 5000ms linear both;
+}
+
+@keyframes animation {
+  0% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -500, 0, 0, 1);
+  }
+  2.6% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -361.431, 0, 0, 1);
+  }
+  5.21% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -257.295, 0, 0, 1);
+  }
+  10.31% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -125.942, 0, 0, 1);
+  }
+  15.52% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -56.241, 0, 0, 1);
+  }
+  20.62% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -22.876, 0, 0, 1);
+  }
+  30.93% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.305, 0, 0, 1);
+  }
+  41.24% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.198, 0, 0, 1);
+  }
+  100% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
+}
+
+.main-title__second {
+  animation: animation1 5000ms linear both;
+}
+
+@keyframes animation1 {
+  0% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 500, 0, 0, 1);
+  }
+  2.6% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 361.431, 0, 0, 1);
+  }
+  5.21% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 257.295, 0, 0, 1);
+  }
+  10.31% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 125.942, 0, 0, 1);
+  }
+  15.52% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 56.241, 0, 0, 1);
+  }
+  20.62% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 22.876, 0, 0, 1);
+  }
+  30.93% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.305, 0, 0, 1);
+  }
+  41.24% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.198, 0, 0, 1);
+  }
+  100% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
 }
 
 .main-title__first {
@@ -196,6 +265,20 @@ nav .list__item a.list__link_active {
   font-size: 18px;
   text-align: center;
   margin-bottom: 63px;
+  opacity: 0; /*Элемент полностью прозрачный (невидимый)*/
+  transition: 1s; /*Скорость перехода состояния элемента*/
+  animation: show 4s 1; /* Указываем название анимации, её время и количество повторов*/
+  animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+  animation-delay: 2s; /* Задержка перед началом */
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .main-title__link {
