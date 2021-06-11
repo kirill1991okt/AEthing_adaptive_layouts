@@ -49,7 +49,7 @@ $("form").submit(function(event) {
     var data = $(this).serializeArray();
     console.log(data);
 
-   const checkCountry =  data.find((value) => { 
+   const checkCountry =  data.find((value) => {
        if (value.name === "country") {
            return true;
        }
@@ -64,8 +64,8 @@ $("form").submit(function(event) {
 
    const checkPri = $('#participateID').is(':checked');
 
-   if (checkCountry) {
-    const checkCountry =  data.find((value) => { 
+   if (!checkCountry) {
+    const checkCountry =  data.find((value) => {
         if (value.name === "prize") {
             return true;
         }
@@ -73,11 +73,11 @@ $("form").submit(function(event) {
 
     if (checkCountry) {
         $('#prizeID').css('border', '1px solid red');
-        return false    
+        return false
     }  else {
-        $('#prizeID').css('border', 'none');     
+        $('#prizeID').css('border', 'none');
     }
-   } 
+   }
 
 //    const checkPrize = $('#participateID').is(':checked');
 

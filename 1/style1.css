@@ -180,6 +180,8 @@ nav .list__item a.list__link_active {
   font-weight: bold;
 }
 
+
+
 .language {
   display: flex;
   align-items: center;
@@ -195,9 +197,30 @@ nav .list__item a.list__link_active {
 }
 
 .language::after {
-  content: '>';
+  content: ">";
   color: #ffffff;
   margin-left: 10px;
+}
+
+.language .popup {
+  display: none;
+  position: absolute;
+  top: 32px;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+}
+
+.language.open .popup {
+  display: block;
+}
+
+.language .popup div {
+  text-align: center;
+  color: #ffffff;
+  padding: 9px;
 }
 
 .main {
@@ -374,7 +397,7 @@ nav .list__item a.list__link_active {
   height: 310px;
 }
 
-.use-mob__useful::before {
+.use-mob__useful .top__square {
   opacity: 0.1;
   width: 282px;
   height: 264px;
@@ -385,7 +408,7 @@ nav .list__item a.list__link_active {
   background-color: #000000;
 }
 
-.use-mob__useful::after {
+.use-mob__useful .bot__square {
   opacity: 0.1;
   width: 282px;
   height: 264px;
@@ -430,7 +453,7 @@ nav .list__item a.list__link_active {
   margin-left: 184px;
 }
 
-.use-mob__mobApp::before {
+.use-mob__mobApp .top__square {
   opacity: 0.1;
   width: 282px;
   height: 264px;
@@ -441,7 +464,7 @@ nav .list__item a.list__link_active {
   background-color: #000000;
 }
 
-.use-mob__mobApp::after {
+.use-mob__mobApp .bot__square {
   opacity: 0.1;
   width: 282px;
   height: 264px;
@@ -489,7 +512,7 @@ nav .list__item a.list__link_active {
   box-shadow: 18px -18px 5px -5px rgba(0, 0, 0, 0.1);
 }
 
-.use-mob .subscribers::before {
+.use-mob .subscribers .top__square {
   opacity: 0.1;
   width: 456px;
   height: 428px;
@@ -500,7 +523,7 @@ nav .list__item a.list__link_active {
   background-color: #000000;
 }
 
-.use-mob .subscribers::after {
+.use-mob .subscribers .bot__square {
   opacity: 0.1;
   width: 456px;
   height: 428px;
@@ -533,11 +556,22 @@ nav .list__item a.list__link_active {
   content: '';
   position: absolute;
   top: -152px;
-  left: -25px;
   width: 305px;
   height: 487px;
   border: 15px solid #8877da;
   z-index: 10;
+}
+
+.main-items.active0::before {
+  left: -25px;
+}
+
+.main-items.active1::before {
+  left: 400px;
+}
+
+.main-items.active2::before {
+  left: 790px;
 }
 
 .main-items__item {
@@ -618,7 +652,7 @@ nav .list__item a.list__link_active {
   animation: animation 5000ms linear both;
 } */
 
-.AEthing__users::before {
+.AEthing__users .top__square {
   opacity: 0.1;
   width: 282px;
   height: 267px;
@@ -629,7 +663,7 @@ nav .list__item a.list__link_active {
   background-color: #000000;
 }
 
-.AEthing__users::after {
+.AEthing__users .bot__square {
   opacity: 0.1;
   width: 282px;
   height: 267px;
@@ -664,7 +698,7 @@ nav .list__item a.list__link_active {
   align-items: center;
 }
 
-.AEthing__business::before {
+.AEthing__business .top__square {
   opacity: 0.1;
   width: 282px;
   height: 267px;
@@ -675,7 +709,7 @@ nav .list__item a.list__link_active {
   background-color: #000000;
 }
 
-.AEthing__business::after {
+.AEthing__business .bot__square {
   opacity: 0.1;
   width: 282px;
   height: 267px;
@@ -825,7 +859,7 @@ nav .list__item a.list__link_active {
   margin-left: 100px;
 }
 
-.get__right-items::before {
+.get__right-items .top__square {
   opacity: 0.1;
   width: 212px;
   height: 218px;
@@ -836,7 +870,7 @@ nav .list__item a.list__link_active {
   background-color: #000000;
 }
 
-.get__right-items::after {
+.get__right-items .bot__square {
   opacity: 0.1;
   width: 212px;
   height: 218px;

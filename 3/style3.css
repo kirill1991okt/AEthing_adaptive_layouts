@@ -75,6 +75,27 @@ nav .list__item a.list__link_active {
   margin-left: 10px;
 }
 
+.language .popup {
+  display: none;
+  position: absolute;
+  top: 32px;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+}
+
+.language.open .popup {
+  display: block;
+}
+
+.language .popup div {
+  text-align: center;
+  color: #ffffff;
+  padding: 9px;
+}
+
 .main {
   background-color: #9a9a9a;
   position: relative;

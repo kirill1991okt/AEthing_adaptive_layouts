@@ -71,7 +71,7 @@ $("form").submit(function(event) {
         }
     })
 
-    if (checkCountry) {
+    if (!checkCountry) {
         $('#prizeID').css('border', '1px solid red');
         return false    
     }  else {
