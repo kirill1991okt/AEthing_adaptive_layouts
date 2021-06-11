@@ -11,6 +11,12 @@ $(document).ready(function() {
         // change language code
     });
 
+
+    $('.popup').mouseleave(function() {
+        $('.language').removeClass('open');
+    })
+
+
     squareScroll($('.prize__img'));
 });
 

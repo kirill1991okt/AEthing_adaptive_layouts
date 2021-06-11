@@ -6,10 +6,14 @@ $(document).ready(function() {
             $(this).addClass('open');
         }
     });
-    $('.language .popup div').on('click', function(e) {
-        e.stopPropagation();
-        // change language code
-    });
+    // $('.language .popup div').on('click', function(e) {
+    //     e.stopPropagation();
+    //     // change language code
+    // });
+
+    $('.popup').mouseleave(function() {
+        $('.language').removeClass('open');
+    })
 
 
 });

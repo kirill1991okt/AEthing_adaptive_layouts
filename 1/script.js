@@ -11,6 +11,11 @@ $(document).ready(function() {
         // change language code
     });
 
+    $('.popup').mouseleave(function() {
+        $('.language').removeClass('open');
+    })
+
+
     squareScroll($('.top__square'));
     squareScroll($('.bot__square'));
 
@@ -31,7 +36,7 @@ $(document).ready(function() {
                     }
                 }
                 if(mainItems.hasClass('active1')) {
-                    mainItems.removeClass('active2').addClass('active2');
+                    mainItems.removeClass('active1').addClass('active2');
                 }
                 if(mainItems.hasClass('active0')) {
                     mainItems.removeClass('active0').addClass('active1');

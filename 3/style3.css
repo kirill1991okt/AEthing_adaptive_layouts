@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
 }
 
@@ -60,7 +60,7 @@ nav .list__item a {
 
 nav .list__item a::after,
 nav .list__item a.list__link_active::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 0;
@@ -92,7 +92,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .language::after {
-  content: ">";
+  content: '>';
   color: #ffffff;
   margin-left: 10px;
 }
@@ -210,7 +210,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .main-title__link1::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 50%;
@@ -343,7 +343,7 @@ nav .list__item a.list__link_active:focus::after {
 .container__text {
   opacity: 0.7019607843137254;
   color: #161515;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   margin-right: 35px;
 }
@@ -381,7 +381,6 @@ nav .list__item a.list__link_active:focus::after {
 /* /work */
 
 main .link {
-  position: relative;
   background-color: #f8f8f8;
   margin-bottom: 14px;
   padding-top: 41px;
@@ -389,8 +388,12 @@ main .link {
   text-align: center;
 }
 
-main .link::after {
-  content: "";
+main .link a {
+  position: relative;
+}
+
+main .link a::after {
+  content: '';
   display: block;
   position: absolute;
   left: 50%;
@@ -401,9 +404,9 @@ main .link::after {
   transition: width 0.3s ease-out;
 }
 
-main .link:hover::after,
-main .link:focus::after {
-  width: 23%;
+main .link a:hover::after,
+main .link a:focus::after {
+  width: 100%;
 }
 
 main .link a {
@@ -627,7 +630,7 @@ main .link a {
   width: 100%;
 }
 
-.blockform input[type="checkbox"] {
+.blockform input[type='checkbox'] {
   width: 24px;
   height: 24px;
   margin-left: 10px;
@@ -640,7 +643,7 @@ main .link a {
   appearance: none;
 }
 
-select[name="country"] {
+select[name='country'] {
   background-color: #6a6a6a;
   border-radius: 17px;
   color: #fefefe;
@@ -658,17 +661,17 @@ form .country::after {
   position: absolute;
   top: 11px;
   right: 15px;
-  content: ">";
+  content: '>';
   color: #fefefe;
   font-size: 14px;
   font-weight: 600;
 }
 
-select[name="country"]:focus {
+select[name='country']:focus {
   outline: none;
 }
 
-input[type="email"] {
+input[type='email'] {
   background-color: #6a6a6a;
   border-radius: 17px;
   padding-top: 11px;
@@ -680,14 +683,14 @@ input[type="email"] {
   text-align: center;
 }
 
-input[type="email"]::placeholder {
+input[type='email']::placeholder {
   color: #fefefe;
   font-size: 14px;
   text-align: center;
   line-height: 1;
 }
 
-input[type="email"]:focus::-webkit-input-placeholder {
+input[type='email']:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
@@ -705,7 +708,7 @@ form .prize {
   margin-bottom: 13px;
 }
 
-select[name="prize"] {
+select[name='prize'] {
   background-color: #6a6a6a;
   border-radius: 17px;
   color: #fefefe;
@@ -714,7 +717,7 @@ select[name="prize"] {
   cursor: pointer;
 }
 
-select[name="prize"]:focus {
+select[name='prize']:focus {
   outline: none;
 }
 
@@ -722,13 +725,13 @@ form .prize::after {
   position: absolute;
   top: 11px;
   right: 26px;
-  content: ">";
+  content: '>';
   color: #fefefe;
   font-size: 14px;
   font-weight: 600;
 }
 
-input[type="text"] {
+input[type='text'] {
   background-color: #6a6a6a;
   border-radius: 17px;
   text-align: center;
@@ -739,16 +742,16 @@ input[type="text"] {
   margin-bottom: 12px;
 }
 
-input[type="text"]::placeholder {
+input[type='text']::placeholder {
   color: #fefefe;
   font-size: 14px;
 }
 
-input[type="text"]:focus::-webkit-input-placeholder {
+input[type='text']:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input[type="tel"] {
+input[type='tel'] {
   background-color: #6a6a6a;
   border-radius: 17px;
   text-align: center;
@@ -759,16 +762,16 @@ input[type="tel"] {
   margin-bottom: 23px;
 }
 
-input[type="tel"]::placeholder {
+input[type='tel']::placeholder {
   color: #fefefe;
   font-size: 14px;
 }
 
-input[type="tel"]:focus::-webkit-input-placeholder {
+input[type='tel']:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   background-color: #e38522;
   border-radius: 17px;
   color: #fefefe;
@@ -781,7 +784,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
+input[type='submit']:hover {
   background-color: #a25406;
   transition: 0.3s;
 }
