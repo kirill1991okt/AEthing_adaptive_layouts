@@ -101,7 +101,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
 }
 
@@ -111,7 +111,7 @@ body {
 }
 
 body::after {
-  content: '';
+  content: "";
   background-image: url(./img/madmen.png);
   background-position: center;
   background-attachment: fixed;
@@ -172,15 +172,35 @@ nav .list__item {
   margin-right: 30px;
 }
 
-nav .list__item a {
-  color: #ffffff;
-}
-
 nav .list__item a.list__link_active {
+  position: relative;
+  color: #ffffff;
   font-weight: bold;
 }
 
+nav .list__item a {
+  position: relative;
+  color: #ffffff;
+}
 
+nav .list__item a::after,
+nav .list__item a.list__link_active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease-out;
+}
+
+nav .list__item a:hover::after,
+nav .list__item a:focus::after,
+nav .list__item a.list__link_active:hover::after,
+nav .list__item a.list__link_active:focus::after {
+  width: 100%;
+}
 
 .language {
   display: flex;
@@ -360,12 +380,18 @@ nav .list__item a.list__link_active {
   background-color: #f98511;
   border-radius: 18px;
   margin-bottom: 126px;
+  cursor: pointer;
+}
+
+.main__btn:hover {
+  background-color: #a25406;
+  transition: 0.3s;
 }
 
 .main-title__footer {
   color: #ffffff;
   font-size: 24px;
-  align-self: start;
+  text-align: center;
 }
 
 /* use-mob */
@@ -373,7 +399,7 @@ nav .list__item a.list__link_active {
 .use-mob {
   position: relative;
   background-color: #fafafa;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 
 .use-mob__img {
@@ -385,7 +411,7 @@ nav .list__item a.list__link_active {
 }
 
 .use-mob__wrapper {
-  margin-top: 70px;
+  margin-top: 160px;
   display: flex;
   margin-bottom: 83px;
 }
@@ -404,7 +430,7 @@ nav .list__item a.list__link_active {
   position: absolute;
   top: -140px;
   left: -155px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -415,7 +441,7 @@ nav .list__item a.list__link_active {
   position: absolute;
   top: -128px;
   left: -139px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -460,7 +486,7 @@ nav .list__item a.list__link_active {
   position: absolute;
   top: -150px;
   right: -120px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -471,7 +497,7 @@ nav .list__item a.list__link_active {
   position: absolute;
   top: -138px;
   right: -104px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -519,7 +545,7 @@ nav .list__item a.list__link_active {
   position: absolute;
   top: -150px;
   right: -120px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -530,7 +556,7 @@ nav .list__item a.list__link_active {
   position: absolute;
   top: -138px;
   right: -104px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -553,7 +579,7 @@ nav .list__item a.list__link_active {
 }
 
 .main-items::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -152px;
   width: 305px;
@@ -659,7 +685,7 @@ nav .list__item a.list__link_active {
   position: absolute;
   top: -108px;
   left: -165px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -670,7 +696,7 @@ nav .list__item a.list__link_active {
   position: absolute;
   top: -96px;
   left: -149px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -705,7 +731,7 @@ nav .list__item a.list__link_active {
   position: absolute;
   top: -71px;
   right: -146px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -716,7 +742,7 @@ nav .list__item a.list__link_active {
   position: absolute;
   top: -59px;
   right: -133px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -778,7 +804,7 @@ nav .list__item a.list__link_active {
 }
 
 .get .get__left::before {
-  content: '';
+  content: "";
   width: 335px;
   height: 517px;
   border: 15px solid #f9bf85;
@@ -835,7 +861,7 @@ nav .list__item a.list__link_active {
   position: absolute;
   bottom: -70px;
   right: 180px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -846,7 +872,7 @@ nav .list__item a.list__link_active {
   position: absolute;
   bottom: -61px;
   right: 168px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -866,7 +892,7 @@ nav .list__item a.list__link_active {
   position: absolute;
   top: -250px;
   left: -223px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -877,7 +903,7 @@ nav .list__item a.list__link_active {
   position: absolute;
   top: -241px;
   left: -211px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -942,6 +968,11 @@ nav .list__item a.list__link_active {
   background-color: #f98511;
   border-radius: 18px;
   align-self: center;
+}
+
+.get__right .btn:hover {
+  background-color: #a25406;
+  transition: 0.3s;
 }
 
 /* /get */

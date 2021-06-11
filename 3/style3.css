@@ -47,12 +47,34 @@ nav .list__item {
   margin-right: 30px;
 }
 
+nav .list__item a.list__link_active {
+  position: relative;
+  color: #ffffff;
+  font-weight: bold;
+}
+
 nav .list__item a {
+  position: relative;
   color: #ffffff;
 }
 
-nav .list__item a.list__link_active {
-  font-weight: bold;
+nav .list__item a::after,
+nav .list__item a.list__link_active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease-out;
+}
+
+nav .list__item a:hover::after,
+nav .list__item a:focus::after,
+nav .list__item a.list__link_active:hover::after,
+nav .list__item a.list__link_active:focus::after {
+  width: 100%;
 }
 
 .language {
@@ -170,6 +192,12 @@ nav .list__item a.list__link_active {
   background-color: #f98511;
   border-radius: 18px;
   margin-bottom: 63px;
+  cursor: pointer;
+}
+
+.main__btn:hover {
+  background-color: #a25406;
+  transition: 0.3s;
 }
 
 .main-title__link1 {
@@ -714,6 +742,11 @@ input[type="submit"] {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #a25406;
+  transition: 0.3s;
 }
 
 /* /forma */
