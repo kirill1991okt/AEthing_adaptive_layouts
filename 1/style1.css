@@ -365,10 +365,28 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .main-title__link {
+  position: relative;
   color: #f98511;
   font-size: 18px;
   text-align: center;
   margin-bottom: 46px;
+}
+
+.main-title__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #f98511;
+  transition: width 0.3s ease-out;
+}
+
+.main-title__link:hover::after,
+.main-title__link:focus::after {
+  width: 100%;
 }
 
 .main__btn {
@@ -563,6 +581,23 @@ nav .list__item a.list__link_active:focus::after {
 .use-mob .subscribers a {
   color: #ffffff;
   font-size: 18px;
+}
+
+.use-mob .subscribers a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease-out;
+}
+
+.use-mob .subscribers a:hover::after,
+.use-mob .subscribers a:focus::after {
+  width: 60%;
 }
 /* / use-mob */
 

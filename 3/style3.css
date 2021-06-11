@@ -201,10 +201,29 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .main-title__link1 {
+  position: relative;
+  padding-bottom: 2px;
   opacity: 0.8;
   color: #ffffff;
   font-size: 18px;
   text-align: center;
+}
+
+.main-title__link1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease-out;
+}
+
+.main-title__link1:hover::after,
+.main-title__link1:focus::after {
+  width: 100%;
 }
 
 /* user */
@@ -362,11 +381,29 @@ nav .list__item a.list__link_active:focus::after {
 /* /work */
 
 main .link {
+  position: relative;
   background-color: #f8f8f8;
   margin-bottom: 14px;
   padding-top: 41px;
   padding-bottom: 44px;
   text-align: center;
+}
+
+main .link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #000000;
+  transition: width 0.3s ease-out;
+}
+
+main .link:hover::after,
+main .link:focus::after {
+  width: 23%;
 }
 
 main .link a {
