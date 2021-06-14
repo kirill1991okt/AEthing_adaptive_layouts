@@ -279,7 +279,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   width: 740px;
   height: 738px;
-  right: -195px;
+  right: -205px;
   top: 170px;
   overflow: hidden;
   border-radius: 50%;
@@ -293,10 +293,10 @@ nav .list__item a.list__link_active:focus::after {
 .main__white_square {
   background-color: #ffffff;
   position: absolute;
-  width: 873px;
-  height: 870px;
-  right: 40px;
-  top: -29px;
+  width: 784px;
+  height: 785px;
+  right: -211px;
+  top: 140px;
   border-radius: 50%;
   z-index: 90;
 }
@@ -304,10 +304,10 @@ nav .list__item a.list__link_active:focus::after {
 .main__purple_square {
   background-color: #8082d1;
   position: absolute;
-  width: 906px;
-  height: 935px;
-  right: 29px;
-  top: -80px;
+  width: 845px;
+  height: 845px;
+  right: -251px;
+  top: 90px;
   border-radius: 50%;
   z-index: 80;
 }

@@ -12,6 +12,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./style1.css" />
     <title>AEthing</title>
   </head>
@@ -49,12 +55,12 @@
     </header>
     <main>
       <section class="main">
-        <div class="main__img">
-          <!-- <img src="./img/girl_1_bg.jpg" alt="main" /> -->
-        </div>
-        <div class="main__white_square"></div>
-        <div class="main__purple_square"></div>
         <div class="wrapper">
+          <div class="main__img">
+            <!-- <img src="./img/girl_1_bg.jpg" alt="main" /> -->
+          </div>
+          <div class="main__white_square"></div>
+          <div class="main__purple_square"></div>
           <div class="main-title">
             <p class="main-title__header">Anunciado La Aplicación Móvil</p>
             <h1
@@ -80,7 +86,9 @@
               >¡Todos los suscriptores pueden <br />
               participar en el sorteo! Leer mas >
             </a>
-            <a class="main__btn" href="../2/index2_sp.html">¡Notificarme!</a>
+            <a class="main__btn" data-toggle="modal" data-target="#formModal"
+              >¡Notificarme!</a
+            >
             <p class="main-title__footer">
               ¡Miles de personas en todo el mundo están <br />
               esperando nuestra aplicación!
@@ -96,6 +104,8 @@
         <div class="wrapper">
           <div class="use-mob__wrapper">
             <div class="use-mob__useful">
+              <div class="top__square"></div>
+              <div class="bot__square"></div>
               <h2
                 class="animate__animated use-mob__title"
                 data-animation="animated animate__fadeInLeft"
@@ -115,6 +125,8 @@
             </div>
 
             <div class="use-mob__mobApp">
+              <div class="top__square"></div>
+              <div class="bot__square"></div>
               <h2
                 class="animate__animated use-mob__title"
                 data-animation="animated animate__fadeInRight"
@@ -139,6 +151,8 @@
           </div>
         </div>
         <div class="subscribers">
+          <div class="top__square"></div>
+          <div class="bot__square"></div>
           <a href="../2/index2_sp.html"
             >¡Todos los suscriptores pueden participar en el sorteo! Leer
             mas></a
@@ -147,7 +161,7 @@
       </section>
 
       <div class="wrapper">
-        <div class="main-items">
+        <div class="main-items active0">
           <div class="main-items__item">
             <img src="./img/money.svg" alt="money" />
             <p>
@@ -187,6 +201,8 @@
         <div class="wrapper">
           <div class="AEthing__wrapper">
             <div class="AEthing__users">
+              <div class="top__square"></div>
+              <div class="bot__square"></div>
               <h2
                 class="animate__animated AEthing__title"
                 data-animation="animated animate__fadeInLeft"
@@ -207,6 +223,8 @@
             </div>
 
             <div class="AEthing__business">
+              <div class="top__square"></div>
+              <div class="bot__square"></div>
               <h2
                 class="animate__animated AEthing__title"
                 data-animation="animated animate__fadeInRight"
@@ -230,63 +248,66 @@
       </section>
 
       <section class="get">
-        <div class="get__left">
+        <div class="wrapper">
+          <div class="get__right">
+            <h2 class="get__title">¡Recibe sólo lo que quieres!</h2>
+            <div class="get__right-items">
+              <div class="top__square"></div>
+              <div class="bot__square"></div>
+              <div class="get__right-items-wrapper">
+                <div
+                  class="animate__animated get__right-item animate__delay-1s"
+                  data-animation="animated animate__zoomIn"
+                >
+                  <img src="./img/finger.svg" alt="finger" />
+                  <p>
+                    Bloquea contenido que no sea interesante o apropiado para
+                    ti.
+                  </p>
+                </div>
+                <div
+                  class="animate__animated get__right-item animate__delay-2s"
+                  data-animation="animated animate__zoomIn"
+                >
+                  <img src="./img/money1.svg" alt="money" />
+                  <p>
+                    ¡Gana dinero extra por tu atención que puedes gastar en
+                    cualquier cosa que desees!
+                  </p>
+                </div>
+                <div
+                  class="animate__animated get__right-item animate__delay-3s"
+                  data-animation="animated animate__zoomIn"
+                >
+                  <img src="./img/sofa.svg" alt="sofa" />
+                  <p>¡Ve la publicidad solo cuando quieras!</p>
+                </div>
+                <div
+                  class="animate__animated get__right-item animate__delay-4s"
+                  data-animation="animated animate__zoomIn"
+                >
+                  <img src="./img/key.svg" alt="key" />
+                  <p>¡Y una cosa clave más! Pronto lo sabrás...</p>
+                </div>
+              </div>
+              <a class="btn" data-toggle="modal" data-target="#formModal"
+                >¡Notificarme!</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- <div class="get__left">
           <div class="get__img">
             <img src="./img/busnesmen.png" alt="men" />
             <div class="get__left-items">
-              <h2
-                class="animate__animated get__title"
-                data-animation="animated animate__fadeInUpBig"
-              >
-                ¡Recibe sólo lo que quieres!
-              </h2>
+              
               <a href="../2/index2.html" class="get__link"
                 >¡Todos los suscriptores pueden participar en el sorteo! Leer
                 mas ></a
               >
             </div>
           </div>
-        </div>
-        <div class="get__right">
-          <div class="get__right-items">
-            <div class="get__right-items-wrapper">
-              <div
-                class="animate__animated get__right-item animate__delay-1s"
-                data-animation="animated animate__zoomIn"
-              >
-                <img src="./img/finger.svg" alt="finger" />
-                <p>
-                  Bloquea contenido que no sea interesante o apropiado para ti.
-                </p>
-              </div>
-              <div
-                class="animate__animated get__right-item animate__delay-2s"
-                data-animation="animated animate__zoomIn"
-              >
-                <img src="./img/money1.svg" alt="money" />
-                <p>
-                  ¡Gana dinero extra por tu atención que puedes gastar en
-                  cualquier cosa que desees!
-                </p>
-              </div>
-              <div
-                class="animate__animated get__right-item animate__delay-3s"
-                data-animation="animated animate__zoomIn"
-              >
-                <img src="./img/sofa.svg" alt="sofa" />
-                <p>¡Ve la publicidad solo cuando quieras!</p>
-              </div>
-              <div
-                class="animate__animated get__right-item animate__delay-4s"
-                data-animation="animated animate__zoomIn"
-              >
-                <img src="./img/key.svg" alt="key" />
-                <p>¡Y una cosa clave más! Pronto lo sabrás...</p>
-              </div>
-            </div>
-            <a class="btn" href="">¡Notificarme!</a>
-          </div>
-        </div>
+        </div> -->
       </section>
     </main>
 
@@ -310,11 +331,109 @@
         >
       </div>
     </footer>
+
+    <div class="modal" tabindex="-1" role="dialog" id="formModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-blockform">
+              <h3>I would like to be notified when AEtning App is released</h3>
+              <form>
+                <div class="country">
+                  <select name="country" id="countryID" required>
+                    <option selected disabled>
+                      Please, chooze your country
+                    </option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="England">England</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                  </select>
+                </div>
+
+                <input
+                  type="email"
+                  name="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  placeholder="Your e-mail"
+                  required
+                />
+
+                <div class="checkbox_text">
+                  <input id="participateID" type="checkbox" />
+                  <p>I want to participate in the prize draw</p>
+                </div>
+
+                <div class="prize" id="prizeID">
+                  <select name="prize">
+                    <option selected disabled>Please, chooze the prize</option>
+                    <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+                    <option value="Urban Electric Bike">
+                      Urban Electric Bike
+                    </option>
+                    <option value="Health insurance plan">
+                      Health insurance plan
+                    </option>
+                  </select>
+                </div>
+                <input
+                  type="text"
+                  id="nameID"
+                  name="name"
+                  maxlength="30"
+                  placeholder="Your name"
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  pattern="/^[\s()+-]*([0-9][\s()+-]*){6,20}$/"
+                  placeholder="Phone number"
+                  id="telID"
+                />
+
+                <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" -->
+
+                <input type="submit" value="Join Giveaway" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
-      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./form.js"></script>
     <script src="./animate.js"></script>
     <script src="./script.js"></script>
   </body>
