@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
 }
 
@@ -60,7 +60,7 @@ nav .list__item a {
 
 nav .list__item a::after,
 nav .list__item a.list__link_active::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -92,7 +92,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .language::after {
-  content: '>';
+  content: ">";
   color: #ffffff;
   margin-left: 10px;
 }
@@ -116,6 +116,27 @@ nav .list__item a.list__link_active:focus::after {
   text-align: center;
   color: #ffffff;
   padding: 9px;
+}
+
+.language .popup div a {
+  position: relative;
+  color: #ffffff;
+}
+
+.language .popup div a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease-out;
+}
+
+.language .popup div a:hover::after,
+.language .popup div a:focus::after {
+  width: 100%;
 }
 
 .main {
@@ -198,6 +219,7 @@ nav .list__item a.list__link_active:focus::after {
 .main__btn:hover {
   background-color: #a25406;
   transition: 0.3s;
+  color: #ffffff;
 }
 
 .main-title__link1 {
@@ -209,8 +231,12 @@ nav .list__item a.list__link_active:focus::after {
   text-align: center;
 }
 
+.main-title__link1:hover {
+  color: #ffffff;
+}
+
 .main-title__link1::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 50%;
@@ -311,7 +337,7 @@ nav .list__item a.list__link_active:focus::after {
   margin-bottom: 90px;
 }
 
-.work .container {
+.work .work__container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -335,7 +361,7 @@ nav .list__item a.list__link_active:focus::after {
   text-align: center;
   /* background-color: #ffffff; */
   /* border-radius: 50%; */
-  color: #bababa;
+  color: #fda956;
   font-weight: 900;
   font-size: 90px;
 }
@@ -343,7 +369,7 @@ nav .list__item a.list__link_active:focus::after {
 .container__text {
   opacity: 0.7019607843137254;
   color: #161515;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   margin-right: 35px;
 }
@@ -393,7 +419,7 @@ main .link a {
 }
 
 main .link a::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 50%;
@@ -469,7 +495,6 @@ main .link a {
 }
 
 .conditions__wrap_item p {
-  opacity: 0.7019607843137254;
   color: #ffffff;
   font-size: 14px;
 }
@@ -630,7 +655,7 @@ main .link a {
   width: 100%;
 }
 
-.blockform input[type='checkbox'] {
+.blockform input[type="checkbox"] {
   width: 24px;
   height: 24px;
   margin-left: 10px;
@@ -643,7 +668,7 @@ main .link a {
   appearance: none;
 }
 
-select[name='country'] {
+select[name="country"] {
   background-color: #6a6a6a;
   border-radius: 17px;
   color: #fefefe;
@@ -661,17 +686,17 @@ form .country::after {
   position: absolute;
   top: 11px;
   right: 15px;
-  content: '>';
+  content: ">";
   color: #fefefe;
   font-size: 14px;
   font-weight: 600;
 }
 
-select[name='country']:focus {
+select[name="country"]:focus {
   outline: none;
 }
 
-input[type='email'] {
+input[type="email"] {
   background-color: #6a6a6a;
   border-radius: 17px;
   padding-top: 11px;
@@ -683,14 +708,14 @@ input[type='email'] {
   text-align: center;
 }
 
-input[type='email']::placeholder {
+input[type="email"]::placeholder {
   color: #fefefe;
   font-size: 14px;
   text-align: center;
   line-height: 1;
 }
 
-input[type='email']:focus::-webkit-input-placeholder {
+input[type="email"]:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
@@ -708,7 +733,7 @@ form .prize {
   margin-bottom: 13px;
 }
 
-select[name='prize'] {
+select[name="prize"] {
   background-color: #6a6a6a;
   border-radius: 17px;
   color: #fefefe;
@@ -717,7 +742,7 @@ select[name='prize'] {
   cursor: pointer;
 }
 
-select[name='prize']:focus {
+select[name="prize"]:focus {
   outline: none;
 }
 
@@ -725,13 +750,13 @@ form .prize::after {
   position: absolute;
   top: 11px;
   right: 26px;
-  content: '>';
+  content: ">";
   color: #fefefe;
   font-size: 14px;
   font-weight: 600;
 }
 
-input[type='text'] {
+input[type="text"] {
   background-color: #6a6a6a;
   border-radius: 17px;
   text-align: center;
@@ -742,16 +767,16 @@ input[type='text'] {
   margin-bottom: 12px;
 }
 
-input[type='text']::placeholder {
+input[type="text"]::placeholder {
   color: #fefefe;
   font-size: 14px;
 }
 
-input[type='text']:focus::-webkit-input-placeholder {
+input[type="text"]:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input[type='tel'] {
+input[type="tel"] {
   background-color: #6a6a6a;
   border-radius: 17px;
   text-align: center;
@@ -762,16 +787,16 @@ input[type='tel'] {
   margin-bottom: 23px;
 }
 
-input[type='tel']::placeholder {
+input[type="tel"]::placeholder {
   color: #fefefe;
   font-size: 14px;
 }
 
-input[type='tel']:focus::-webkit-input-placeholder {
+input[type="tel"]:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input[type='submit'] {
+input[type="submit"] {
   background-color: #e38522;
   border-radius: 17px;
   color: #fefefe;
@@ -784,12 +809,209 @@ input[type='submit'] {
   cursor: pointer;
 }
 
-input[type='submit']:hover {
+input[type="submit"]:hover {
   background-color: #a25406;
   transition: 0.3s;
 }
 
 /* /forma */
+
+/* modal form */
+
+.modal-content {
+  width: 324px;
+  background-color: #ffffff;
+  border-radius: 13px;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-blockform {
+  width: 321px;
+  background-color: #ffffff;
+  border-radius: 13px;
+  padding: 0px 32px 83px;
+  z-index: 10;
+}
+
+.modal-blockform h3 {
+  color: #000000;
+  font-size: 21px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.modal-blockform select,
+.modal-blockform input {
+  width: 100%;
+}
+
+.modal-blockform input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  margin-right: 18px;
+}
+
+.modal-blockform select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.modal-blockform select[name="country"] {
+  background-color: #6a6a6a;
+  border-radius: 17px;
+  color: #fefefe;
+  font-size: 14px;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+form .country {
+  position: relative;
+}
+
+form .country::after {
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  content: ">";
+  color: #fefefe;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+select[name="country"]:focus {
+  outline: none;
+}
+
+.modal-blockform input[type="email"] {
+  background-color: #6a6a6a;
+  border-radius: 17px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+input[type="email"]::placeholder {
+  color: #fefefe;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1;
+}
+
+input[type="email"]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+form .checkbox_text {
+  display: flex;
+  text-align: center;
+  color: #000000;
+  font-size: 14px;
+  padding-right: 32px;
+  margin-bottom: 20px;
+}
+
+form .prize {
+  position: relative;
+  margin-bottom: 13px;
+}
+
+.modal-blockform select[name="prize"] {
+  background-color: #6a6a6a;
+  border-radius: 17px;
+  color: #fefefe;
+  font-size: 14px;
+  padding: 10px 44px;
+  cursor: pointer;
+}
+
+select[name="prize"]:focus {
+  outline: none;
+}
+
+form .prize::after {
+  position: absolute;
+  top: 11px;
+  right: 26px;
+  content: ">";
+  color: #fefefe;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.modal-blockform input[type="text"] {
+  background-color: #6a6a6a;
+  border-radius: 17px;
+  text-align: center;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border: none;
+  outline: none;
+  margin-bottom: 12px;
+}
+
+input[type="text"]::placeholder {
+  color: #fefefe;
+  font-size: 14px;
+}
+
+input[type="text"]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.modal-blockform input[type="tel"] {
+  background-color: #6a6a6a;
+  border-radius: 17px;
+  text-align: center;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border: none;
+  outline: none;
+  margin-bottom: 23px;
+}
+
+input[type="tel"]::placeholder {
+  color: #fefefe;
+  font-size: 14px;
+}
+
+input[type="tel"]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input[type="submit"] {
+  background-color: #e38522;
+  border-radius: 17px;
+  color: #fefefe;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #a25406;
+  transition: 0.3s;
+}
+
+/* /modal form */
 
 /* footer */
 

@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -14,6 +13,17 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style3.css" />
     <title>AEthing</title>
@@ -27,13 +37,17 @@
         <nav>
           <ul class="list">
             <li class="list__item">
-              <a href="" class="list__link">Acerca de AEthing </a>
+              <a href="../1/index1_sp.html" class="list__link"
+                >Acerca de AEthing
+              </a>
             </li>
             <li class="list__item">
-              <a href="" class="list__link list__link_active">Sorteo </a>
+              <a href="../2/index2_sp.html" class="list__link">Sorteo </a>
             </li>
             <li class="list__item">
-              <a href="" class="list__link">Cómo funciona </a>
+              <a href="../3/index3_sp.html" class="list__link list__link_active"
+                >Cómo funciona
+              </a>
             </li>
           </ul>
         </nav>
@@ -70,7 +84,9 @@
               Invite more friends - get more chances to win! <br />
               Get your prize on the day of the program launch!
             </p>
-            <a class="main__btn">Notify me</a>
+            <a class="main__btn" data-toggle="modal" data-target="#formModal"
+              >Notify me</a
+            >
 
             <a href="" class="main-title__link1"
               >All subscribers can participate in a giveaway event! <br />
@@ -117,7 +133,7 @@
           <div class="work__wrap">
             <h1 class="title">How our giveaway based on blockchain works</h1>
 
-            <div class="container">
+            <div class="work__container">
               <div class="container__items">
                 <div class="container__item">1</div>
                 <p class="container__text">Get email invitation</p>
@@ -332,7 +348,108 @@
         >
       </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <div class="modal" tabindex="-1" role="dialog" id="formModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-blockform">
+              <h3>I would like to be notified when AEtning App is released</h3>
+              <form>
+                <div class="country">
+                  <select name="country" id="countryID" required>
+                    <option selected disabled>
+                      Please, chooze your country
+                    </option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="England">England</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                  </select>
+                </div>
+
+                <input
+                  type="email"
+                  name="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  placeholder="Your e-mail"
+                  required
+                />
+
+                <div class="checkbox_text">
+                  <input id="participateID" type="checkbox" />
+                  <p>I want to participate in the prize draw</p>
+                </div>
+
+                <div class="prize" id="prizeID">
+                  <select name="prize">
+                    <option selected disabled>Please, chooze the prize</option>
+                    <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+                    <option value="Urban Electric Bike">
+                      Urban Electric Bike
+                    </option>
+                    <option value="Health insurance plan">
+                      Health insurance plan
+                    </option>
+                  </select>
+                </div>
+                <input
+                  type="text"
+                  id="nameID"
+                  name="name"
+                  maxlength="30"
+                  placeholder="Your name"
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  pattern="/^[\s()+-]*([0-9][\s()+-]*){6,20}$/"
+                  placeholder="Phone number"
+                  id="telID"
+                />
+
+                <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" -->
+
+                <input type="submit" value="Join Giveaway" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
     <script src="./form.js"></script>
     <script src="./animate.js"></script>
     <script src="./script.js"></script>

@@ -12,6 +12,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./style1.css" />
     <title>AEthing</title>
   </head>
@@ -79,7 +85,9 @@
               >All subscribers can participate in a <br />
               giveaway event! Read more >
             </a>
-            <a class="main__btn">Notify me</a>
+            <a class="main__btn" data-toggle="modal" data-target="#formModal"
+              >Notify me</a
+            >
             <p class="main-title__footer">
               Thousands of people around the <br />
               world are waiting of our app!
@@ -286,7 +294,9 @@
                 <p>And one more Key Thing!You will find out soon…</p>
               </div>
             </div>
-            <a class="btn" href="">Notify me</a>
+            <a class="btn" data-toggle="modal" data-target="#formModal"
+              >Notify me</a
+            >
           </div>
         </div>
       </section>
@@ -312,11 +322,109 @@
         >
       </div>
     </footer>
+
+    <div class="modal" tabindex="-1" role="dialog" id="formModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-blockform">
+              <h3>I would like to be notified when AEtning App is released</h3>
+              <form>
+                <div class="country">
+                  <select name="country" id="countryID" required>
+                    <option selected disabled>
+                      Please, chooze your country
+                    </option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="England">England</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                  </select>
+                </div>
+
+                <input
+                  type="email"
+                  name="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  placeholder="Your e-mail"
+                  required
+                />
+
+                <div class="checkbox_text">
+                  <input id="participateID" type="checkbox" />
+                  <p>I want to participate in the prize draw</p>
+                </div>
+
+                <div class="prize" id="prizeID">
+                  <select name="prize">
+                    <option selected disabled>Please, chooze the prize</option>
+                    <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+                    <option value="Urban Electric Bike">
+                      Urban Electric Bike
+                    </option>
+                    <option value="Health insurance plan">
+                      Health insurance plan
+                    </option>
+                  </select>
+                </div>
+                <input
+                  type="text"
+                  id="nameID"
+                  name="name"
+                  maxlength="30"
+                  placeholder="Your name"
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  pattern="/^[\s()+-]*([0-9][\s()+-]*){6,20}$/"
+                  placeholder="Phone number"
+                  id="telID"
+                />
+
+                <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" -->
+
+                <input type="submit" value="Join Giveaway" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
-      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./form.js"></script>
     <script src="./animate.js"></script>
     <script src="./script.js"></script>
   </body>
