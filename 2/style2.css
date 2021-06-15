@@ -1135,6 +1135,21 @@ nav .list__item a.list__link_active:focus::after {
   background-image: url(./img/dog.jpg);
   background-size: 840px 1330px;
   background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: 310px -350px;
+  position: absolute;
+  width: 1119px;
+  height: 977px;
+  left: -900px;
+  bottom: -10px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+/* .section-form__img {
+  background-image: url(./img/dog.jpg);
+  background-size: 840px 1330px;
+  background-repeat: no-repeat;
 
   background-attachment: fixed;
   background-position: -91px -350px;
@@ -1145,7 +1160,7 @@ nav .list__item a.list__link_active:focus::after {
   bottom: -10px;
   overflow: hidden;
   border-radius: 50%;
-}
+} */
 
 .section-form__img img {
   height: 100%;
