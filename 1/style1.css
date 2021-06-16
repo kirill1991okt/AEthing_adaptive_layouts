@@ -607,6 +607,8 @@ nav .list__item a.list__link_active:focus::after {
 .use-mob .subscribers a {
   color: #ffffff;
   font-size: 18px;
+  position: relative;
+  z-index: 10;
 }
 
 .use-mob .subscribers a::after {
@@ -643,10 +645,11 @@ nav .list__item a.list__link_active:focus::after {
   content: "";
   position: absolute;
   top: -152px;
-  width: 305px;
+  width: 335px;
   height: 487px;
   border: 15px solid #8877da;
   z-index: 10;
+  transition: all 0.3s ease;
 }
 
 .main-items.active0::before {
@@ -785,6 +788,33 @@ nav .list__item a.list__link_active:focus::after {
   color: #f98511;
   font-size: 18px;
   text-align: center;
+  position: relative;
+}
+
+/* TODO поставь по размерам правильным, я приблительно поставил */
+.AEthing__users .get__link .top__square {
+  opacity: 0.1;
+  width: 200px;
+  height: 185px;
+  position: absolute;
+  top: -108px;
+  right: -165px;
+  left: auto;
+  content: "";
+  background-color: #000000;
+}
+
+/* TODO поставь по размерам правильным, я приблительно поставил */
+.AEthing__users .get__link .bot__square {
+  opacity: 0.1;
+  width: 200px;
+  height: 185px;
+  position: absolute;
+  top: -96px;
+  right: -149px;
+  left: auto;
+  content: "";
+  background-color: #000000;
 }
 
 .AEthing__users .get__link::after {
@@ -941,25 +971,45 @@ nav .list__item a.list__link_active:focus::after {
   max-width: 1057px;
 }
 
-.get::before {
+/* TODO поставь по размерам правильным, я приблительно поставил */
+.get__right > .top__square {
+  opacity: 0.1;
+  width: 200px;
+  height: 185px;
+  position: absolute;
+  top: 250px;
+  left: 123px;
+  background-color: #000000;
+}
+
+/* TODO поставь по размерам правильным, я приблительно поставил */
+.get__right > .bot__square {
+  opacity: 0.1;
+  width: 200px;
+  height: 185px;
+  position: absolute;
+  top: 241px;
+  left: 111px;
+  background-color: #000000;
+}
+
+.get > .top__square {
   opacity: 0.1;
   width: 212px;
   height: 218px;
   position: absolute;
   bottom: -70px;
   right: 180px;
-  content: "";
   background-color: #000000;
 }
 
-.get::after {
+.get > .bot__square {
   opacity: 0.1;
   width: 212px;
   height: 218px;
   position: absolute;
   bottom: -61px;
   right: 168px;
-  content: "";
   background-color: #000000;
 }
 

@@ -15,9 +15,12 @@ $(document).ready(function() {
         $('.language').removeClass('open');
     })
 
-
-    squareScroll($('.top__square'));
-    squareScroll($('.bot__square'));
+    $('.top__square').each(function() {
+        squareScroll($(this));
+    });
+    $('.bot__square').each(function() {
+        squareScroll($(this));
+    });
 
     var previousScrollTop = 0;
     var scrollLock = false;
@@ -25,11 +28,12 @@ $(document).ready(function() {
         var mainItems = $('.main-items');
         var mainItemsOffset = mainItems.offset().top - 200;
         var cScroll = $(this).scrollTop();
-        console.log(cScroll, mainItemsOffset);
 
+        console.log(cScroll)
         if(cScroll > previousScrollTop) {
             if(cScroll > mainItemsOffset) {
                 if(!mainItems.hasClass('active2')) {
+                    e.preventDefault();
                     scrollLock = true;
                     if(scrollLock) {
                         $(this).scrollTop(previousScrollTop);
@@ -41,11 +45,12 @@ $(document).ready(function() {
                 if(mainItems.hasClass('active0')) {
                     mainItems.removeClass('active0').addClass('active1');
                 }
-                console.log(cScroll, mainItemsOffset, previousScrollTop, scrollLock);
+                return;
             }
         } else if(cScroll < previousScrollTop) {
             if (cScroll < mainItemsOffset) {
                 if(mainItems.hasClass('active2')) {
+                    e.preventDefault();
                     scrollLock = true;
                     if(scrollLock) {
                         $(this).scrollTop(previousScrollTop);
@@ -57,6 +62,7 @@ $(document).ready(function() {
                 if(mainItems.hasClass('active2')) {
                     mainItems.removeClass('active2').addClass('active1');
                 }
+                return;
             }
         }
         previousScrollTop = $(this).scrollTop();
@@ -66,13 +72,20 @@ $(document).ready(function() {
 function squareScroll($el) {
     var maxHp = 100 / ($(document).height() - $(window).height() + $el.height() * 2);
     var pre = $(document).scrollTop();
+    var preEl = $el.position().top;
     $(document).scroll(function() {
         var cScroll = $(this).scrollTop();
-        var p = cScroll * maxHp / 20;
+        var p = cScroll * maxHp / 50;
         if(cScroll > pre) {
-            $el.css({'top': $el.position().top + p + 'px'});
+            if((preEl - $el.position().top) >= -100) {
+                // console.log('bot', (preEl - $el.position().top))
+                $el.css({'top': $el.position().top + p + 'px'});
+            }
         } else {
-            $el.css({'top': $el.position().top - p + 'px'});
+            if(preEl - $el.position().top <= 100) {
+                // console.log('top', (preEl - $el.position().top))
+                $el.css({'top': $el.position().top - p + 'px'});
+            }
         }
         pre = cScroll;
     });
