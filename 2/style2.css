@@ -1156,7 +1156,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   width: 1119px;
   height: 977px;
-  left: -900px;
+  left: -650px;
   bottom: -10px;
   overflow: hidden;
   border-radius: 50%;
