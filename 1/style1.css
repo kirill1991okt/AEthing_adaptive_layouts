@@ -576,7 +576,7 @@ nav .list__item a.list__link_active:focus::after {
   width: 559px;
   background-color: #5a40de;
   border-radius: 100%;
-  padding: 57px 130px 67px 130px;
+  padding: 57px 129px 67px 130px;
 
   margin-left: 523px;
   box-shadow: 18px -18px 5px -5px rgba(0, 0, 0, 0.1);
@@ -625,7 +625,7 @@ nav .list__item a.list__link_active:focus::after {
 
 .use-mob .subscribers a:hover::after,
 .use-mob .subscribers a:focus::after {
-  width: 60%;
+  width: 100%;
 }
 /* / use-mob */
 
@@ -950,7 +950,7 @@ nav .list__item a.list__link_active:focus::after {
 
 .get .get__title {
   align-self: center;
-  width: 340px;
+  width: 370px;
   color: #000000;
   font-size: 48px;
   font-weight: bold;
@@ -1045,6 +1045,7 @@ nav .list__item a.list__link_active:focus::after {
 .get__right-items-wrapper {
   display: flex;
   justify-content: space-between;
+  /* align-items: center; */
   margin-bottom: 82px;
   column-gap: 100px;
 }
@@ -1061,7 +1062,7 @@ nav .list__item a.list__link_active:focus::after {
   justify-content: space-between;
   text-align: center;
   width: 159px;
-  height: 172px;
+  height: 170px;
 }
 
 .get__right-items-wrapper .get__right-item:nth-child(2) {
@@ -1070,7 +1071,7 @@ nav .list__item a.list__link_active:focus::after {
   justify-content: space-between;
   text-align: center;
   width: 219px;
-  height: 158px;
+  height: 170px;
 }
 
 .get__right-items-wrapper .get__right-item:nth-child(3) {
@@ -1079,7 +1080,7 @@ nav .list__item a.list__link_active:focus::after {
   justify-content: space-between;
   text-align: center;
   width: 162px;
-  height: 135px;
+  height: 150px;
 }
 
 .get__right-items-wrapper .get__right-item:nth-child(4) {
@@ -1088,7 +1089,7 @@ nav .list__item a.list__link_active:focus::after {
   justify-content: space-between;
   text-align: center;
   width: 205px;
-  height: 135px;
+  height: 150px;
 }
 
 .get__right .btn {
