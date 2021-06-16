@@ -270,10 +270,10 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .main__img {
-  background-image: url(./img/img1_AE.jpg);
+  background-image: url(./img/img1_AE_cut.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0px 0px;
+  background-position: 0px -200px;
   display: flex;
   justify-content: center;
   position: absolute;
