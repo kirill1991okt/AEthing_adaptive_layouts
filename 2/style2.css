@@ -139,7 +139,7 @@ nav .list__item a.list__link_active::after {
   position: absolute;
   left: 0;
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #ffffff;
   transition: width 0.3s ease-out;
 }
@@ -203,7 +203,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   left: 0;
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #ffffff;
   transition: width 0.3s ease-out;
 }
@@ -327,10 +327,10 @@ nav .list__item a.list__link_active:focus::after {
   content: "";
   display: block;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  /* transform: translateX(-50%); */
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #f98511;
   transition: width 0.3s ease-out;
 }
@@ -387,10 +387,10 @@ nav .list__item a.list__link_active:focus::after {
   content: "";
   display: block;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  /* transform: translateX(-50%); */
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #f98511;
   transition: width 0.3s ease-out;
 }
@@ -1045,10 +1045,10 @@ nav .list__item a.list__link_active:focus::after {
   content: "";
   display: block;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  /* transform: translateX(-50%); */
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #f98511;
   transition: width 0.3s ease-out;
 }
@@ -1123,10 +1123,10 @@ nav .list__item a.list__link_active:focus::after {
   content: "";
   display: block;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  /* transform: translateX(-50%); */
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #f98511;
   transition: width 0.3s ease-out;
 }
@@ -1459,6 +1459,7 @@ input[type="submit"]:hover {
   width: 324px;
   background-color: #f1d773;
   border-radius: 13px;
+  margin-top: 150px;
 }
 
 .modal-body {

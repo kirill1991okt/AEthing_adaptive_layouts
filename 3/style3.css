@@ -65,7 +65,7 @@ nav .list__item a.list__link_active::after {
   position: absolute;
   left: 0;
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #ffffff;
   transition: width 0.3s ease-out;
 }
@@ -129,7 +129,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   left: 0;
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #ffffff;
   transition: width 0.3s ease-out;
 }
@@ -249,6 +249,15 @@ nav .list__item a.list__link_active:focus::after {
   color: #ffffff;
 }
 
+.main-title__link1_text {
+  position: relative;
+  padding-bottom: 2px;
+  opacity: 0.8;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+}
+
 .main-title__link1 {
   position: relative;
   padding-bottom: 2px;
@@ -266,10 +275,10 @@ nav .list__item a.list__link_active:focus::after {
   content: "";
   display: block;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  /* transform: translateX(-50%); */
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #ffffff;
   transition: width 0.3s ease-out;
 }
@@ -463,10 +472,10 @@ main .link a::after {
   content: "";
   display: block;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  /* transform: translateX(-50%); */
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #000000;
   transition: width 0.3s ease-out;
 }
@@ -880,6 +889,7 @@ input[type="submit"]:hover {
   width: 324px;
   background-color: #ffffff;
   border-radius: 13px;
+  margin-top: 150px;
 }
 
 .modal-body {

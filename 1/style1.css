@@ -190,7 +190,7 @@ nav .list__item a.list__link_active::after {
   position: absolute;
   left: 0;
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #ffffff;
   transition: width 0.3s ease-out;
 }
@@ -254,7 +254,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   left: 0;
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #ffffff;
   transition: width 0.3s ease-out;
 }
@@ -385,6 +385,14 @@ nav .list__item a.list__link_active:focus::after {
   }
 }
 
+.main-title__link_text {
+  position: relative;
+  color: #f98511;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 46px;
+}
+
 .main-title__link {
   position: relative;
   color: #f98511;
@@ -401,10 +409,10 @@ nav .list__item a.list__link_active:focus::after {
   content: "";
   display: block;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  /* transform: translateX(-50%); */
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #f98511;
   transition: width 0.3s ease-out;
 }
@@ -603,6 +611,12 @@ nav .list__item a.list__link_active:focus::after {
   content: "";
   background-color: #000000;
 }
+.use-mob .subscribers p {
+  color: #ffffff;
+  font-size: 18px;
+  position: relative;
+  z-index: 10;
+}
 
 .use-mob .subscribers a {
   color: #ffffff;
@@ -615,10 +629,10 @@ nav .list__item a.list__link_active:focus::after {
   content: "";
   display: block;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  /* transform: translateX(-50%); */
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #ffffff;
   transition: width 0.3s ease-out;
 }
@@ -782,6 +796,15 @@ nav .list__item a.list__link_active:focus::after {
   text-align: center;
 }
 
+.AEthing__users .get__link_text {
+  margin-top: 100px;
+  width: 312px;
+  color: #f98511;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+}
+
 .AEthing__users .get__link {
   margin-top: 100px;
   width: 312px;
@@ -789,6 +812,23 @@ nav .list__item a.list__link_active:focus::after {
   font-size: 18px;
   text-align: center;
   position: relative;
+}
+
+.AEthing__users .get__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  /* transform: translateX(-50%); */
+  width: 0;
+  height: 1px;
+  background-color: #f98511;
+  transition: width 0.3s ease-out;
+}
+
+.AEthing__users .get__link:hover::after,
+.AEthing__users .get__link:focus::after {
+  width: 100%;
 }
 
 /* TODO поставь по размерам правильным, я приблительно поставил */
@@ -815,23 +855,6 @@ nav .list__item a.list__link_active:focus::after {
   left: auto;
   content: "";
   background-color: #000000;
-}
-
-.AEthing__users .get__link::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 2px;
-  background-color: #f98511;
-  transition: width 0.3s ease-out;
-}
-
-.AEthing__users .get__link:hover::after,
-.AEthing__users .get__link:focus::after {
-  width: 100%;
 }
 
 .AEthing__business {
@@ -1117,6 +1140,7 @@ nav .list__item a.list__link_active:focus::after {
   width: 324px;
   background-color: #f1d773;
   border-radius: 13px;
+  margin-top: 150px;
 }
 
 .modal-body {

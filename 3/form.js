@@ -22,7 +22,7 @@ $('#countryID').on("change", function() {
     const codesCounry = codes[county];
    
 
-    $('#telID').attr('placeholder', codesCounry);
+    $('#telID').attr('value', codesCounry);
 })
 
 $('#prizeID').on("change", function() {
