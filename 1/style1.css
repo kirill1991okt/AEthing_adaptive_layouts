@@ -147,8 +147,11 @@ a:hover {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
   padding-top: 12px;
-  background-color: #191919;
+  background-color: #ffffff;
 }
 
 .logo {
@@ -174,13 +177,13 @@ nav .list__item {
 
 nav .list__item a.list__link_active {
   position: relative;
-  color: #ffffff;
+  color: #000000;
   font-weight: bold;
 }
 
 nav .list__item a {
   position: relative;
-  color: #ffffff;
+  color: #000000;
 }
 
 nav .list__item a::after,
@@ -191,7 +194,7 @@ nav .list__item a.list__link_active::after {
   left: 0;
   width: 0;
   height: 1px;
-  background-color: #ffffff;
+  background-color: #000000;
   transition: width 0.3s ease-out;
 }
 
@@ -206,7 +209,7 @@ nav .list__item a.list__link_active:focus::after {
   display: flex;
   align-items: center;
   padding: 9px 53px;
-  color: #ffffff;
+  color: #000000;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 16px;
   line-height: 1;
@@ -216,11 +219,31 @@ nav .list__item a.list__link_active:focus::after {
   cursor: pointer;
 }
 
-.language::after {
-  content: ">";
-  color: #ffffff;
-  margin-left: 10px;
+.language span {
+  position: relative;
 }
+
+.language span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #000000;
+  transition: width 0.3s ease-out;
+}
+
+.language span:hover::after,
+.language span:focus::after {
+  width: 100%;
+}
+
+/* .language::after {
+  content: ">";
+  color: #000000;
+  margin-left: 10px;
+} */
 
 .language .popup {
   display: none;
@@ -229,6 +252,7 @@ nav .list__item a.list__link_active:focus::after {
   width: 100%;
   left: 0;
   z-index: 10;
+  background-color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 16px;
 }
@@ -239,13 +263,13 @@ nav .list__item a.list__link_active:focus::after {
 
 .language .popup div {
   text-align: center;
-  color: #ffffff;
+  color: #000000;
   padding: 9px;
 }
 
 .language .popup div a {
   position: relative;
-  color: #ffffff;
+  color: #000000;
 }
 
 .language .popup div a::after {
@@ -255,7 +279,7 @@ nav .list__item a.list__link_active:focus::after {
   left: 0;
   width: 0;
   height: 1px;
-  background-color: #ffffff;
+  background-color: #000000;
   transition: width 0.3s ease-out;
 }
 
@@ -1343,13 +1367,13 @@ footer {
 }
 
 footer .contact {
-  width: 223px;
+  width: 250px;
   text-align: center;
-  margin-right: 356px;
+  margin-right: 300px;
 }
 
 footer .office {
-  width: 246px;
+  width: 270px;
   text-align: center;
 }
 
