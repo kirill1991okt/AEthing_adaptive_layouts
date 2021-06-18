@@ -204,7 +204,8 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .main-title__first {
-  width: 310px;
+  text-align: center;
+  width: 420px;
   line-height: 1;
   color: #ffffff;
   font-size: 72px;
@@ -250,6 +251,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .main-title__link1_text {
+  width: 442px;
   position: relative;
   padding-bottom: 2px;
   opacity: 0.8;
@@ -306,7 +308,8 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .user .right {
-  width: 361px;
+  width: 391px;
+  text-align: center;
 }
 
 .right .right__title {
@@ -573,13 +576,13 @@ main .link a {
 }
 
 .conditions__wrap_right .conditions__wrap_item:nth-child(1) p {
-  width: 426px;
+  width: 456px;
   text-align: center;
   margin: 66px 0px 66px 64px;
 }
 
 .conditions__wrap_right .conditions__wrap_item:nth-child(2) p {
-  width: 393px;
+  width: 432px;
   text-align: center;
   margin: 57px 0px 44px 83px;
 }
@@ -631,7 +634,7 @@ main .link a {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 26px;
-  width: 401px;
+  width: 486px;
 }
 
 .fillForm__subtitle {
@@ -805,7 +808,7 @@ select[name="prize"] {
   border-radius: 17px;
   color: #fefefe;
   font-size: 14px;
-  padding: 10px 44px;
+  padding: 10px 40px;
   cursor: pointer;
 }
 
@@ -1094,13 +1097,13 @@ footer {
 }
 
 footer .contact {
-  width: 223px;
+  width: 250px;
   text-align: center;
-  margin-right: 356px;
+  margin-right: 300px;
 }
 
 footer .office {
-  width: 246px;
+  width: 270px;
   text-align: center;
 }
 
