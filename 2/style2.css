@@ -1189,7 +1189,7 @@ nav .list__item a.list__link_active:focus::after {
   width: 467px;
   padding-top: 75px;
   padding-bottom: 141px;
-  margin-left: 335px;
+  margin-left: 305px;
 }
 
 .section-form__title {
@@ -1197,7 +1197,7 @@ nav .list__item a.list__link_active:focus::after {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 23px;
-  width: 405px;
+  width: 495px;
   text-align: center;
 }
 
@@ -1573,7 +1573,7 @@ select[name="prize"] {
   border-radius: 17px;
   color: #fefefe;
   font-size: 14px;
-  padding: 10px 44px;
+  padding: 10px 40px;
   cursor: pointer;
 }
 
@@ -1651,12 +1651,12 @@ input[type="submit"]:hover {
 
 /* /modal forma */
 
-.spainForm {
+/* .spainForm {
   width: 324px;
   height: 586px;
   background-image: url(./img/girl_1_bg-tr.jpg);
   background-size: cover;
-}
+} */
 
 /* footer */
 footer {

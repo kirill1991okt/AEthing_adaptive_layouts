@@ -76,7 +76,7 @@
 
             <a class="main__btn" data-toggle="modal" data-target="#formModal">Únete al sorteo</a>
 
-            <a href="../3/index3.html" class="main-title__link1">Descubra cómo funciona ></a>
+            <a href="../3/index3_sp.html" class="main-title__link1">Descubra cómo funciona ></a>
           </div>
         </div>
       </section>
@@ -207,7 +207,7 @@
                 ¿Son realmente sorteosjustos?
               </div>
               <div class="group__middle_romb">
-                I will not be able to influence my odds of winning?
+                ¿Nada depende de mí y no podré influir en mis probabilidades de ganar?
               </div>
               <div class="group__middle_romb">
                 ¿El premio realmente se entregará al ganador? 
@@ -339,7 +339,50 @@
           class="animate__animated blockform spainForm"
               data-animation="animated animate__fadeInUp"
           >
-            
+          
+
+          <h3>Me gustaría recibir una notificación cuando se lance la
+            aplicación AEtning</h3>
+          <form>
+            <div class="country">
+              <select name="country" id="countryID" required>
+                <option selected disabled>Por favor, elija su país></option>
+                <option value="USA">EE.UU</option>
+                <option value="Canada">Canadá</option>
+                <option value="Australia">Australia</option>
+                <option value="England">Inglaterra</option>
+                <option value="Singapore">Singapur</option>
+                <option value="New Zealand">Nueva Zelanda</option>
+                <option value="Mexico">México</option>
+                <option value="Spain">España</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Hong Kong">Hong Kong</option>
+              </select>
+            </div>
+
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Your e-mail" required />
+
+            <div class="checkbox_text">
+              <input id ="participateID" type="checkbox" />
+              <p>Quiero participar en el sorteo</p>
+            </div>
+
+            <div class="prize" id="prizeID">
+              <select name="prize">
+                <option selected disabled>Por favor, elige el premio</option>
+                <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+                <option value="Urban Electric Bike">Bicicleta Eléctrica Urbana</option>
+                <option value="Health insurance plan">Plan de seguro médico</option>
+              </select>
+            </div>
+            <input type="text" id="nameID" name="name" maxlength="30" placeholder="Your name" />
+            <input type="tel" name="phone" pattern="/^*([0-9][\s()+-]*){6,20}$/"  placeholder="Phone number" id="telID" />
+
+            <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" -->
+
+            <input type="submit" value="Join Giveaway" />
+          </form>
             
           </div>
           <!-- forma -->
