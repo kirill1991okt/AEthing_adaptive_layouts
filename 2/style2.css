@@ -729,7 +729,7 @@ nav .list__item a.list__link_active:focus::after {
 
 .items_slider .carousel-item img {
   width: 375px;
-  height: 375px;
+  height: 215px;
 }
 
 
