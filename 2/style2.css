@@ -139,7 +139,7 @@ nav .list__item a.list__link_active::after {
   position: absolute;
   left: 0;
   width: 0;
-  height: 1px;
+  height: 2px;
   background-color: #ffffff;
   transition: width 0.3s ease-out;
 }
@@ -203,7 +203,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   left: 0;
   width: 0;
-  height: 1px;
+  height: 2px;
   background-color: #ffffff;
   transition: width 0.3s ease-out;
 }
@@ -327,10 +327,10 @@ nav .list__item a.list__link_active:focus::after {
   content: "";
   display: block;
   position: absolute;
-  left: 0;
-  /* transform: translateX(-50%); */
+  left: 50%;
+  transform: translateX(-50%);
   width: 0;
-  height: 1px;
+  height: 2px;
   background-color: #f98511;
   transition: width 0.3s ease-out;
 }
@@ -387,10 +387,10 @@ nav .list__item a.list__link_active:focus::after {
   content: "";
   display: block;
   position: absolute;
-  left: 0;
-  /* transform: translateX(-50%); */
+  left: 50%;
+  transform: translateX(-50%);
   width: 0;
-  height: 1px;
+  height: 2px;
   background-color: #f98511;
   transition: width 0.3s ease-out;
 }
@@ -682,15 +682,56 @@ nav .list__item a.list__link_active:focus::after {
   margin-bottom: 37px;
 }
 
-.prize__container .items__wrap {
+.prize__container .items {
   position: relative;
+  max-width: 615px;
+}
+
+
+.prize__container .items__wrap {
+  /* position: relative; */
   display: flex;
   align-items: center;
 }
 
-.prize__container .items {
-  max-width: 615px;
+.prize__container .items_slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: -120px;
+  background-color: #fff;
+  width: 387px;
+  height: 387px;
+  border-radius: 50%;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
 }
+
+.items_slider .carousel-control-next-icon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 0 12px 22px;
+  border-color: transparent transparent transparent #7f81d1;
+}
+
+.items_slider .carousel-control-prev-icon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 22px 12px 0;
+  border-color: transparent #7f81d1 transparent transparent;
+}
+
+.items_slider .carousel-item img {
+  width: 375px;
+  height: 375px;
+}
+
 
 .items .items__number {
   display: flex;
@@ -731,7 +772,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .prize__container .items__wrap:nth-child(2) .items__img {
-  padding-left: 64px;
+  padding-left: 83px;
 }
 
 .prize__container .items__wrap:nth-child(3) .items__number {
@@ -1045,10 +1086,10 @@ nav .list__item a.list__link_active:focus::after {
   content: "";
   display: block;
   position: absolute;
-  left: 0;
-  /* transform: translateX(-50%); */
+  left: 50%;
+  transform: translateX(-50%);
   width: 0;
-  height: 1px;
+  height: 2px;
   background-color: #f98511;
   transition: width 0.3s ease-out;
 }
@@ -1123,10 +1164,10 @@ nav .list__item a.list__link_active:focus::after {
   content: "";
   display: block;
   position: absolute;
-  left: 0;
-  /* transform: translateX(-50%); */
+  left: 50%;
+  transform: translateX(-50%);
   width: 0;
-  height: 1px;
+  height: 2px;
   background-color: #f98511;
   transition: width 0.3s ease-out;
 }
@@ -1189,7 +1230,7 @@ nav .list__item a.list__link_active:focus::after {
   width: 467px;
   padding-top: 75px;
   padding-bottom: 141px;
-  margin-left: 305px;
+  margin-left: 335px;
 }
 
 .section-form__title {
@@ -1197,7 +1238,7 @@ nav .list__item a.list__link_active:focus::after {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 23px;
-  width: 495px;
+  width: 405px;
   text-align: center;
 }
 
@@ -1375,7 +1416,7 @@ select[name="prize"] {
   border-radius: 17px;
   color: #fefefe;
   font-size: 14px;
-  padding: 10px 40px;
+  padding: 10px 44px;
   cursor: pointer;
 }
 
@@ -1459,7 +1500,6 @@ input[type="submit"]:hover {
   width: 324px;
   background-color: #f1d773;
   border-radius: 13px;
-  margin-top: 150px;
 }
 
 .modal-body {
@@ -1573,7 +1613,7 @@ select[name="prize"] {
   border-radius: 17px;
   color: #fefefe;
   font-size: 14px;
-  padding: 10px 40px;
+  padding: 10px 44px;
   cursor: pointer;
 }
 
@@ -1651,12 +1691,12 @@ input[type="submit"]:hover {
 
 /* /modal forma */
 
-/* .spainForm {
+.spainForm {
   width: 324px;
   height: 586px;
   background-image: url(./img/girl_1_bg-tr.jpg);
   background-size: cover;
-} */
+}
 
 /* footer */
 footer {
@@ -1670,13 +1710,13 @@ footer {
 }
 
 footer .contact {
-  width: 250px;
+  width: 223px;
   text-align: center;
-  margin-right: 300px;
+  margin-right: 356px;
 }
 
 footer .office {
-  width: 270px;
+  width: 246px;
   text-align: center;
 }
 
