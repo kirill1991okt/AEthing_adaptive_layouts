@@ -694,12 +694,17 @@ nav .list__item a.list__link_active:focus::after {
   align-items: center;
 }
 
+.prize__container .slider-wrapper {
+  position: relative;
+}
+
 .prize__container .items_slider {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: -120px;
   background-color: #fff;
   width: 387px;
@@ -715,8 +720,8 @@ nav .list__item a.list__link_active:focus::after {
 
 .slider-closer {
   position: absolute;
-  right: 32px;
-  top: 32px;
+  right: -90px;
+  top: -345px;
   width: 41px;
   height: 41px;
   opacity: 1;
@@ -726,6 +731,7 @@ nav .list__item a.list__link_active:focus::after {
   -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   cursor: pointer;
+  z-index: 1;
 }
 
 .slider-closer:hover {
