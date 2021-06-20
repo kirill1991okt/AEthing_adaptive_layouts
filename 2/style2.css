@@ -711,12 +711,55 @@ nav .list__item a.list__link_active:focus::after {
 
 }
 
+/* .slider-closer */
+
+.slider-closer {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 41px;
+  height: 41px;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: #ffffff;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  cursor: pointer;
+}
+
+.slider-closer:hover {
+  opacity: 1;
+}
+
+.slider-closer:before,
+.slider-closer:after {
+  position: absolute;
+  top: 13px;
+  left: 19px;
+  content: ' ';
+  height: 14px;
+  width: 2px;
+  background-color: #8082d1;
+}
+
+.slider-closer:before {
+  transform: rotate(45deg);
+}
+
+.slider-closer:after {
+  transform: rotate(-45deg);
+}
+
+/* / slider-closer */
+
+
 .items_slider .carousel-control-next-icon {
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 12px 0 12px 22px;
-  border-color: transparent transparent transparent #7f81d1;
+  border-color: transparent transparent transparent #a1a0a0;
 }
 
 .items_slider .carousel-control-prev-icon {
@@ -724,7 +767,7 @@ nav .list__item a.list__link_active:focus::after {
   height: 0;
   border-style: solid;
   border-width: 12px 22px 12px 0;
-  border-color: transparent #7f81d1 transparent transparent;
+  border-color: transparent #a1a0a0 transparent transparent;
 }
 
 .items_slider .carousel-item img {
@@ -764,6 +807,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .prize__container .items__wrap:nth-child(1) .items__img {
+  cursor: pointer;
   padding-left: 233px;
 }
 
@@ -773,6 +817,7 @@ nav .list__item a.list__link_active:focus::after {
 
 .prize__container .items__wrap:nth-child(2) .items__img {
   padding-left: 83px;
+  cursor: pointer;
 }
 
 .prize__container .items__wrap:nth-child(3) .items__number {
@@ -781,6 +826,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .prize__container .items__wrap:nth-child(3) .items__img {
+  cursor: pointer;
   padding-left: 123px;
 }
 
