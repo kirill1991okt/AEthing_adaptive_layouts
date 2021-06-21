@@ -687,7 +687,6 @@ nav .list__item a.list__link_active:focus::after {
   max-width: 615px;
 }
 
-
 .prize__container .items__wrap {
   /* position: relative; */
   display: flex;
@@ -713,7 +712,6 @@ nav .list__item a.list__link_active:focus::after {
   -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-
 }
 
 /* .slider-closer */
@@ -743,7 +741,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   top: 13px;
   left: 19px;
-  content: ' ';
+  content: " ";
   height: 14px;
   width: 2px;
   background-color: #8082d1;
@@ -758,7 +756,6 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 /* / slider-closer */
-
 
 .items_slider .carousel-control-next-icon {
   width: 0;
@@ -780,7 +777,6 @@ nav .list__item a.list__link_active:focus::after {
   width: 375px;
   height: 215px;
 }
-
 
 .items .items__number {
   display: flex;
@@ -1282,7 +1278,7 @@ nav .list__item a.list__link_active:focus::after {
   width: 467px;
   padding-top: 75px;
   padding-bottom: 141px;
-  margin-left: 335px;
+  margin-left: 305px;
 }
 
 .section-form__title {
@@ -1290,7 +1286,7 @@ nav .list__item a.list__link_active:focus::after {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 23px;
-  width: 405px;
+  width: 486px;
   text-align: center;
 }
 
