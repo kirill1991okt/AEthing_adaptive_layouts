@@ -1370,12 +1370,14 @@ nav .list__item a.list__link_active:focus::after {
   z-index: 10;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
+
 .blockform-send {
   background: url(img/girl_1_bg.jpg) 41% 67% lightgreen;
   background-size: 139%;
   text-align: center;
   height: 100%;
 }
+
 .blockform-send p {
   position: relative;
   z-index: 19;
@@ -1384,6 +1386,7 @@ nav .list__item a.list__link_active:focus::after {
   color: white;
   font-weight: 500;
 }
+
 .blockform-send p span {
   font-size: 19px;
 }
@@ -1432,6 +1435,7 @@ nav .list__item a.list__link_active:focus::after {
   top: -4%;
   opacity: 1 !important;
 }
+
 .close span {
   font-size: 27px;
   color: white !important;
@@ -1458,6 +1462,7 @@ select[name="country"] {
   background-color: #e38522;
   border-radius: 9px;
 }
+
 .prize-select-error {
   padding: 2px;
   display: none;
@@ -1876,8 +1881,107 @@ footer a span:last-child {
   color: #f98511;
 }
 
+
+/* header bg */
+
 .bg-white {
-  width: 500px;
-  height: 500px;
-  border-color: #f98511;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  padding-top: 12px;
+  background-color: #ffffff;
+}
+
+.bg-white nav .list__item a.list__link_active {
+  position: relative;
+  color: #000000;
+  font-weight: bold;
+}
+
+.bg-white nav .list__item a {
+  position: relative;
+  color: #000000;
+}
+
+.bg-white nav .list__item a::after,
+.bg-white nav .list__item a.list__link_active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  transition: width 0.3s ease-out;
+}
+
+.bg-white nav .list__item a:hover::after,
+.bg-white nav .list__item a:focus::after,
+.bg-white nav .list__item a.list__link_active:hover::after,
+.bg-white nav .list__item a.list__link_active:focus::after {
+  width: 100%;
+}
+
+.bg-white .language {
+  display: flex;
+  align-items: center;
+  padding: 9px 53px;
+  color: #000;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  line-height: 1;
+  height: 32px;
+  position: relative;
+  margin-left: -15px;
+  cursor: pointer;
+}
+
+.bg-white .language::after {
+  content: ">";
+  color: #000;
+  margin-left: 10px;
+}
+
+.bg-white .language .popup {
+  display: none;
+  position: absolute;
+  top: 32px;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+}
+
+.bg-white .language.open .popup {
+  display: block;
+}
+
+.bg-white .language .popup div {
+  text-align: center;
+  color: #000;
+  padding: 9px;
+}
+
+.bg-white .language .popup div a {
+  position: relative;
+  color: #000;
+}
+
+
+.bg-white .language .popup div a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  transition: width 0.3s ease-out;
+}
+
+.bg-white .language .popup div a:hover::after,
+.bg-white .language .popup div a:focus::after {
+  width: 100%;
 }

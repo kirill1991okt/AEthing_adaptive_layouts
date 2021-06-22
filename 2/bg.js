@@ -1,1 +1,0 @@
-var logo = $(".site-logo", context), header = $("header", context); if ($(window).width() >= 960) { if ($(window).scrollTop() !== 0) header.addClass("bg-white"); $(window).scroll(function () { var scroll = $(window).scrollTop(); if (scroll === 0) { header.removeClass("bg-white") } else header.addClass("bg-white") }) } 
