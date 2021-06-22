@@ -2,27 +2,35 @@
   0% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -500, 0, 0, 1);
   }
+
   2.6% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -361.431, 0, 0, 1);
   }
+
   5.21% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -257.295, 0, 0, 1);
   }
+
   10.31% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -125.942, 0, 0, 1);
   }
+
   15.52% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -56.241, 0, 0, 1);
   }
+
   20.62% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -22.876, 0, 0, 1);
   }
+
   30.93% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.305, 0, 0, 1);
   }
+
   41.24% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.198, 0, 0, 1);
   }
+
   100% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
@@ -32,27 +40,35 @@
   0% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 500, 0, 0, 1);
   }
+
   2.6% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 361.431, 0, 0, 1);
   }
+
   5.21% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 257.295, 0, 0, 1);
   }
+
   10.31% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 125.942, 0, 0, 1);
   }
+
   15.52% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 56.241, 0, 0, 1);
   }
+
   20.62% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 22.876, 0, 0, 1);
   }
+
   30.93% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.305, 0, 0, 1);
   }
+
   41.24% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -1.198, 0, 0, 1);
   }
+
   100% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
@@ -62,27 +78,35 @@
   0% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 500, 0, 1);
   }
+
   2.6% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 361.431, 0, 1);
   }
+
   5.21% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 257.295, 0, 1);
   }
+
   10.31% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 125.942, 0, 1);
   }
+
   15.52% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 56.241, 0, 1);
   }
+
   20.62% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 22.876, 0, 1);
   }
+
   30.93% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1.305, 0, 1);
   }
+
   41.24% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -1.198, 0, 1);
   }
+
   100% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
@@ -92,6 +116,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -404,6 +429,7 @@ nav .list__item a.list__link_active:focus::after {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -635,6 +661,7 @@ nav .list__item a.list__link_active:focus::after {
   content: "";
   background-color: #000000;
 }
+
 .use-mob .subscribers p {
   color: #ffffff;
   font-size: 18px;
@@ -665,6 +692,7 @@ nav .list__item a.list__link_active:focus::after {
 .use-mob .subscribers a:focus::after {
   width: 100%;
 }
+
 /* / use-mob */
 
 /* main-items */
@@ -687,7 +715,7 @@ nav .list__item a.list__link_active:focus::after {
   height: 487px;
   border: 15px solid #8877da;
   z-index: 10;
-  transition: all 0.3s ease;
+  transition: all 2s ease;
 }
 
 .main-items.active0::before {
@@ -779,6 +807,7 @@ nav .list__item a.list__link_active:focus::after {
   line-height: 1;
   text-align: center;
 }
+
 /* 
 .AEthing__users .AEthing__title {
   animation: animation 5000ms linear both;
@@ -1019,7 +1048,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 /* TODO поставь по размерам правильным, я приблительно поставил */
-.get__right > .top__square {
+.get__right>.top__square {
   opacity: 0.1;
   width: 200px;
   height: 185px;
@@ -1030,7 +1059,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 /* TODO поставь по размерам правильным, я приблительно поставил */
-.get__right > .bot__square {
+.get__right>.bot__square {
   opacity: 0.1;
   width: 200px;
   height: 185px;
@@ -1040,7 +1069,7 @@ nav .list__item a.list__link_active:focus::after {
   background-color: #000000;
 }
 
-.get > .top__square {
+.get>.top__square {
   opacity: 0.1;
   width: 212px;
   height: 218px;
@@ -1050,7 +1079,7 @@ nav .list__item a.list__link_active:focus::after {
   background-color: #000000;
 }
 
-.get > .bot__square {
+.get>.bot__square {
   opacity: 0.1;
   width: 212px;
   height: 218px;
@@ -1092,7 +1121,7 @@ nav .list__item a.list__link_active:focus::after {
 .get__right-items-wrapper {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
   margin-bottom: 82px;
   column-gap: 100px;
 }
@@ -1108,7 +1137,7 @@ nav .list__item a.list__link_active:focus::after {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  width: 159px;
+  width: 200px;
   height: 170px;
 }
 
@@ -1140,7 +1169,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .get__right .btn {
-  width: 236px;
+  width: 260px;
   padding: 9px 75px;
   height: 36px;
   color: #ffffff;
@@ -1424,11 +1453,12 @@ footer a span:last-child {
   right: 0%;
   z-index: 50;
   top: -4%;
-  opacity: 1!important;
+  opacity: 1 !important;
 }
+
 .close span {
   font-size: 27px;
-  color: white!important;
+  color: white !important;
 
 }
 
@@ -1443,6 +1473,7 @@ footer a span:last-child {
   background-color: #e38522;
   border-radius: 9px;
 }
+
 .prize-select-error {
   padding: 2px;
   display: none;
@@ -1454,12 +1485,15 @@ footer a span:last-child {
   background-color: #e38522;
   border-radius: 9px;
 }
+
 .blockform-send {
-  background: url(img/girl_1_bg.jpg) 41% 67% lightgreen;
+  /* background: url(img/girl_1_bg.jpg) 41% 67% lightgreen; */
+  background-color: #3c6048;
   background-size: 139%;
   text-align: center;
   height: 100%;
 }
+
 .blockform-send p {
   position: relative;
   z-index: 19;
@@ -1468,9 +1502,11 @@ footer a span:last-child {
   color: white;
   font-weight: 500;
 }
+
 .blockform-send p span {
   font-size: 19px;
 }
+
 .blockform-send:after {
   content: '';
   position: absolute;
@@ -1478,7 +1514,7 @@ footer a span:last-child {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(128,130,209,.5);
+  /* background: rgba(128, 130, 209, .5); */
   z-index: 2;
   border-radius: 13px;
 }

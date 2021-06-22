@@ -32,8 +32,7 @@ header {
   height: 39px;
 }
 
-nav {
-}
+nav {}
 
 nav .list {
   display: flex;
@@ -615,12 +614,10 @@ main .link a {
   bottom: 0;
   right: 0;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0.5606617647058824) 40%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.5606617647058824) 40%,
+      rgba(255, 255, 255, 0) 100%);
 }
 
 .fillForm__container {
@@ -714,12 +711,14 @@ main .link a {
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
+/* 
 .blockform-send {
   background: url(img/girl_1_bg.jpg) 41% 67% lightgreen;
   background-size: 139%;
   text-align: center;
   height: 100%;
 }
+
 .blockform-send p {
   position: relative;
   z-index: 19;
@@ -728,6 +727,7 @@ main .link a {
   color: white;
   font-weight: 500;
 }
+
 .blockform-send p span {
   font-size: 19px;
 }
@@ -739,22 +739,11 @@ main .link a {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(128,130,209,.5);
+  background: rgba(128, 130, 209, .5);
   z-index: 2;
   border-radius: 13px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+ */
 
 
 
@@ -1200,11 +1189,12 @@ footer a span:last-child {
   right: 0%;
   z-index: 50;
   top: -4%;
-  opacity: 1!important;
+  opacity: 1 !important;
 }
+
 .close span {
   font-size: 27px;
-  color: white!important;
+  color: white !important;
 
 }
 
@@ -1219,6 +1209,7 @@ footer a span:last-child {
   background-color: #e38522;
   border-radius: 9px;
 }
+
 .prize-select-error {
   padding: 2px;
   display: none;
@@ -1230,12 +1221,15 @@ footer a span:last-child {
   background-color: #e38522;
   border-radius: 9px;
 }
+
 .blockform-send {
-  background: url(img/girl_1_bg.jpg) 41% 67% lightgreen;
+  /* background: url(img/girl_1_bg.jpg) 41% 67% lightgreen; */
+  background-color: #3c6048;
   background-size: 139%;
   text-align: center;
   height: 100%;
 }
+
 .blockform-send p {
   position: relative;
   z-index: 19;
@@ -1244,9 +1238,11 @@ footer a span:last-child {
   color: white;
   font-weight: 500;
 }
+
 .blockform-send p span {
   font-size: 19px;
 }
+
 .blockform-send:after {
   content: '';
   position: absolute;
@@ -1254,7 +1250,7 @@ footer a span:last-child {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(128,130,209,.5);
+  /* background: rgba(128,130,209,.5); */
   z-index: 2;
   border-radius: 13px;
 }
