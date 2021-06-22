@@ -349,7 +349,7 @@
     <div class="modal" tabindex="-1" role="dialog" id="formModal">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
+
             <button
               type="button"
               class="close"
@@ -358,13 +358,13 @@
             >
               <span aria-hidden="true">&times;</span>
             </button>
-          </div>
+
           <div class="modal-body">
             <div class="modal-blockform">
               <h3>I would like to be notified when AEtning App is released</h3>
               <form>
                 <div class="country">
-                  <select name="country" id="countryID" required>
+                  <select name="country" class="country-select" required>
                     <option selected disabled>
                       Please, chooze your country
                     </option>
@@ -380,6 +380,7 @@
                     <option value="Colombia">Colombia</option>
                     <option value="Hong Kong">Hong Kong</option>
                   </select>
+                  <div class="country-select-error"></div>
                 </div>
 
                 <input
@@ -391,12 +392,12 @@
                 />
 
                 <div class="checkbox_text">
-                  <input id="participateID" type="checkbox" />
+                  <input class="participate-select" type="checkbox" />
                   <p>I want to participate in the prize draw</p>
                 </div>
 
-                <div class="prize" id="prizeID">
-                  <select name="prize">
+                <div class="prize" >
+                  <select name="prize"  class="prize-select">
                     <option selected disabled>Please, chooze the prize</option>
                     <option value="iPhone 12 Pro">iPhone 12 Pro</option>
                     <option value="Urban Electric Bike">
@@ -406,10 +407,11 @@
                       Health insurance plan
                     </option>
                   </select>
+                  <div class="prize-select-error"></div>
                 </div>
                 <input
                   type="text"
-                  id="nameID"
+                  class="name-select"
                   name="name"
                   maxlength="30"
                   placeholder="Your name"
@@ -417,10 +419,9 @@
                 <input
                   type="tel"
                   name="phone"
-                  pattern="/^*([0-9][\s()+-]*){6,20}$/"
+                  pattern="\+\s?[0-9]{1,15}"
                   placeholder="Phone number"
-                  
-                  id="telID"
+                  class="phone-select"
                 />
 
                 <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" -->
@@ -448,7 +449,6 @@
       integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
       crossorigin="anonymous"
     ></script>
-    <script src="./form.js"></script>
     <script src="./animate.js"></script>
     <script src="./script.js"></script>
   </body>

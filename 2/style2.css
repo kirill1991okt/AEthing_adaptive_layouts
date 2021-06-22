@@ -139,7 +139,7 @@ nav .list__item a.list__link_active::after {
   position: absolute;
   left: 0;
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #ffffff;
   transition: width 0.3s ease-out;
 }
@@ -203,7 +203,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   left: 0;
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #ffffff;
   transition: width 0.3s ease-out;
 }
@@ -327,10 +327,10 @@ nav .list__item a.list__link_active:focus::after {
   content: "";
   display: block;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  /* transform: translateX(-50%); */
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #f98511;
   transition: width 0.3s ease-out;
 }
@@ -387,10 +387,10 @@ nav .list__item a.list__link_active:focus::after {
   content: "";
   display: block;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  /* transform: translateX(-50%); */
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #f98511;
   transition: width 0.3s ease-out;
 }
@@ -617,8 +617,8 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .prize-animate {
-  animation: animationUP 5000ms linear both;
-  animation-delay: 3s;
+  animation: animationUP 3000ms linear both;
+  animation-delay: 2s;
 }
 
 .darkblock__title {
@@ -695,6 +695,7 @@ nav .list__item a.list__link_active:focus::after {
 
 .prize__container .slider-wrapper {
   position: relative;
+  display: none;
 }
 
 .prize__container .items_slider {
@@ -1134,10 +1135,10 @@ nav .list__item a.list__link_active:focus::after {
   content: "";
   display: block;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  /* transform: translateX(-50%); */
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #f98511;
   transition: width 0.3s ease-out;
 }
@@ -1212,10 +1213,10 @@ nav .list__item a.list__link_active:focus::after {
   content: "";
   display: block;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  /* transform: translateX(-50%); */
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #f98511;
   transition: width 0.3s ease-out;
 }
@@ -1359,14 +1360,44 @@ nav .list__item a.list__link_active:focus::after {
 
 .blockform {
   position: absolute;
+  height: 93%;
   right: 0px;
   bottom: -40px;
-  width: 321px;
+  width: 323px;
   background-color: #f1d773;
   border-radius: 13px;
   padding: 48px 32px 83px;
   z-index: 10;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.blockform-send {
+  background: url(img/girl_1_bg.jpg) 41% 67% lightgreen;
+  background-size: 139%;
+  text-align: center;
+  height: 100%;
+}
+.blockform-send p {
+  position: relative;
+  z-index: 19;
+  top: 31%;
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+}
+.blockform-send p span {
+  font-size: 19px;
+}
+
+.blockform-send:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(128, 130, 209, 0.5);
+  z-index: 2;
+  border-radius: 13px;
 }
 
 .blockform h3 {
@@ -1394,6 +1425,18 @@ nav .list__item a.list__link_active:focus::after {
   appearance: none;
 }
 
+.close {
+  position: absolute;
+  right: 0%;
+  z-index: 50;
+  top: -4%;
+  opacity: 1 !important;
+}
+.close span {
+  font-size: 27px;
+  color: white !important;
+}
+
 select[name="country"] {
   background-color: #7c6f3d;
   border-radius: 17px;
@@ -1402,6 +1445,29 @@ select[name="country"] {
   padding: 10px 30px;
   margin-bottom: 10px;
   cursor: pointer;
+}
+
+.country-select-error {
+  padding: 2px;
+  display: none;
+  top: -60px;
+  left: -162px;
+  position: absolute;
+  width: 148px;
+  height: 87px;
+  background-color: #e38522;
+  border-radius: 9px;
+}
+.prize-select-error {
+  padding: 2px;
+  display: none;
+  top: -60px;
+  left: -162px;
+  position: absolute;
+  width: 148px;
+  height: 87px;
+  background-color: #e38522;
+  border-radius: 9px;
 }
 
 form .country {
@@ -1552,6 +1618,7 @@ input[type="submit"]:hover {
 
 .modal-body {
   padding: 0;
+  height: 628px;
 }
 
 .modal-header {
@@ -1559,10 +1626,10 @@ input[type="submit"]:hover {
 }
 
 .modal-blockform {
-  width: 321px;
+  width: 323px;
   background-color: #f1d773;
   border-radius: 13px;
-  padding: 0px 32px 83px;
+  padding: 60px 32px 83px;
   z-index: 10;
 }
 
@@ -1741,7 +1808,7 @@ input[type="submit"]:hover {
 
 .spainForm {
   width: 324px;
-  height: 586px;
+  height: 620px;
   background-image: url(./img/girl_1_bg-tr.jpg);
   background-size: cover;
 }
@@ -1758,13 +1825,13 @@ footer {
 }
 
 footer .contact {
-  width: 223px;
+  width: 245px;
   text-align: center;
   margin-right: 356px;
 }
 
 footer .office {
-  width: 246px;
+  width: 270px;
   text-align: center;
 }
 
@@ -1807,4 +1874,10 @@ footer a {
 
 footer a span:last-child {
   color: #f98511;
+}
+
+.bg-white {
+  width: 500px;
+  height: 500px;
+  border-color: #f98511;
 }

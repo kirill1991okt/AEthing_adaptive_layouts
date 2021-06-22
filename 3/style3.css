@@ -705,13 +705,59 @@ main .link a {
   position: absolute;
   right: 101px;
   bottom: -40px;
-  width: 321px;
+  width: 323px;
+  height: 93%;
   background-color: #ffffff;
   border-radius: 13px;
   padding: 48px 32px 83px;
   z-index: 10;
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
+
+.blockform-send {
+  background: url(img/girl_1_bg.jpg) 41% 67% lightgreen;
+  background-size: 139%;
+  text-align: center;
+  height: 100%;
+}
+.blockform-send p {
+  position: relative;
+  z-index: 19;
+  top: 31%;
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+}
+.blockform-send p span {
+  font-size: 19px;
+}
+
+.blockform-send:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(128,130,209,.5);
+  z-index: 2;
+  border-radius: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .blockform h3 {
   color: #000000;
@@ -897,6 +943,7 @@ input[type="submit"]:hover {
 
 .modal-body {
   padding: 0;
+  height: 628px;
 }
 
 .modal-header {
@@ -904,10 +951,10 @@ input[type="submit"]:hover {
 }
 
 .modal-blockform {
-  width: 321px;
-  background-color: #ffffff;
+  width: 323px;
+  background-color: white;
   border-radius: 13px;
-  padding: 0px 32px 83px;
+  padding: 60px 32px 83px;
   z-index: 10;
 }
 
@@ -1146,4 +1193,68 @@ footer a {
 
 footer a span:last-child {
   color: #f98511;
+}
+
+.close {
+  position: absolute;
+  right: 0%;
+  z-index: 50;
+  top: -4%;
+  opacity: 1!important;
+}
+.close span {
+  font-size: 27px;
+  color: white!important;
+
+}
+
+.country-select-error {
+  padding: 2px;
+  display: none;
+  top: -60px;
+  left: -162px;
+  position: absolute;
+  width: 148px;
+  height: 87px;
+  background-color: #e38522;
+  border-radius: 9px;
+}
+.prize-select-error {
+  padding: 2px;
+  display: none;
+  top: -60px;
+  left: -162px;
+  position: absolute;
+  width: 148px;
+  height: 87px;
+  background-color: #e38522;
+  border-radius: 9px;
+}
+.blockform-send {
+  background: url(img/girl_1_bg.jpg) 41% 67% lightgreen;
+  background-size: 139%;
+  text-align: center;
+  height: 100%;
+}
+.blockform-send p {
+  position: relative;
+  z-index: 19;
+  top: 31%;
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+}
+.blockform-send p span {
+  font-size: 19px;
+}
+.blockform-send:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(128,130,209,.5);
+  z-index: 2;
+  border-radius: 13px;
 }

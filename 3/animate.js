@@ -1,5 +1,4 @@
 try{
-    console.log('efwe');
     [].forEach.call(document.querySelectorAll('[data-animation]'), function(observable) {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {

@@ -293,9 +293,9 @@
             data-animation="animated animate__fadeInUp"
           >
             <h3>I would like to be notified when AEtning App is released</h3>
-            <form action="" method="POST">
+            <form>
               <div class="country">
-                <select name="country" id="countryID" required>
+                <select name="country" class="country-select" required>
                   <option selected disabled>Please, chooze your country</option>
                   <option value="USA">USA</option>
                   <option value="Canada">Canada</option>
@@ -309,6 +309,7 @@
                   <option value="Colombia">Colombia</option>
                   <option value="Hong Kong">Hong Kong</option>
                 </select>
+                <div class="country-select-error"></div>
               </div>
 
               <input
@@ -320,12 +321,12 @@
               />
 
               <div class="checkbox_text">
-                <input id="participateID" type="checkbox" />
+                <input class="participate-select" type="checkbox" />
                 <p>I want to participate in the prize draw</p>
               </div>
 
-              <div class="prize" id="prizeID">
-                <select name="prize">
+              <div class="prize">
+                <select name="prize" class="prize-select">
                   <option selected disabled>Please, chooze the prize</option>
                   <option value="iPhone 12 Pro">iPhone 12 Pro</option>
                   <option value="Urban Electric Bike">
@@ -335,10 +336,11 @@
                     Health insurance plan
                   </option>
                 </select>
+                <div class="prize-select-error"></div>
               </div>
               <input
                 type="text"
-                id="nameID"
+                class="name-select"
                 name="name"
                 maxlength="30"
                 placeholder="Your name"
@@ -346,8 +348,9 @@
               <input
                 type="tel"
                 name="phone"
+                class="phone-select"
                 placeholder="Phone number"
-                id="telID"
+                pattern="\+\s?[0-9]{1,15}"
               />
 
               <input type="submit" value="Join Giveaway" />
@@ -379,7 +382,7 @@
     <div class="modal" tabindex="-1" role="dialog" id="formModal">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
+
             <button
               type="button"
               class="close"
@@ -388,13 +391,13 @@
             >
               <span aria-hidden="true">&times;</span>
             </button>
-          </div>
+
           <div class="modal-body">
             <div class="modal-blockform">
               <h3>I would like to be notified when AEtning App is released</h3>
               <form>
                 <div class="country">
-                  <select name="country" id="countryID" required>
+                  <select name="country" class="country-select" required>
                     <option selected disabled>
                       Please, chooze your country
                     </option>
@@ -410,6 +413,7 @@
                     <option value="Colombia">Colombia</option>
                     <option value="Hong Kong">Hong Kong</option>
                   </select>
+                  <div class="country-select-error"></div>
                 </div>
 
                 <input
@@ -421,12 +425,12 @@
                 />
 
                 <div class="checkbox_text">
-                  <input id="participateID" type="checkbox" />
+                  <input class="participate-select" type="checkbox" />
                   <p>I want to participate in the prize draw</p>
                 </div>
 
-                <div class="prize" id="prizeID">
-                  <select name="prize">
+                <div class="prize" >
+                  <select name="prize" class="prize-select">
                     <option selected disabled>Please, chooze the prize</option>
                     <option value="iPhone 12 Pro">iPhone 12 Pro</option>
                     <option value="Urban Electric Bike">
@@ -436,20 +440,21 @@
                       Health insurance plan
                     </option>
                   </select>
+                  <div class="prize-select-error"></div>
                 </div>
                 <input
                   type="text"
-                  id="nameID"
                   name="name"
                   maxlength="30"
                   placeholder="Your name"
+                  class="name-select"
                 />
                 <input
                   type="tel"
                   name="phone"
-                  pattern="/^[\s()+-]*([0-9][\s()+-]*){6,20}$/"
                   placeholder="Phone number"
-                  id="telID"
+                  class="phone-select"
+                  pattern="\+\s?[0-9]{1,15}"
                 />
 
                 <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" -->
