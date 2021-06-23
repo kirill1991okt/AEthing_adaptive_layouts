@@ -177,6 +177,13 @@ $(document).ready(function () {
     });
 
     $('.items__img').on('click', function () {
+        var index = $(this).data('index');
+        $('#carouselExampleControls .carousel-item').each(function(i) {
+            $(this).removeClass('active');
+            if(i == index) {
+                $(this).addClass('active');
+            }
+        });
         $('.prize__container .slider-wrapper').css('display', 'block');
     })
     $('.slider-closer').on('click', function () {
