@@ -1377,3 +1377,18 @@ footer a span:last-child {
 .bg-white .language .popup div a:focus::after {
   width: 100%;
 }
+
+/* NOTES */
+@media (max-width: 1440px) {
+
+}
+
+/* TABS */
+@media (max-width: 768px) {
+
+}
+
+/* MOBILE */
+@media (max-width: 460px) {
+
+}
