@@ -220,6 +220,7 @@ nav .list__item a.list__link_active:focus::after {
 .main {
   position: relative;
   background-color: #191919;
+  overflow: hidden;
 }
 
 .main__img {
@@ -2007,15 +2008,56 @@ footer a span:last-child {
 
 /* NOTES */
 @media (max-width: 1440px) {
+  .left__count {
+    width: 750px;
+  }
 
+  .prize__container {
+    margin-left: 395px;
+  }
+
+  .prize__container .items__wrap:nth-child(1) .items__img {
+    padding-left: 160px;
+  }
+
+  .prize__container .items__wrap:nth-child(3) .items__img {
+    padding-left: 73px;
+  }
+
+  .prize__container .items_slider {
+    bottom: 4px;
+    right: -10px;
+    width: 382px;
+    height: 382px;
+  }
+
+  .slider-closer {
+    right: 20px;
+  }
+
+  .blockchain .group__middle {
+    width: 490px;
+  }
+
+  .blockchain .group__middle {
+    justify-content: center;
+  }
+
+  .section-form__container {
+    margin-left: 195px;
+  }
+
+  .blockform {
+    right: 20px;
+  }
+
+  .section-form__img {
+    left: -770px;
+  }
 }
 
 /* TABS */
-@media (max-width: 768px) {
-
-}
+@media (max-width: 768px) {}
 
 /* MOBILE */
-@media (max-width: 460px) {
-
-}
+@media (max-width: 460px) {}
