@@ -172,11 +172,8 @@ a:hover {
 }
 
 header {
-  position: sticky;
-  top: 0;
-  z-index: 10000;
   padding-top: 12px;
-  background-color: #ffffff;
+  background-color: #171819;
 }
 
 .logo {
@@ -202,13 +199,13 @@ nav .list__item {
 
 nav .list__item a.list__link_active {
   position: relative;
-  color: #000000;
+  color: #fff;
   font-weight: bold;
 }
 
 nav .list__item a {
   position: relative;
-  color: #000000;
+  color: #fff;
 }
 
 nav .list__item a::after,
@@ -219,7 +216,7 @@ nav .list__item a.list__link_active::after {
   left: 0;
   width: 0;
   height: 1px;
-  background-color: #000000;
+  background-color: #fff;
   transition: width 0.3s ease-out;
 }
 
@@ -234,7 +231,7 @@ nav .list__item a.list__link_active:focus::after {
   display: flex;
   align-items: center;
   padding: 9px 53px;
-  color: #000000;
+  color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 16px;
   line-height: 1;
@@ -242,26 +239,6 @@ nav .list__item a.list__link_active:focus::after {
   position: relative;
   margin-left: -15px;
   cursor: pointer;
-}
-
-.language span {
-  position: relative;
-}
-
-.language span::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background-color: #000000;
-  transition: width 0.3s ease-out;
-}
-
-.language span:hover::after,
-.language span:focus::after {
-  width: 100%;
 }
 
 /* .language::after {
@@ -277,7 +254,6 @@ nav .list__item a.list__link_active:focus::after {
   width: 100%;
   left: 0;
   z-index: 10;
-  background-color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 16px;
 }
@@ -288,13 +264,13 @@ nav .list__item a.list__link_active:focus::after {
 
 .language .popup div {
   text-align: center;
-  color: #000000;
+  color: #fff;
   padding: 9px;
 }
 
 .language .popup div a {
   position: relative;
-  color: #000000;
+  color: #fff;
 }
 
 .language .popup div a::after {
@@ -304,7 +280,7 @@ nav .list__item a.list__link_active:focus::after {
   left: 0;
   width: 0;
   height: 1px;
-  background-color: #000000;
+  background-color: #fff;
   transition: width 0.3s ease-out;
 }
 
@@ -1048,7 +1024,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 /* TODO поставь по размерам правильным, я приблительно поставил */
-.get__right>.top__square {
+.get__right > .top__square {
   opacity: 0.1;
   width: 200px;
   height: 185px;
@@ -1059,7 +1035,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 /* TODO поставь по размерам правильным, я приблительно поставил */
-.get__right>.bot__square {
+.get__right > .bot__square {
   opacity: 0.1;
   width: 200px;
   height: 185px;
@@ -1069,7 +1045,7 @@ nav .list__item a.list__link_active:focus::after {
   background-color: #000000;
 }
 
-.get>.top__square {
+.get > .top__square {
   opacity: 0.1;
   width: 212px;
   height: 218px;
@@ -1079,7 +1055,7 @@ nav .list__item a.list__link_active:focus::after {
   background-color: #000000;
 }
 
-.get>.bot__square {
+.get > .bot__square {
   opacity: 0.1;
   width: 212px;
   height: 218px;
@@ -1459,7 +1435,6 @@ footer a span:last-child {
 .close span {
   font-size: 27px;
   color: white !important;
-
 }
 
 .country-select-error {
@@ -1508,7 +1483,7 @@ footer a span:last-child {
 }
 
 .blockform-send:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1517,4 +1492,128 @@ footer a span:last-child {
   /* background: rgba(128, 130, 209, .5); */
   z-index: 2;
   border-radius: 13px;
+}
+
+/* header bg */
+
+.bg-white {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  padding-top: 12px;
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+
+.bg-white nav .list__item a.list__link_active {
+  position: relative;
+  color: #000000;
+  font-weight: bold;
+}
+
+.bg-white nav .list__item a {
+  position: relative;
+  color: #000000;
+}
+
+.bg-white nav .list__item a::after,
+.bg-white nav .list__item a.list__link_active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  transition: width 0.3s ease-out;
+}
+
+.bg-white nav .list__item a:hover::after,
+.bg-white nav .list__item a:focus::after,
+.bg-white nav .list__item a.list__link_active:hover::after,
+.bg-white nav .list__item a.list__link_active:focus::after {
+  width: 100%;
+}
+
+.bg-white .language {
+  display: flex;
+  align-items: center;
+  padding: 9px 53px;
+  color: #000;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  line-height: 1;
+  height: 32px;
+  position: relative;
+  margin-left: -15px;
+  cursor: pointer;
+}
+
+.bg-white .language span {
+  position: relative;
+}
+
+.bg-white .language span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  transition: width 0.3s ease-out;
+}
+
+.bg-white .language span:hover::after,
+.bg-white .language span:focus::after {
+  width: 100%;
+}
+
+/* .bg-white .language::after {
+  content: ">";
+  color: #000;
+  margin-left: 10px;
+} */
+
+.bg-white .language .popup {
+  display: none;
+  position: absolute;
+  top: 32px;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+}
+
+.bg-white .language.open .popup {
+  display: block;
+}
+
+.bg-white .language .popup div {
+  text-align: center;
+  color: #000;
+  padding: 9px;
+}
+
+.bg-white .language .popup div a {
+  position: relative;
+  color: #000;
+}
+
+.bg-white .language .popup div a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  transition: width 0.3s ease-out;
+}
+
+.bg-white .language .popup div a:hover::after,
+.bg-white .language .popup div a:focus::after {
+  width: 100%;
 }

@@ -165,11 +165,11 @@ nav .list__item a.list__link_active:focus::after {
   cursor: pointer;
 }
 
-.language::after {
+/* .language::after {
   content: ">";
   color: #ffffff;
   margin-left: 10px;
-}
+} */
 
 .language .popup {
   display: none;
@@ -1881,7 +1881,6 @@ footer a span:last-child {
   color: #f98511;
 }
 
-
 /* header bg */
 
 .bg-white {
@@ -1890,6 +1889,7 @@ footer a span:last-child {
   z-index: 10000;
   padding-top: 12px;
   background-color: #ffffff;
+  opacity: 0.9;
 }
 
 .bg-white nav .list__item a.list__link_active {
@@ -1936,11 +1936,31 @@ footer a span:last-child {
   cursor: pointer;
 }
 
-.bg-white .language::after {
+.bg-white .language span {
+  position: relative;
+}
+
+.bg-white .language span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  transition: width 0.3s ease-out;
+}
+
+.bg-white .language span:hover::after,
+.bg-white .language span:focus::after {
+  width: 100%;
+}
+
+/* .bg-white .language::after {
   content: ">";
   color: #000;
   margin-left: 10px;
-}
+} */
 
 .bg-white .language .popup {
   display: none;
@@ -1968,7 +1988,6 @@ footer a span:last-child {
   position: relative;
   color: #000;
 }
-
 
 .bg-white .language .popup div a::after {
   content: "";
