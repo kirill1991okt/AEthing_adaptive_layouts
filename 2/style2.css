@@ -2092,6 +2092,10 @@ footer a span:last-child {
     margin-bottom: 0;
   }
 
+  .participate__container .top {
+    margin-bottom: 57px;
+  }
+
   .participate__container .top .line {
     width: 74px;
     height: 1px;
@@ -2270,6 +2274,89 @@ footer a span:last-child {
   .left__count_note {
     display: none;
   }
+
+  .prize {
+    background: rgba(97, 71, 226, 0.2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 24px;
+    padding: 51px 20px 37px;
+  }
+
+  .prize_wrap {
+    width: 100%;
+  }
+
+  .darkblock {
+    display: none;
+  }
+
+  .prize__container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .prize__container .title {
+    font-family: 'DunbarTall';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .prize__container .subtitle {
+    display: none;
+  }
+
+  .prize__container .items {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .prize__container .items__wrap {
+    width: calc(47% - 20px);
+    margin: 0 10px 24px;
+    background-color: #fff;
+    border-radius: 12px;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .items .items__number {
+    display: none;
+  }
+
+  .prize__container .items__wrap .items__img {
+    max-width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+
+  .prize__container .items__wrap:nth-child(1) .items__img {
+    padding: 0;
+  }
+
+  .prize__container .items__wrap:nth-child(2) .items__img {
+    padding: 0;
+  }
+
+  .prize__container .items__wrap:nth-child(3) .items__img {
+    padding: 0;
+  }
+
+  .items .items__text {
+    font-family: 'DunbarTall';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+
+
 
 }
 
