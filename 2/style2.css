@@ -1183,6 +1183,7 @@ nav .list__item a.list__link_active:focus::after {
   color: #383636;
   font-size: 18px;
   margin-bottom: 47px;
+  text-align: center;
 }
 
 .creating__container .text1 {
@@ -2316,8 +2317,8 @@ footer a span:last-child {
   }
 
   .prize__container .items__wrap {
-    width: calc(47% - 20px);
-    margin: 0 10px 24px;
+    width: calc(50% - 24px);
+    margin: 0 12px 24px;
     background-color: #fff;
     border-radius: 12px;
     flex-direction: column-reverse;
@@ -2355,9 +2356,323 @@ footer a span:last-child {
     line-height: 40px;
   }
 
+  .prize__container .slider-wrapper {
+    display: none !important;
+  }
+
+  .blockchain {
+    background: rgba(255, 193, 32, 0.15);
+    border-radius: 24px;
+    padding: 70px 60px;
+    margin-bottom: 10px;
+  }
+
+  .blockchain__top__wrap .line {
+    width: 74px;
+    height: 1px;
+    background: #5a40de;
+    background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    margin-bottom: 70px;
+  }
+
+  .blockchain__top__wrap .line.right {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .blockchain__top__wrap .blockchain__top__title {
+    font-family: 'DunbarTall';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 40px;
+    width: 80%;
+  }
+
+  .blockchain__top__wrap .blockchain__top__subtitle {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 40px;
+    width: 80%;
+  }
+
+  .blockchain__top__wrap .blockchain__top__btn {
+    font-family: 'DunbarText';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 9px 24px;
+    background: #FFC120;
+    border-radius: 16px;
+    color: #000;
+    display: inline-block;
+    margin-bottom: 100px;
+  }
+
+  .blockchain__title {
+    font-family: 'DunbarTall';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 40px;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
+    width: 80%;
+  }
+
+  .blockchain__subtitle {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 40px;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
+    width: 80%;
+  }
+
+  .blockchain .top__undertext {
+    font-family: 'DunbarLow';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 90px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .blockchain .right__bot {
+    width: 420px;
+    height: 420px;
+    background: rgba(97, 71, 226, 0.7);
+    padding: 89px 0 0 55px;
+    position: relative;
+    border-radius: 100%;
+    margin-left: -59px;
+  }
+
+  .blockchain .right__bot .line {
+    display: block;
+    width: 74px;
+    height: 1px;
+    background: #5a40de;
+    background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    margin-bottom: 20px;
+    margin-left: 65px;
+  }
+
+  .right__bot .right__bot__title {
+    font-family: 'DunbarTall';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000;
+    margin-bottom: 40px;
+  }
+
+  .right__bot .right__bot__subtitle {
+    font-family: 'DunbarText';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000;
+    margin-left: 65px;
+  }
+
+  .blockchain .group {
+    display: none;
+  }
+
+  .diamont {
+    background: #000000;
+    border-radius: 24px;
+    padding: 80px 60px 30px;
+    margin-top: 0;
+  }
+
+  .diamont .diamont__title {
+    font-family: 'DunbarTall';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .diamont__wrap .left, .diamont__wrap .right {
+    padding: 0;
+  }
+
+  .diamont__wrap .left {
+    padding-right: 24px;
+  }
+
+  .diamont__wrap .right {
+    padding-left: 24px;
+  }
+
+  .diamont__wrap .left::before, .diamont__wrap .right::before {
+    display: none;
+  }
+
+  .left__container, .right__container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .diamont .left__wrap, .diamont .right__wrap {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .left__wrap_img, .right__wrap_img {
+    display: none;
+  }
+
+  .diamont .line {
+    display: block;
+    width: 74px;
+    height: 1px;
+    background: #5a40de;
+    background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .left__wrap p, .right__wrap p {
+    height: 180px;
+    font-family: 'DunbarText';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .diamont .right__link {
+    display: none;
+  }
+
+  .creating {
+    background: #F5F5F5;
+    border-radius: 24px;
+    padding: 70px 60px 90px;
+  }
+
+  .creating__container {
+    align-items: flex-start;
+  }
+
+  .creating .right {
+    width: 345px;
+    height: 345px;
+    background: rgba(255, 193, 32, 0.7);
+    padding: 60px 0 0 60px;
+    position: relative;
+    margin-bottom: 45px;
+  }
+
+  .right .title {
+    font-family: 'DunbarTall';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: left;
+    width: 160%;
+  }
+
+  .right .subtitle {
+    font-family: 'DunbarText';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000;
+    text-align: left;
+    width: 160%;
+  }
+
+  .creating__container .text1 {
+    width: 60%;
+    margin-left: 65px;
+    margin-bottom: 40px;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    opacity: 1;
+  }
+
+  .creating__container .text2 {
+    width: 60%;
+    margin-left: 65px;
+    margin-bottom: 50px;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    opacity: 1;
+  }
+
+  .creating__link {
+    margin-left: 60px;
+    background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'DunbarLow';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    width: 45%;
+    margin-bottom: 0;
+  }
 
 
 
+
+  .section-form__img {
+    display: none;
+  }
 }
 
 /* MOBILE */
