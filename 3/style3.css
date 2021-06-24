@@ -1522,12 +1522,14 @@ footer a span:last-child {
   }
 
   .work__wrap {
+    width: 100%;
     position: relative;
     margin-top: 0;
     margin-bottom: 0;
   }
 
   .work .title {
+    width: 100%;
     position: relative;
     margin-top: 130px;
     margin-bottom: 180px;
@@ -1647,6 +1649,11 @@ footer a span:last-child {
 
   .container__items:nth-child(7) .container__text {
     max-width: 340px;
+  }
+
+  .work .work__container .container__items {
+    width: 100%;
+    max-width: 583px;
   }
 
   .container__items .container__item::after {
