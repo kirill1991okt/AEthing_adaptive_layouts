@@ -18,6 +18,10 @@ a:hover {
   display: flex;
 }
 
+.mobile {
+  display: none;
+}
+
 header {
   padding-top: 4px;
   background-color: #9a9a9a;
@@ -1405,6 +1409,10 @@ footer a span:last-child {
 
 /* TABS */
 @media (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+
   .user {
     margin: 10px 32px 0 32px;
     border-top-right-radius: 24px;
@@ -1529,6 +1537,7 @@ footer a span:last-child {
   }
 
   .work .title {
+    /* display: none; */
     width: 100%;
     position: relative;
     margin-top: 130px;
@@ -1543,6 +1552,42 @@ footer a span:last-child {
     text-align: right;
     color: #000;
     z-index: 10;
+  }
+
+  .work .right__bot {
+    align-self: flex-end;
+    width: 420px;
+    height: 420px;
+    background: rgba(97, 71, 226, 0.7);
+    padding: 89px 0 0 55px;
+    position: relative;
+    border-radius: 100%;
+    margin-left: -59px;
+    margin-bottom: 55px;
+    margin-right: 60px;
+  }
+
+  .work .right__bot .line {
+    display: block;
+    width: 74px;
+    height: 1px;
+    background: #5a40de;
+    background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    margin-bottom: 20px;
+    margin-left: 65px;
+  }
+
+  .work .right__bot .right__bot__title {
+    font-family: "DunbarTall";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000;
+    margin-bottom: 40px;
+    text-align: right;
   }
 
   .work .title::after {
@@ -1759,23 +1804,32 @@ footer a span:last-child {
     display: flex;
     flex-direction: column;
     align-items: end;
-    padding-top: 0;
+    padding: 0 60px 0 60px;
     margin-bottom: 0;
   }
 
-  .conditions .title {
+  .conditions .square {
+    margin-top: 108px;
+    margin-bottom: 55px;
+    width: 344px;
+    height: 344px;
+    background: rgba(255, 193, 32, 0.7);
+    padding: 53px 65px;
+    position: relative;
+  }
+
+  .conditions .square__title {
     position: relative;
     font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 32px;
-    margin: 200px 0 170px 122px;
     text-align: left;
     width: 340px;
   }
 
-  .conditions .title span {
+  .conditions .square__title span {
     display: block;
     font-family: "DunbarTall";
     font-style: normal;
@@ -1787,7 +1841,7 @@ footer a span:last-child {
     margin-bottom: 40px;
   }
 
-  .conditions .subtitle {
+  .conditions .square__subtitle {
     width: auto;
     font-family: "DunbarLow";
     font-style: normal;
@@ -1796,9 +1850,13 @@ footer a span:last-child {
     line-height: 32px;
     /* or 133% */
     color: #000000;
-    padding: 0 60px 0 60px;
+
     margin-bottom: 40px;
     text-align: left;
+  }
+
+  .conditions .title {
+    display: none;
   }
 
   .conditions__wrap {
@@ -1862,9 +1920,131 @@ footer a span:last-child {
     p {
     margin: 0 0 80px 0;
   }
-
   /* / conditions */
+
+  /* footer */
+  footer {
+    margin-left: -32px;
+    margin-right: -32px;
+    margin-bottom: -21px;
+    background: #000;
+    padding: 45px 90px 150px;
+    position: relative;
+    flex-direction: column;
+  }
+
+  footer::before {
+    content: "";
+    display: block;
+    width: 74px;
+    height: 1px;
+    background: #5a40de;
+    background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  footer .contact {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 88px;
+  }
+
+  footer .contact h3 {
+    display: none;
+  }
+
+  footer h3 {
+    color: #fff;
+  }
+
+  footer .campany {
+    margin: 0;
+  }
+
+  footer .campany span {
+    font-family: "DunbarLow";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #ffc120;
+  }
+
+  footer p {
+    width: 50%;
+    font-family: "DunbarLow";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+  }
+
+  footer .office {
+    width: auto;
+    margin: 0 auto;
+    font-family: "DunbarLow";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 130px;
+  }
+
+  footer .office h3 {
+    font-family: "DunbarLow";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #ffc120;
+    text-transform: inherit;
+    margin-bottom: 0;
+  }
+
+  footer address {
+    font-family: "DunbarLow";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  footer a {
+    font-family: "DunbarLow";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+  }
+
+  footer a span:last-child {
+    font-family: "DunbarLow";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+  }
 }
+/* /footer */
 
 /* MOBILE */
 @media (max-width: 460px) {
