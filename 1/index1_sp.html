@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -19,6 +29,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style1.css" />
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
     <title>AEthing</title>
   </head>
   <body>
@@ -113,6 +124,7 @@
             <div class="use-mob__useful">
               <div class="top__square"></div>
               <div class="bot__square"></div>
+              <div class="line"></div>
               <h2
                 class="animate__animated use-mob__title"
                 data-animation="animated animate__fadeInLeft"
@@ -162,6 +174,7 @@
             ¡Todos los suscriptores pueden participar en el sorteo!
             <a href="../2/index2_sp.html">Leer mas></a>
           </p>
+          <div class="line"></div>
           <div class="top__square"></div>
           <div class="bot__square"></div>
         </div>
@@ -326,6 +339,123 @@
             </div>
           </div>
         </div> -->
+      </section>
+      <section class="fillForm">
+        <div class="wrapper">
+          <!-- mob -->
+          <div class="section-form__container mobile">
+            <h1 class="section-form__title">Join our prize draw!</h1>
+            <p class="section-form__subtitle">
+              You want to get a new iphone 12 PRO, or a city electric bike, or
+              health insurance?
+            </p>
+            <a href="javascript:void(0)" class="section-form__link"
+              >Just fill out the participant form</a
+            >
+          </div>
+          <!-- mob -->
+
+          <div class="fillForm__container">
+            <h1 class="fillForm_title">Fill out the form and join!</h1>
+            <p class="fillForm__subtitle">Take part in our prize giveaway!</p>
+
+            <div class="fillForm__prize">
+              <div class="fillForm__prize_item">
+                <div class="fillForm__prize_number">1</div>
+                <p class="fillForm__prize_text">
+                  iPhone 12 <br />
+                  Pro
+                </p>
+              </div>
+              <div class="fillForm__prize_item">
+                <div class="fillForm__prize_number">2</div>
+                <p class="fillForm__prize_text">
+                  Urban Electric <br />
+                  Bike
+                </p>
+              </div>
+              <div class="fillForm__prize_item">
+                <div class="fillForm__prize_number">3</div>
+                <p class="fillForm__prize_text">
+                  Health insurance <br />
+                  plan
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- forma -->
+          <div
+            class="animate__animated blockform"
+            data-animation="animated animate__fadeInUp"
+          >
+            <h3>I would like to be notified when AEtning App is released</h3>
+            <form>
+              <div class="country">
+                <select name="country" class="country-select" required>
+                  <option selected disabled>Please, chooze your country</option>
+                  <option value="USA">USA</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Australia">Australia</option>
+                  <option value="England">England</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="New Zealand">New Zealand</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Spain">Spain</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Colombia">Colombia</option>
+                  <option value="Hong Kong">Hong Kong</option>
+                </select>
+                <div class="country-select-error"></div>
+              </div>
+
+              <input
+                type="email"
+                name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                placeholder="Your e-mail"
+                required
+              />
+
+              <div class="checkbox_text">
+                <input class="participate-select" type="checkbox" />
+                <p>I want to participate in the prize draw</p>
+              </div>
+
+              <div class="prize">
+                <select name="prize" class="prize-select">
+                  <option selected disabled>Please, chooze the prize</option>
+                  <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+                  <option value="Urban Electric Bike">
+                    Urban Electric Bike
+                  </option>
+                  <option value="Health insurance plan">
+                    Health insurance plan
+                  </option>
+                </select>
+                <div class="prize-select-error"></div>
+              </div>
+              <input
+                type="text"
+                class="name-select"
+                name="name"
+                maxlength="30"
+                placeholder="Your name"
+              />
+              <input
+                type="tel"
+                name="phone"
+                minlength="6"
+                class="phone-select"
+                placeholder="Phone number"
+                pattern="\+\s?[0-9]{6,15}"
+              />
+
+              <input type="submit" value="Join Giveaway" />
+            </form>
+          </div>
+          <!-- forma -->
+        </div>
       </section>
     </main>
 
