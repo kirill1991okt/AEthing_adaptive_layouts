@@ -1678,5 +1678,92 @@ footer a span:last-child {
   } */
 }
 
+
+
+
+/* TABS */
+@media (max-width: 768px) {
+
+  body {
+    padding: 21px 32px;
+    background: none;
+  }
+
+  body::after {
+    display: none;
+  }
+
+  header {
+    display: none;
+  }
+
+  .main {
+    display: none;
+  }
+
+  .use-mob {
+    width: 100%;
+    background: #f5f5f5;
+    padding: 70px 58px;
+    border-radius: 24px;
+  }
+
+  .use-mob__wrapper {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .use-mob__useful {
+    width: 100%;
+    height: inherit;
+    margin-left: 0;
+  }
+
+  .top__square {
+    display: none;
+  }
+
+  .bot__square {
+    display: none;
+  }
+
+  .use-mob__useful .use-mob__title {
+    font-family: 'DunbarTall';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+    text-align: inherit;
+    margin-bottom: 40px;
+  }
+
+  .use-mob__useful .use-mob__subtitle {
+    font-family: 'DunbarText';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .use-mob__useful .use-mob__text {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+
+
+}
+
 /* MOBILE */
 @media (max-width: 460px) {}
