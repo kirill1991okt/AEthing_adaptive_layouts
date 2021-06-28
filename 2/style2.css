@@ -3240,6 +3240,10 @@ footer a span:last-child {
     padding: 18px 10px;
   }
 
+  .mobile.menu {
+    width: 100%;
+  }
+
   /* header */
 
   .logo img {
@@ -3337,6 +3341,7 @@ footer a span:last-child {
   .participate .right {
     width: 219px;
     height: 219px;
+    padding: 53px 30px;
     margin-bottom: 100px;
   }
 
@@ -3507,4 +3512,82 @@ footer a span:last-child {
   }
 
   /* /creating */
+
+  /* section-form */
+
+  .fillForm {
+    padding: 75px 90px 120px;
+  }
+
+  .section-form__title {
+    font-size: 32px;
+    line-height: 40px;
+    width: 85%;
+    margin-bottom: 40px;
+  }
+
+  .section-form__subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 50px;
+  }
+
+  .section-form__link {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .fillForm::after {
+    right: 100px;
+    bottom: 60px;
+  }
+
+  .section-form::after {
+    right: 50px;
+  }
+
+  /* /section-form */
+
+  /* footer */
+
+  footer {
+    padding: 45px 0px 150px;
+  }
+
+  footer .campany span {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  footer p {
+    width: 100%;
+    max-width: 230px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  footer .office {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  footer .office h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  footer address {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  footer a {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  footer a span:last-child {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
