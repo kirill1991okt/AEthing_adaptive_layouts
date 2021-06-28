@@ -2154,6 +2154,7 @@ footer a span:last-child {
 
   .mobile.menu nav .list__item {
     margin-bottom: 25px;
+    margin-right: 0;
   }
 
   nav .list__item a {
@@ -2191,6 +2192,9 @@ footer a span:last-child {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    padding: 0;
+    border: none;
+    height: auto;
   }
 
   .mobile.menu .language span {
@@ -2201,8 +2205,30 @@ footer a span:last-child {
     line-height: 32px;
     color: #000;
     text-transform: uppercase;
+    margin-bottom: 25px;
   }
 
+  .mobile.menu .language div {
+    margin-bottom: 25px;
+  }
+
+  .mobile.menu .language a {
+    font-family: 'DunbarText';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000;
+    text-transform: uppercase;
+  }
+
+  .mobile.menu .language a.active {
+    background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
   .main {
     border-radius: 0 0 24px 24px;
