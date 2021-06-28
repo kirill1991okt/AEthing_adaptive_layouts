@@ -2359,12 +2359,18 @@ footer a span:last-child {
 
   /* footer */
 
+  footer {
+    padding: 45px 0px 150px;
+  }
+
   footer .campany span {
     font-size: 18px;
     line-height: 24px;
   }
 
   footer p {
+    width: 100%;
+    max-width: 230px;
     font-size: 18px;
     line-height: 24px;
   }
