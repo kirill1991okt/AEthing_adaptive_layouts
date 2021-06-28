@@ -1288,6 +1288,10 @@ nav .list__item a.list__link_active:focus::after {
   margin-left: 305px;
 }
 
+.section-form__container.mobile {
+  display: none;
+}
+
 .section-form__title {
   color: #ffffff;
   font-size: 48px;
@@ -2815,6 +2819,45 @@ footer a span:last-child {
     text-align: center;
   }
 
+  footer .office h3 {
+    display: block;
+    font-family: 'DunbarLow';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFC120;
+  }
+
+  footer .office address {
+    font-family: 'DunbarLow';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  footer .office a {
+    font-family: 'DunbarLow';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  footer .office a span {
+    font-family: 'DunbarLow';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+  }
 
 }
 
