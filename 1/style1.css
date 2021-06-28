@@ -157,6 +157,10 @@ body::after {
   display: none;
 }
 
+.get__link_text-mobile {
+  display: none;
+}
+
 /* body {
   background-color: black;
   height: 100%;
@@ -662,17 +666,16 @@ nav .list__item a.list__link_active:focus::after {
   z-index: 10;
 }
 
-.use-mob .subscribers a::after {
+/* .use-mob .subscribers a::after {
   content: "";
   display: block;
   position: absolute;
   left: 0;
-  /* transform: translateX(-50%); */
   width: 0;
   height: 1px;
   background-color: #ffffff;
   transition: width 0.3s ease-out;
-}
+} */
 
 .use-mob .subscribers a:hover::after,
 .use-mob .subscribers a:focus::after {
@@ -1035,7 +1038,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 /* TODO поставь по размерам правильным, я приблительно поставил */
-.get__right>.top__square {
+.get__right > .top__square {
   opacity: 0.1;
   width: 200px;
   height: 185px;
@@ -1046,7 +1049,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 /* TODO поставь по размерам правильным, я приблительно поставил */
-.get__right>.bot__square {
+.get__right > .bot__square {
   opacity: 0.1;
   width: 200px;
   height: 185px;
@@ -1056,7 +1059,7 @@ nav .list__item a.list__link_active:focus::after {
   background-color: #000000;
 }
 
-.get>.top__square {
+.get > .top__square {
   opacity: 0.1;
   width: 212px;
   height: 218px;
@@ -1066,7 +1069,7 @@ nav .list__item a.list__link_active:focus::after {
   background-color: #000000;
 }
 
-.get>.bot__square {
+.get > .bot__square {
   opacity: 0.1;
   width: 212px;
   height: 218px;
@@ -1650,7 +1653,6 @@ footer a span:last-child {
   .AEthing__business {
     margin-left: 105px;
   }
-
 }
 
 /* TABS */
@@ -1686,12 +1688,8 @@ footer a span:last-child {
   } */
 }
 
-
-
-
 /* TABS */
 @media (max-width: 768px) {
-
   .line {
     display: block;
 
@@ -1702,7 +1700,6 @@ footer a span:last-child {
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
     margin-bottom: 70px;
-
   }
 
   body {
@@ -1727,6 +1724,7 @@ footer a span:last-child {
     background: #f5f5f5;
     padding: 70px 58px 210px 58px;
     border-radius: 24px;
+    overflow: inherit;
   }
 
   .use-mob__img {
@@ -1742,7 +1740,6 @@ footer a span:last-child {
     width: 198px;
     height: 344px;
   } */
-
 
   .use-mob__wrapper {
     width: 100%;
@@ -1765,7 +1762,7 @@ footer a span:last-child {
   }
 
   .use-mob__useful .use-mob__title {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -1776,7 +1773,7 @@ footer a span:last-child {
   }
 
   .use-mob__useful .use-mob__subtitle {
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -1809,7 +1806,7 @@ footer a span:last-child {
   }
 
   .use-mob__mobApp::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -70px;
     left: 0;
@@ -1821,10 +1818,10 @@ footer a span:last-child {
   }
 
   .use-mob__mobApp::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -110px;
-    left: -58px;
+    left: -90px;
     background-image: url(./img/tablet_img/img2\ 1.svg);
     width: 198px;
     height: 344px;
@@ -1840,7 +1837,7 @@ footer a span:last-child {
   }
 
   .use-mob__mobApp .use-mob__title {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -1851,7 +1848,7 @@ footer a span:last-child {
   }
 
   .use-mob__mobApp .use-mob__subtitle {
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -1871,7 +1868,6 @@ footer a span:last-child {
     text-align: left;
     margin-bottom: 0;
   }
-
 
   .use-mob .subscribers {
     position: relative;
@@ -1895,9 +1891,8 @@ footer a span:last-child {
     opacity: 0.65;
   }
 
-
   .use-mob .subscribers p {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -1910,7 +1905,7 @@ footer a span:last-child {
   .use-mob .subscribers a {
     display: block;
     position: relative;
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -1921,7 +1916,7 @@ footer a span:last-child {
   }
 
   .use-mob .subscribers a::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -20px;
     right: 30px;
@@ -1944,8 +1939,229 @@ footer a span:last-child {
 
   /* /main-items  -- ДОДЕЛАТЬ */
 
-  /* fillForm */
+  /* AEthing */
 
+  .AEthing {
+    width: 100%;
+    padding: 100px 55px 210px 55px;
+    border-radius: 24px;
+    background: #ffc02038;
+    overflow: inherit;
+  }
+
+  .AEthing__img_left {
+    display: none;
+  }
+
+  .AEthing__img_right {
+    display: none;
+  }
+
+  .AEthing__wrapper {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .AEthing__users {
+    width: 100%;
+    height: inherit;
+    margin-left: 0;
+  }
+
+  .AEthing__users::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -90px;
+    background-image: url(./img/tablet_img/man.svg);
+    width: 198px;
+    height: 344px;
+  }
+
+  .AEthing__users .top__square {
+    display: none;
+  }
+
+  .AEthing__users .bot__square {
+    display: none;
+  }
+
+  .AEthing__users .AEthing__title {
+    font-family: "DunbarTall";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+    text-align: inherit;
+    margin-bottom: 60px;
+  }
+
+  .AEthing__users .AEthing__subtitle {
+    max-width: 410px;
+    font-family: "DunbarText";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .AEthing__users .AEthing__text {
+    max-width: 540px;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .AEthing__users .get__link_text {
+    display: none;
+  }
+
+  .AEthing__business {
+    width: 100%;
+    margin-top: 190px;
+    margin-bottom: 260px;
+    padding-right: 60px;
+    margin-left: 0;
+    align-items: flex-end;
+    z-index: 10;
+  }
+
+  .AEthing__business::before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    right: 0;
+    width: 345px;
+    height: 345px;
+    background: rgba(255, 193, 32, 0.7);
+    opacity: 0.7;
+    z-index: -1;
+  }
+
+  .AEthing__business::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    left: -90px;
+    background-image: url(./img/tablet_img/man2.svg);
+    width: 198px;
+    height: 344px;
+  }
+
+  .AEthing__business .top__square {
+    display: none;
+  }
+
+  .AEthing__business .bot__square {
+    display: none;
+  }
+
+  .AEthing__business .AEthing__title {
+    max-width: 340px;
+    font-family: "DunbarTall";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+    text-align: inherit;
+    margin-bottom: 50px;
+    text-align: end;
+  }
+
+  .AEthing__business .AEthing__subtitle {
+    font-family: "DunbarText";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 40px;
+    text-align: end;
+  }
+
+  .AEthing__business .AEthing__text {
+    width: 100%;
+    max-width: 540px;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    text-align: left;
+    margin-bottom: 0;
+    text-align: end;
+  }
+
+  .AEthing__wrapper .get__link_text-mobile {
+    display: block;
+    position: relative;
+    max-width: 500px;
+    padding-left: 70px;
+    font-family: "DunbarTall";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 0;
+    z-index: 10;
+  }
+
+  .AEthing__wrapper .get__link_text-mobile::after {
+    content: "";
+    position: absolute;
+    top: -90px;
+    right: 60px;
+    width: 418px;
+    height: 418px;
+    background: #6147e2;
+    border-radius: 50%;
+    opacity: 0.65;
+    z-index: -1;
+  }
+
+  .AEthing__wrapper .get__link_text-mobile a {
+    display: block;
+    position: relative;
+    font-family: "DunbarText";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    padding-left: 70px;
+    margin-top: 70px;
+  }
+
+  .AEthing__wrapper .get__link_text-mobile a::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 70px;
+    display: block;
+    width: 74px;
+    height: 1px;
+    background: #5a40de;
+    background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
+  }
+
+  /* /AEthing */
 
   /* fillForm */
 
@@ -2039,8 +2255,6 @@ footer a span:last-child {
   }
 
   /* /fillForm */
-
-
 
   /* fillForm */
 
@@ -2169,6 +2383,6 @@ footer a span:last-child {
 
 /* /footer */
 
-
 /* MOBILE */
-@media (max-width: 460px) {}
+@media (max-width: 460px) {
+}
