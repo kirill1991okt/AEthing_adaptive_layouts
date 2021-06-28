@@ -161,6 +161,10 @@ body::after {
   display: none;
 }
 
+.main-items_mobile {
+  display: none;
+}
+
 /* body {
   background-color: black;
   height: 100%;
@@ -964,8 +968,17 @@ nav .list__item a.list__link_active:focus::after {
 /* get */
 
 .get {
+  width: 100%;
   background: #ffffff;
   position: relative;
+  display: flex;
+}
+
+.get .wrapper {
+  width: 100%;
+  position: relative;
+  max-width: 1070px;
+  margin: 0 auto;
   display: flex;
 }
 
@@ -1029,12 +1042,12 @@ nav .list__item a.list__link_active:focus::after {
 } */
 
 .get .get__right {
+  width: 100%;
   position: relative;
   margin-top: 110px;
   margin-bottom: 92px;
   display: flex;
   flex-direction: column;
-  max-width: 1057px;
 }
 
 /* TODO поставь по размерам правильным, я приблительно поставил */
@@ -1080,8 +1093,10 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .get__right-items {
+  width: 100%;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -1110,10 +1125,10 @@ nav .list__item a.list__link_active:focus::after {
 
 .get__right-items-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 82px;
-  column-gap: 100px;
 }
 
 .get__right-items-wrapper .get__right-item {
@@ -1647,7 +1662,7 @@ footer a span:last-child {
   }
 
   .get__right-items-wrapper {
-    column-gap: 40px;
+    column-gap: inherit;
   }
 
   .AEthing__business {
@@ -1937,7 +1952,92 @@ footer a span:last-child {
     display: none;
   }
 
-  /* /main-items  -- ДОДЕЛАТЬ */
+  .main-items_mobile {
+    display: block;
+    background: #000000;
+    border-radius: 24px;
+    padding: 80px 60px 30px;
+    margin-top: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .main-items__title_mobile {
+    font-family: "DunbarTall";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .main-items__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-items__wrap .left {
+    padding-right: 24px;
+  }
+
+  .left__container,
+  .right__container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .right__container a {
+    display: none;
+  }
+
+  .main-items_mobile .left__wrap,
+  .main-items_mobile .right__wrap {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .left__wrap_img,
+  .right__wrap_img {
+    display: none;
+  }
+
+  .main-items_mobile .line {
+    display: block;
+    width: 74px;
+    height: 1px;
+    background: #5a40de;
+    background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .left__wrap p,
+  .right__wrap p {
+    max-width: 220px;
+    height: 180px;
+    font-family: "DunbarText";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .main-items__wrap .right {
+    padding-left: 24px;
+  }
+
+  /* /main-items */
 
   /* AEthing */
 
@@ -2162,6 +2262,80 @@ footer a span:last-child {
   }
 
   /* /AEthing */
+
+  /* get */
+
+  .get {
+    display: block;
+    background: #f5f5f5;
+    border-radius: 24px;
+    padding: 100px 60px 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .get .get__right {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .get__right-items-wrapper {
+    column-gap: inherit;
+  }
+
+  .get .get__title {
+    width: auto;
+    max-width: 460px;
+    font-family: "DunbarTall";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 80px;
+  }
+
+  .get .get__right-items-wrapper .get__right-item {
+    width: 100%;
+    height: auto;
+    max-width: 260px;
+  }
+
+  .get .get__right-items-wrapper .get__right-item img {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .get .get__right-items-wrapper .get__right-item p {
+    position: relative;
+    font-family: "DunbarLow";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 70px;
+  }
+
+  .get__right-items-wrapper .get__right-item p::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 103px;
+    display: block;
+    width: 74px;
+    height: 1px;
+    background: #5a40de;
+    background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
+  }
+
+  .get__right .btn {
+    display: none;
+  }
+  /* /get */
 
   /* fillForm */
 
