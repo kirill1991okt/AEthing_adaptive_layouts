@@ -1288,6 +1288,10 @@ nav .list__item a.list__link_active:focus::after {
   margin-left: 305px;
 }
 
+.section-form__container.mobile {
+  display: none;
+}
+
 .section-form__title {
   color: #ffffff;
   font-size: 48px;
@@ -2504,6 +2508,128 @@ footer a span:last-child {
     display: none;
   }
 
+  .blockchain .group__bg.active {
+    display: block;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+  }
+
+  .blockchain .group.active {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 12px 32px;
+    padding: 37px 60px;
+    background: #F5F5F5;
+    border-radius: 24px;
+  }
+
+  .blockchain .group .close {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 22px;
+    right: 27px;
+    background: #fff;
+  }
+
+  .blockchain .group__middle::before,
+  .blockchain .group__middle::after,
+  .group__middle .group__middle_romb:before {
+    display: none;
+  }
+
+  .blockchain .group__left {
+    margin: 0 0 0;
+    width: 100%;
+  }
+
+  .blockchain .group__left p:nth-child(1) {
+    font-family: 'DunbarTall';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000;
+    margin-bottom: 35px;
+    opacity: 1;
+  }
+
+  .blockchain .group__left p:nth-child(2) {
+    font-family: 'DunbarText';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000;
+    margin-bottom: 50px;
+    opacity: 1;
+  }
+
+  .blockchain .group__middle {
+    margin: 0;
+    width: 100%;
+  }
+
+  .group__middle .group__middle_romb {
+    font-family: 'DunbarLow';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000;
+    width: 50%;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: auto;
+    margin-bottom: 60px;
+  }
+
+  .blockchain .group__middle_romb:before {
+    content: '';
+    display: block;
+    width: 74px;
+    height: 1px;
+    background: #5a40de;
+    background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    position: static;
+  }
+
+  .blockchain .group__right {
+    margin: 0 0 0;
+    width: 100%;
+  }
+
+  .blockchain .group__right p {
+    opacity: 1;
+    font-family: 'DunbarLow';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+
   .diamont {
     background: #000000;
     border-radius: 24px;
@@ -2815,6 +2941,45 @@ footer a span:last-child {
     text-align: center;
   }
 
+  footer .office h3 {
+    display: block;
+    font-family: 'DunbarLow';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFC120;
+  }
+
+  footer .office address {
+    font-family: 'DunbarLow';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  footer .office a {
+    font-family: 'DunbarLow';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  footer .office a span {
+    font-family: 'DunbarLow';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+  }
 
 }
 
