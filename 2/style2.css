@@ -2079,9 +2079,125 @@ footer a span:last-child {
     display: block;
   }
 
-  /* временно */
-  .header, .main {
+  header {
+    border-radius: 24px 24px 0 0;
+    padding-top: 27px;
+    padding-right: 27px;
+    padding-left: 27px;
+    margin-bottom: -1px;
+  }
+
+  .logo img:not(.mobile) {
     display: none;
+  }
+
+  nav, .language {
+    display: none;
+  }
+
+
+
+
+  .main {
+    border-radius: 0 0 24px 24px;
+    padding: 27px 27px 155px;
+    position: relative;
+  }
+
+  .main:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(./img/girl_1_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 420px;
+    height: 420px;
+    border-radius: 100%;
+    background-size: cover;
+    filter: brightness(70%);
+  }
+
+  .main__img, .main__white_square, .main__purple_square {
+    display: none;
+  }
+
+  .main-title {
+    width: 100%;
+    margin: 50px 0 0;
+  }
+
+  .main .text1,
+  .main .text2,
+  .main-title__link1 {
+    display: none;
+  }
+
+  .main-title__header {
+    font-family: 'DunbarText';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 37px;
+  }
+
+  .main-title__first {
+    font-family: 'DunbarTall';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFC120;
+    background: none;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+    margin-bottom: 30px;
+  }
+
+  .main-title__subtitle {
+    font-family: 'DunbarLow';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    width: 50%;
+    margin-bottom: 180px;
+  }
+
+  .main-title__link:not(.mobile) {
+    display: none;
+  }
+
+  .main-title__link.mobile {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+    width: 70%;
+    margin-bottom: 67px;
+  }
+
+  .main__btn {
+    font-family: 'DunbarText';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 11px 24px;
+    background: #FFC120;
+    border-radius: 16px;
+    color: #000;
+    display: inline-block;
+    height: auto;
+    margin-bottom: 0;
   }
 
   .participate {
