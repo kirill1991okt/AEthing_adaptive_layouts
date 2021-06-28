@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -26,6 +34,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style3.css" />
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
     <title>AEthing</title>
   </head>
   <body>
@@ -198,8 +207,17 @@
 
       <section class="conditions">
         <div class="title_wrap">
-          <h1 class="title">Condiciones de participación en el Sorteo</h1>
-          <p class="subtitle">
+          <h1 class="title">
+            <span>Condiciones</span> de participación en el Sorteo
+          </h1>
+
+          <div class="square mobile">
+            <h1 class="square__title">
+              <span>Condiciones</span> de participación en el Sorteo
+            </h1>
+          </div>
+
+          <p class="square__subtitle">
             Todas las condiciones permanecerán sin cambios hasta que se realice
             el sorteo. El único cambio que podemos hacer es aumentar el número
             de premios, que dependerá del número de participantes del sorteo
@@ -263,6 +281,21 @@
 
       <section class="fillForm">
         <div class="wrapper">
+          <!-- mob -->
+          <div class="section-form__container mobile">
+            <h1 class="section-form__title">
+              ¡Únete a nuestro sorteo de premios!
+            </h1>
+            <p class="section-form__subtitle">
+              ¿Quieres conseguir un nuevo iphone 12 PRO, una bicicleta eléctrica
+              urbana o un seguro médico?
+            </p>
+            <a href="javascript:void(0)" class="section-form__link"
+              >Simplemente complete el formulario de participante</a
+            >
+          </div>
+          <!-- mob -->
+
           <div class="fillForm__container">
             <h1 class="fillForm_title">¡Complete el formulario y únase!</h1>
             <p class="fillForm__subtitle">
