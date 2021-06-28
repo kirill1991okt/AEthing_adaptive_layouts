@@ -2558,5 +2558,278 @@ footer a span:last-child {
 /* /footer */
 
 /* MOBILE */
+
 @media (max-width: 460px) {
+  body {
+    padding: 21px 10px;
+    background: none;
+  }
+
+  .use-mob {
+    width: 100%;
+    padding: 70px 34px 130px 34px;
+    border-radius: 24px;
+  }
+
+  .use-mob__useful .use-mob__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .use-mob__useful .use-mob__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .use-mob__useful .use-mob__text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .use-mob__mobApp {
+    margin-top: 95px;
+    margin-bottom: 90px;
+    padding-left: 40px;
+  }
+
+  .use-mob__mobApp::before {
+    width: 219px;
+    height: 219px;
+  }
+
+  .use-mob__mobApp::after {
+    left: -45px;
+    top: -100px;
+    width: 131px;
+    height: 228px;
+    background-size: cover;
+  }
+
+  .use-mob__mobApp .use-mob__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .use-mob__mobApp .use-mob__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+
+  .use-mob__mobApp .use-mob__text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .use-mob .subscribers {
+    width: 100%;
+    padding: 0;
+  }
+
+  .use-mob .subscribers::after {
+    width: 280px;
+    height: 280px;
+    top: -20px;
+    right: -10px;
+  }
+
+  .use-mob .subscribers p {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: right;
+  }
+
+  .use-mob .subscribers a {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0;
+    margin-top: 40px;
+  }
+
+  .use-mob .subscribers a::before {
+    right: 0;
+  }
+
+  /* /use-mob */
+
+  /* main-items */
+
+  .main-items_mobile {
+  }
+
+  /* /main-items */
+
+  /* AEthing */
+
+  .AEthing {
+    width: 100%;
+    padding: 100px 35px 20px 35px;
+    border-radius: 24px;
+    overflow: inherit;
+  }
+
+  .AEthing__users::after {
+    top: -30px;
+    right: -50px;
+    width: 191px;
+    height: 305px;
+    background-size: cover;
+  }
+
+  .AEthing__users .AEthing__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .AEthing__users .AEthing__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .AEthing__users .AEthing__text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .AEthing__business {
+    padding-right: 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .AEthing__business::before {
+    width: 219px;
+    height: 219px;
+    top: -10px;
+  }
+
+  .AEthing__business::after {
+    bottom: -50px;
+    left: -50px;
+    width: 123px;
+    height: 270px;
+    background-size: cover;
+  }
+
+  .AEthing__business .AEthing__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+
+  .AEthing__business .AEthing__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 45px;
+  }
+
+  .AEthing__business .AEthing__text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .AEthing__wrapper .get__link_text-mobile {
+    display: block;
+    font-size: 32px;
+    line-height: 40px;
+    padding-left: 20px;
+    margin-bottom: 90px;
+  }
+
+  .AEthing__wrapper .get__link_text-mobile a {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 30px;
+    padding-left: 0;
+  }
+
+  .AEthing__wrapper .get__link_text-mobile a::before {
+    top: -15px;
+    left: 0px;
+  }
+
+  .AEthing__wrapper .get__link_text-mobile::after {
+    width: 280px;
+    height: 280px;
+    top: -40px;
+    right: 40px;
+  }
+
+  /* /AEthing */
+
+  /* section-form */
+
+  .fillForm {
+    padding: 75px 90px 120px;
+  }
+
+  .section-form__title {
+    font-size: 32px;
+    line-height: 40px;
+    width: 85%;
+    margin-bottom: 40px;
+  }
+
+  .section-form__subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 50px;
+  }
+
+  .section-form__link {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .fillForm::after {
+    right: 100px;
+    bottom: 60px;
+  }
+
+  /* /section-form */
+
+  /* footer */
+  footer {
+    padding: 45px 0px 150px;
+  }
+
+  footer .campany span {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  footer p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  footer .office {
+    width: 100%;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  footer .office h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  footer address {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  footer a {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  footer a span:last-child {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  /* /footer */
 }
