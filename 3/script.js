@@ -122,7 +122,7 @@ $(document).ready(function () {
         }
 
         const messageEn = `
-           <p>
+           <p class="not-mob">
                   <span>Your message has</br> been sent</br> successfully!</span></br></br>
                     In the near future you will</br> receive a confirmation to</br> the specified e-mail.</br></br></br>
                     Thank You!  
@@ -134,7 +134,7 @@ $(document).ready(function () {
             </div>
         `;
         const messageSp = `
-              <p>
+              <p class="not-mob">
                   <span>¡Tu mensaje ha</br>sido enviado</br> exitosamente!</span></br></br>
                     En un futuro próximo,</br> receive a confirmation</br>en el correo electrónico</br>especificado.
                   </p> 
