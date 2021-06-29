@@ -861,9 +861,14 @@
     <div class="modal" tabindex="-1" role="dialog" id="formModal">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
+          <div class="close mobile"
+               data-dismiss="modal"
+               aria-label="Close">
+            <img src="./img/close.svg" alt="close" />
+          </div>
           <button
             type="button"
-            class="close"
+            class="close not-mob"
             data-dismiss="modal"
             aria-label="Close"
           >
@@ -907,7 +912,7 @@
                   <p>I want to participate in the prize draw</p>
                 </div>
 
-                <div class="prize">
+                <div class="prize inform">
                   <select name="prize" class="prize-select">
                     <option selected disabled>Please, chooze the prize</option>
                     <option value="iPhone 12 Pro">iPhone 12 Pro</option>
