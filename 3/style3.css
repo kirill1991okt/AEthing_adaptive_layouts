@@ -2598,6 +2598,10 @@ footer a span:last-child {
 
   /* /header */
 
+  .mobile.menu {
+    width: 100%;
+  }
+
   /* main */
 
   .main {
