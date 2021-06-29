@@ -3678,6 +3678,11 @@ footer a span:last-child {
 
   /* section-form */
 
+  .section-form {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
   .fillForm {
     padding: 75px 90px 120px;
   }
@@ -3714,6 +3719,8 @@ footer a span:last-child {
   /* footer */
   footer {
     padding: 45px 0px 150px;
+    margin-left: -10px;
+    margin-right: -10px;
   }
 
   footer .campany span {
