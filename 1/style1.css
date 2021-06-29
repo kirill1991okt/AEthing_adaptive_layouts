@@ -2867,6 +2867,16 @@ footer a span:last-child {
     background: #F5F5F5;
   }
 
+  .modal-blockform h2 {
+    font-family: 'DunbarTall';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
   .modal-blockform h3 {
     font-family: 'DunbarText';
     font-style: normal;
@@ -2874,6 +2884,7 @@ footer a span:last-child {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 60px;
+    text-align: center;
   }
 
   .modal-blockform select[name="country"],
@@ -2928,6 +2939,10 @@ footer a span:last-child {
     display: none;
   }
 
+  input.notify[type="submit"] {
+    margin-top: 65px;
+  }
+
   input[type="submit"] {
     font-family: "DunbarText";
     font-style: normal;
@@ -2942,6 +2957,41 @@ footer a span:last-child {
     width: 70%;
     height: auto;
     margin: 0 auto;
+  }
+
+  .blockform-send .mobile {
+    padding-top: 50px;
+  }
+
+  .blockform-send .mobile .title {
+    font-family: 'DunbarTall';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #000;
+    margin: 0 auto 36px;
+    width: 70%;
+  }
+
+  .blockform-send .mobile .smile {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  .blockform-send .mobile .subtitle {
+    font-family: 'DunbarTall';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
