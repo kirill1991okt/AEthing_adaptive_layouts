@@ -66,6 +66,13 @@ $(document).ready(function () {
         }
     });
 
+    $('.mobile.burger').on('click', function() {
+        $('.mobile.menu').addClass('active');
+    });
+    $('.mobile.menu .close').on('click', function() {
+        $('.mobile.menu').removeClass('active');
+    });
+
 
 
     $("form").submit(function (event) {

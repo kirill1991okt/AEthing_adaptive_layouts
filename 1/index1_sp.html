@@ -1,320 +1,467 @@
 <!DOCTYPE html>
 <html lang="sp">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./style1.css" />
-    <title>AEthing</title>
-  </head>
-  <body>
-    <header>
-      <div class="wrapper">
-        <div class="logo">
-          <img src="./img/aething-stroke.svg" alt="aething-stroke" />
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style1.css" />
+  <link rel="stylesheet" href="./fonts/stylesheet.css" />
+  <title>AEthing</title>
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="./img/aething-stroke.svg" alt="aething-stroke" />
+        <img class="mobile" src="./img/logomob.svg" alt="aething-stroke" />
+      </div>
+
+      <div class="mobile burger">
+        <img src="./img/burger.svg" alt="menu" />
+      </div>
+      <div class="mobile menu">
+        <div class="close"><img src="./img/close.svg" alt="close" /></div>
+        <img
+                class="mobile logo"
+                src="./img/logomob2.svg"
+                alt="aething-stroke"
+        />
         <nav>
           <ul class="list">
             <li class="list__item">
-              <a href="../1/index1_sp.html" class="list__link list__link_active"
-                >Acerca de AEthing
+              <a href="../1/index1.html" class="list__link">Acerca de AEthing </a>
+            </li>
+            <li class="list__item">
+              <a href="../2/index2.html" class="list__link list__link_active"
+              >Sorteo
               </a>
             </li>
             <li class="list__item">
-              <a href="../2/index2_sp.html" class="list__link">Sorteo </a>
-            </li>
-            <li class="list__item">
-              <a href="../3/index3_sp.html" class="list__link"
-                >Cómo funciona
-              </a>
+              <a href="../3/index3.html" class="list__link">Cómo funciona</a>
             </li>
           </ul>
         </nav>
         <div class="language">
-          <span>Idioma ></span>
-          <div class="popup">
-            <div><a href="./index1.html">English</a></div>
-            <div><a href="./index1_sp.html">Spanish</a></div>
-          </div>
+          <span>Idioma:</span>
+          <div><a href="./index2.html">English</a></div>
+          <div><a href="./index2_sp.html" class="active">Spanish</a></div>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="main">
-        <div class="wrapper">
-          <div class="main__img">
-            <!-- <img src="./img/girl_1_bg.jpg" alt="main" /> -->
-          </div>
-          <div class="main__white_square"></div>
-          <div class="main__purple_square"></div>
-          <div class="main-title">
-            <p class="main-title__header">Anunciado La Aplicación Móvil</p>
-            <h1
-              class="animate__animated main-title__first"
-              data-animation="animated animate__fadeInLeft"
-            >
-              ANYTHING &
-            </h1>
-            <h1
-              class="animate__animated main-title__second"
-              data-animation="animated animate__fadeInRight"
-            >
-              Everything
-            </h1>
-            <p
-              class="animate__animated main-title__subtitle"
-              data-animation="animated animate__zoomIn"
-            >
-              ¡Una nueva era de publicidad útil! <br />
-              ¡Lanzamiento de la aplicación antes de fin de año!
-            </p>
-
-            <p class="main-title__link_text">
-              ¡Todos los suscriptores pueden <br />
-              participar en el sorteo!<a
-                href="../2/index2_sp.html"
-                class="main-title__link"
-              >
-                Leer mas >
-              </a>
-            </p>
-
-            <a class="main__btn" data-toggle="modal" data-target="#formModal"
-              >¡Notificarme!</a
-            >
-            <p class="main-title__footer">
-              ¡Miles de personas en todo el mundo están <br />
-              esperando nuestra aplicación!
-            </p>
-          </div>
+      <nav>
+        <ul class="list">
+          <li class="list__item">
+            <a href="../1/index1_sp.html" class="list__link list__link_active">Acerca de AEthing
+            </a>
+          </li>
+          <li class="list__item">
+            <a href="../2/index2_sp.html" class="list__link">Sorteo </a>
+          </li>
+          <li class="list__item">
+            <a href="../3/index3_sp.html" class="list__link">Cómo funciona
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="language">
+        <span>Idioma ></span>
+        <div class="popup">
+          <div><a href="./index1.html">English</a></div>
+          <div><a href="./index1_sp.html">Spanish</a></div>
         </div>
-      </section>
-
-      <section class="use-mob">
-        <div class="wrapper">
-          <div class="use-mob__img">
-            <img src="./img/women.png" alt="women" />
-          </div>
-          <div class="use-mob__wrapper">
-            <div class="use-mob__useful">
-              <div class="top__square"></div>
-              <div class="bot__square"></div>
-              <h2
-                class="animate__animated use-mob__title"
-                data-animation="animated animate__fadeInLeft"
-              >
-                ¿Publicidad útil?
-              </h2>
-              <p class="use-mob__subtitle">¿Me estáis tomando el pelo?</p>
-              <p class="use-mob__text">
-                Æthing hace que la publicidad sea eficaz para los negocios y
-                beneficiosa para los clientes, ¡Tal como debe ser! <br />
-                <br />
-                ¿Cómo puede hacer que sus anuncios sean útiles? <br />
-                ¡Solo cambia lo que no te gustó! <br />
-                No intente superar a los anuncios. <br />
-                ¡Domesticalo!
-              </p>
-            </div>
-
-            <div class="use-mob__mobApp">
-              <div class="top__square"></div>
-              <div class="bot__square"></div>
-              <h2
-                class="animate__animated use-mob__title"
-                data-animation="animated animate__fadeInRight"
-              >
-                Aplicación Móvil Anything & Everything
-              </h2>
-              <p class="use-mob__subtitle">
-                Principios de publicidad útil <br />
-                ¡Nuestro principio básico es la libertad de elección!
-              </p>
-              <p class="use-mob__text">
-                Nuestro principio fundamental es la libertad. La publicidad
-                puede ser útil solo cuando eres libre en tu elección. Realizamos
-                un gran análisis de la investigación científica moderna sobre
-                publicidad.<br />
-                <br />
-                En nuestra aplicación, los anunciantes no pagan por el acceso a
-                los usuarios, sino que pagan directamente a los usuarios por la
-                atención que prestan a sus anuncios.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="subscribers">
-          <p>
-            ¡Todos los suscriptores pueden participar en el sorteo!
-            <a href="../2/index2_sp.html">Leer mas></a>
-          </p>
-          <div class="top__square"></div>
-          <div class="bot__square"></div>
-        </div>
-      </section>
-
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="main">
       <div class="wrapper">
-        <div class="main-items active0">
-          <div class="main-items__item">
-            <img src="./img/money.svg" alt="money" />
-            <p>
-              ¡No limitamos al anunciante la cantidad de compensación que paga
-              al usuario! ¡Le damos a las empresas la libertad de elegir el
-              precio de su anuncio!
-            </p>
-          </div>
-          <div class="main-items__item">
-            <img src="./img/sandclock.svg" alt="sand-clock" />
-            <p>
-              Si estás listo para dedicar tu <br />
-              tiempo libre a ver anuncios, ¡obtienes un pago justo por tu <br />
-              tiempo!
-            </p>
-          </div>
-          <div class="main-items__item">
-            <img src="./img/egg.svg" alt="egg" />
-            <p>
-              Hemos repensado cada elemento <br />
-              que impide que la publicidad sea útil para el usuario y eficaz
-              para el <br />
-              negocio.
-            </p>
-          </div>
+        <div class="main__img">
+          <!-- <img src="./img/girl_1_bg.jpg" alt="main" /> -->
+        </div>
+        <div class="main__white_square"></div>
+        <div class="main__purple_square"></div>
+        <div class="main-title">
+          <p class="main-title__header">Anunciado La Aplicación Móvil</p>
+          <h1 class="animate__animated main-title__first" data-animation="animated animate__fadeInLeft">
+            ANYTHING &
+          </h1>
+          <h1 class="animate__animated main-title__second" data-animation="animated animate__fadeInRight">
+            Everything
+          </h1>
+          <p class="animate__animated main-title__subtitle not-mob" data-animation="animated animate__zoomIn">
+            ¡Una nueva era de publicidad útil! <br />
+            ¡Lanzamiento de la aplicación antes de fin de año!
+          </p>
+
+          <p class="main-title__link_text not-mob">
+            ¡Todos los suscriptores pueden <br />
+            participar en el sorteo!<a href="../2/index2_sp.html" class="main-title__link">
+              Leer mas >
+            </a>
+          </p>
+
+          <p class="animate__animated main-title__subtitle mobile">
+            ¡Una nueva era de publicidad útil!
+          </p>
+          <p class="main-title__footer mobile">
+            ¡Lanzamiento de la aplicación antes de fin de año! ¡Miles de personas en todo el mundo están esperando nuestra aplicación!
+          </p>
+
+          <a class="main__btn" data-toggle="modal" data-target="#formModal">¡Notificarme!</a>
+          <p class="main-title__footer not-mob">
+            ¡Miles de personas en todo el mundo están <br />
+            esperando nuestra aplicación!
+          </p>
         </div>
       </div>
+    </section>
 
-      <section class="AEthing">
-        <div class="wrapper">
-          <div class="AEthing__img_left">
-            <img src="./img/man1.png" alt="" />
-          </div>
-
-          <div class="AEthing__img_right">
-            <img src="./img/man2.png" alt="" />
-          </div>
-          <div class="AEthing__wrapper">
-            <div class="AEthing__users">
-              <div class="top__square"></div>
-              <div class="bot__square"></div>
-              <h2
-                class="animate__animated AEthing__title"
-                data-animation="animated animate__fadeInLeft"
-              >
-                AEthing para el Usuario:
-              </h2>
-              <p class="AEthing__subtitle">
-                ¡Deja que los negocios te informen directamente sobre todo lo
-                nuevo y útil que se crea para ti!
-              </p>
-              <p class="AEthing__text">
-                Deja que los negocios se ocupen de ti y paguen por tu atención a
-                los productos y servicios. Los anunciantes de AEthing están
-                tratando de hacer que este mundo sea mejor y más conveniente
-                para ti. ¡Así que extendamos nuestra mano! ¡AEthing: publicidad
-                digital para el mundo real!
-              </p>
-              <p class="get__link_text"
-                >¡Todos los suscriptores pueden participar en el sorteo! <a href="../2/index2_sp.html" class="get__link">Leer
-                  mas ></a>
-                
-                <div class="top__square"></div>
-                <div class="bot__square"></div>
-              </p>
-            </div>
-
-            <div class="AEthing__business">
-              <div class="top__square"></div>
-              <div class="bot__square"></div>
-              <h2
-                class="animate__animated AEthing__title"
-                data-animation="animated animate__fadeInRight"
-              >
-                AEthing para el Negocio:
-              </h2>
-              <p class="AEthing__subtitle">
-                ¿Sigues pagando a los que muestran tu anuncio a tus clientes?
-                Pero esto no aumentará los ingresos de tus clientes, ¿Verdad?
-              </p>
-              <p class="AEthing__text">
-                En el mundo moderno, es una práctica común cuidar a tu cliente,
-                ¡hagámoslo juntos! ¡Paga directamente al cliente que verá tu
-                anuncio! ¡Tu publicidad se convertirá en una fuente adicional de
-                ingresos para tu cliente, que con gusto te devolverá con sus
-                nuevas compras!
-              </p>
-            </div>
-          </div>
+    <section class="use-mob">
+      <div class="wrapper">
+        <div class="use-mob__img">
+          <img src="./img/women.png" alt="women" />
         </div>
-      </section>
-
-      <section class="get">
-        <div class="top__square"></div>
-        <div class="bot__square"></div>
-        <div class="wrapper">
-          <div class="get__right">
+        <div class="use-mob__wrapper">
+          <div class="use-mob__useful">
             <div class="top__square"></div>
             <div class="bot__square"></div>
-            <h2 class="get__title">¡Recibe sólo lo que quieres!</h2>
-            <div class="get__right-items">
-              <div class="top__square"></div>
-              <div class="bot__square"></div>
-              <div class="get__right-items-wrapper">
-                <div
-                  class="get__right-item"
-                  data-animation="animated animate__zoomIn"
-                >
-                  <img src="./img/finger.svg" alt="finger" />
-                  <p>
-                    Bloquea contenido que no sea interesante o apropiado para
-                    ti.
-                  </p>
-                </div>
-                <div
-                  class="get__right-item"
-                  data-animation="animated animate__zoomIn"
-                >
-                  <img src="./img/money1.svg" alt="money" />
-                  <p>
-                    ¡Gana dinero extra por tu atención que puedes gastar en
-                    cualquier cosa que desees!
-                  </p>
-                </div>
-                <div
-                  class="get__right-item"
-                  data-animation="animated animate__zoomIn"
-                >
-                  <img src="./img/sofa.svg" alt="sofa" />
-                  <p>¡Ve la publicidad solo cuando quieras!</p>
-                </div>
-                <div
-                  class="get__right-item"
-                  data-animation="animated animate__zoomIn"
-                >
-                  <img src="./img/key.svg" alt="key" />
-                  <p>¡Y una cosa clave más! Pronto lo sabrás...</p>
-                </div>
-              </div>
-              <a class="btn" data-toggle="modal" data-target="#formModal"
-                >¡Notificarme!</a
-              >
-            </div>
+            <div class="line"></div>
+            <h2 class="animate__animated use-mob__title" data-animation="animated animate__fadeInLeft">
+              ¿Publicidad útil?
+            </h2>
+            <p class="use-mob__subtitle">¿Me estáis tomando el pelo?</p>
+            <p class="use-mob__text">
+              Æthing hace que la publicidad sea eficaz para los negocios y
+              beneficiosa para los clientes, ¡Tal como debe ser! <br />
+              <br />
+              ¿Cómo puede hacer que sus anuncios sean útiles? <br />
+              ¡Solo cambia lo que no te gustó! <br />
+              No intente superar a los anuncios. <br />
+              ¡Domesticalo!
+            </p>
+          </div>
+
+          <div class="use-mob__mobApp">
+            <div class="top__square"></div>
+            <div class="bot__square"></div>
+            <h2 class="animate__animated use-mob__title" data-animation="animated animate__fadeInRight">
+              Aplicación Móvil Anything & Everything
+            </h2>
+            <p class="use-mob__subtitle">
+              Principios de publicidad útil <br />
+              ¡Nuestro principio básico es la libertad de elección!
+            </p>
+            <p class="use-mob__text">
+              Nuestro principio fundamental es la libertad. La publicidad
+              puede ser útil solo cuando eres libre en tu elección. Realizamos
+              un gran análisis de la investigación científica moderna sobre
+              publicidad.<br />
+              <br />
+              En nuestra aplicación, los anunciantes no pagan por el acceso a
+              los usuarios, sino que pagan directamente a los usuarios por la
+              atención que prestan a sus anuncios.
+            </p>
           </div>
         </div>
-        <!-- <div class="get__left">
+      </div>
+      <div class="subscribers">
+        <p>
+          ¡Todos los suscriptores pueden participar en el sorteo!
+          <a href="../2/index2_sp.html">Leer mas></a>
+        </p>
+        
+        <div class="top__square"></div>
+        <div class="bot__square"></div>
+      </div>
+    </section>
+
+    <div class="wrapper">
+      <div class="main-items active0">
+        <div class="main-items__item">
+          <img src="./img/money.svg" alt="money" />
+          <p>
+            ¡No limitamos al anunciante la cantidad de compensación que paga
+            al usuario! ¡Le damos a las empresas la libertad de elegir el
+            precio de su anuncio!
+          </p>
+        </div>
+        <div class="main-items__item">
+          <img src="./img/sandclock.svg" alt="sand-clock" />
+          <p>
+            Si estás listo para dedicar tu <br />
+            tiempo libre a ver anuncios, ¡obtienes un pago justo por tu <br />
+            tiempo!
+          </p>
+        </div>
+        <div class="main-items__item">
+          <img src="./img/egg.svg" alt="egg" />
+          <p>
+            Hemos repensado cada elemento <br />
+            que impide que la publicidad sea útil para el usuario y eficaz
+            para el <br />
+            negocio.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+ <!-- main-items -->
+
+ <section class="main-items_mobile">
+  <h2 class="main-items__title_mobile">¡Te va a encantar!</h2>
+
+   <div
+           id="carouselExampleControls"
+           class="carousel slide"
+           data-ride="carousel"
+   >
+     <ol class="carousel-indicators">
+       <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+       <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+       <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+     </ol>
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+         <img class="left__wrap_img" src="./img/ic1.svg" alt="diamont">
+         <div class="line mobile"></div>
+         <p>
+           ¡No limitamos al anunciante la cantidad de compensación que paga al usuario! ¡Le damos a las empresas la libertad de elegir el precio de su anuncio!
+         </p>
+       </div>
+       <div class="carousel-item">
+         <img class="left__wrap_img" src="./img/ic2.svg" alt="diamont">
+         <div class="line mobile"></div>
+         <p>
+           Si estás listo para dedicar tu tiempo libre a ver anuncios, ¡obtienes un pago justo por tu tiempo!
+         </p>
+       </div>
+       <div class="carousel-item">
+         <img class="right__wrap_img" src="./img/ic3.svg" alt="diamont">
+         <div class="line mobile"></div>
+         <p>
+           Hemos repensado cada elemento que impide que la publicidad sea útil para el usuario y eficaz para el negocio.
+         </p>
+       </div>
+     </div>
+   </div>
+
+  <div class="main-items__wrap">
+    <div class="left">
+      <div class="left__container">
+        <div class="left__wrap">
+          <img class="left__wrap_img" src="./img/diamont.svg" alt="diamont">
+          <div class="line mobile"></div>
+          <p>
+            ¡No limitamos al anunciante la cantidad de compensación que paga al usuario! 
+          </p>
+        </div>
+        <div class="left__wrap">
+          <img class="left__wrap_img" src="./img/diamont.svg" alt="diamont">
+          <div class="line mobile"></div>
+          <p>
+            Si estás listo para dedicar tu tiempo libre a ver anuncios, ¡obtienes un pago justo por tu tiempo!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="right__container">
+        <div class="right__wrap">
+          <img class="right__wrap_img" src="./img/diamont.svg" alt="diamont">
+          <div class="line mobile"></div>
+          <p>
+            ¡Le damos a las empresas la libertad de elegir el precio de su anuncio!
+          </p>
+        </div>
+        <div class="right__wrap">
+          <img class="right__wrap_img" src="./img/diamont.svg" alt="diamont">
+          <div class="line mobile"></div>
+          <p>
+            Hemos repensado cada elemento que impide que la publicidad sea útil para el usuario y eficaz para el negocio.
+          </p>
+        </div>
+  
+        <a class="right__link" href="../3/index3.html">Find out how it works &gt;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- /main-items -->
+
+
+
+    <section class="AEthing">
+      <div class="wrapper">
+        <div class="AEthing__img_left">
+          <img src="./img/man1.png" alt="" />
+        </div>
+
+        <div class="AEthing__img_right">
+          <img src="./img/man2.png" alt="" />
+        </div>
+        <div class="AEthing__wrapper">
+          <div class="AEthing__users">
+            <div class="top__square"></div>
+            <div class="bot__square"></div>
+            <div class="line"></div>
+            <h2 class="animate__animated AEthing__title" data-animation="animated animate__fadeInLeft">
+              AEthing para el Usuario:
+            </h2>
+            <p class="AEthing__subtitle">
+              ¡Deja que los negocios te informen directamente sobre todo lo
+              nuevo y útil que se crea para ti!
+            </p>
+            <p class="AEthing__text">
+              Deja que los negocios se ocupen de ti y paguen por tu atención a
+              los productos y servicios. Los anunciantes de AEthing están
+              tratando de hacer que este mundo sea mejor y más conveniente
+              para ti. ¡Así que extendamos nuestra mano! ¡AEthing: publicidad
+              digital para el mundo real!
+            </p>
+            <p class="get__link_text">¡Todos los suscriptores pueden participar en el sorteo! <a
+                href="../2/index2_sp.html" class="get__link">Leer
+                mas ></a>
+
+            <div class="top__square"></div>
+            <div class="bot__square"></div>
+            </p>
+          </div>
+
+          <div class="AEthing__business">
+            <div class="top__square"></div>
+            <div class="bot__square"></div>
+            <h2 class="animate__animated AEthing__title" data-animation="animated animate__fadeInRight">
+              AEthing para el Negocio:
+            </h2>
+            <p class="AEthing__subtitle">
+              ¿Sigues pagando a los que muestran tu anuncio a tus clientes?
+              Pero esto no aumentará los ingresos de tus clientes, ¿Verdad?
+            </p>
+            <p class="AEthing__text">
+              En el mundo moderno, es una práctica común cuidar a tu cliente,
+              ¡hagámoslo juntos! ¡Paga directamente al cliente que verá tu
+              anuncio! ¡Tu publicidad se convertirá en una fuente adicional de
+              ingresos para tu cliente, que con gusto te devolverá con sus
+              nuevas compras!
+            </p>
+          </div>
+
+
+          <div class="get__link_text-mobile">¡Todos los suscriptores pueden participar en el sorteo! <a
+              href="../2/index2_sp.html" class="get__link">Leer
+              mas ></a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="get">
+      <div class="top__square"></div>
+      <div class="bot__square"></div>
+      <div class="wrapper">
+        <div class="get__right">
+          <div class="top__square"></div>
+          <div class="bot__square"></div>
+          <h2 class="get__title">¡Recibe sólo lo que quieres!</h2>
+
+          <div
+                  id="carouselExampleControls2"
+                  class="carousel slide mobile"
+                  data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleControls2" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleControls2" data-slide-to="1"></li>
+              <li data-target="#carouselExampleControls2" data-slide-to="2"></li>
+              <li data-target="#carouselExampleControls2" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="left__wrap_img" src="./img/finger_new.svg" alt="diamont">
+                <div class="line mobile"></div>
+                <p>
+                  Bloquea contenido que no sea interesante o apropiado para
+                  ti.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <img class="left__wrap_img" src="./img/money_new.svg" alt="diamont">
+                <div class="line mobile"></div>
+                <p>
+                  ¡Gana dinero extra por tu atención que puedes gastar en
+                  cualquier cosa que desees!
+                </p>
+              </div>
+              <div class="carousel-item">
+                <img class="right__wrap_img" src="./img/sofa_new.svg" alt="diamont">
+                <div class="line mobile"></div>
+                <p>
+                  ¡Ve la publicidad solo cuando quieras!
+                </p>
+              </div>
+              <div class="carousel-item">
+                <img class="right__wrap_img" src="./img/key_new.svg" alt="diamont">
+                <div class="line mobile"></div>
+                <p>
+                  ¡Y una cosa clave más! Pronto lo sabrás...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="get__right-items">
+            <div class="top__square"></div>
+            <div class="bot__square"></div>
+            <div class="get__right-items-wrapper">
+              <div class="get__right-item" data-animation="animated animate__zoomIn">
+                <img src="./img/finger_new.svg" alt="finger" />
+                <p>
+                  Bloquea contenido que no sea interesante o apropiado para
+                  ti.
+                </p>
+              </div>
+              <div class="get__right-item" data-animation="animated animate__zoomIn">
+                <img src="./img/money_new.svg" alt="money" />
+                <p>
+                  ¡Gana dinero extra por tu atención que puedes gastar en
+                  cualquier cosa que desees!
+                </p>
+              </div>
+              <div class="get__right-item" data-animation="animated animate__zoomIn">
+                <img src="./img/sofa_new.svg" alt="sofa" />
+                <p>¡Ve la publicidad solo cuando quieras!</p>
+              </div>
+              <div class="get__right-item" data-animation="animated animate__zoomIn">
+                <img src="./img/key_new.svg" alt="key" />
+                <p>¡Y una cosa clave más! Pronto lo sabrás...</p>
+              </div>
+            </div>
+            <a class="btn" data-toggle="modal" data-target="#formModal">¡Notificarme!</a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="get__left">
           <div class="get__img">
             <img src="./img/busnesmen.png" alt="men" />
             <div class="get__left-items">
@@ -326,139 +473,204 @@
             </div>
           </div>
         </div> -->
-      </section>
-    </main>
+    </section>
+    <section class="fillForm">
+      <div class="wrapper">
+        <!-- mob -->
+        <div class="section-form__container mobile">
+          <h1 class="section-form__title">¡Únete a nuestro sorteo de premios!</h1>
+          <p class="section-form__subtitle">
+            ¿Quieres conseguir un nuevo iphone 12 PRO, una bicicleta eléctrica urbana o un seguro médico?
+          </p>
+          <a href="javascript:void(0)" class="section-form__link">Simplemente complete el formulario de participante</a>
+        </div>
+        <!-- mob -->
 
-    <footer>
-      <div class="contact">
-        <h3>Contáctenos</h3>
-        <div class="campany"><span>AE</span><span>thing</span></div>
-        <p>
-          TODO lo que necesitas para lograr <br />
-          CUALQUIER COSA que quieras
-        </p>
-      </div>
-      <div class="office">
-        <h3>Nuestras oficinas:</h3>
-        <address>
-          46001, Valencia, España <br />
-          90001, Los Ángeles, California, EE. UU.
-        </address>
-        <a href="mailto:info@aething.com"
-          ><span>Correo electrónico:</span> info@aething.com</a
-        >
-      </div>
-    </footer>
+        <div class="fillForm__container">
+          <h1 class="fillForm_title">Fill out the form and join!</h1>
+          <p class="fillForm__subtitle">Take part in our prize giveaway!</p>
 
-    <div class="modal" tabindex="-1" role="dialog" id="formModal">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-
-          <div class="modal-body">
-            <div class="modal-blockform">
-              <h3>
-                Me gustaría recibir una notificación cuando se lance la
-                aplicación AEtning
-              </h3>
-              <form>
-                <div class="country">
-                  <select name="country" class="country-select" required>>
-                    <option selected disabled>Por favor, elija su país></option>
-                    <option value="USA">EE.UU</option>
-                    <option value="Canada">Canadá</option>
-                    <option value="Australia">Australia</option>
-                    <option value="England">Inglaterra</option>
-                    <option value="Singapore">Singapur</option>
-                    <option value="New Zealand">Nueva Zelanda</option>
-                    <option value="Mexico">México</option>
-                    <option value="Spain">España</option>
-                    <option value="Argentina">Argentina</option>
-                    <option value="Colombia">Colombia</option>
-                    <option value="Hong Kong">Hong Kong</option>
-                  </select>
-                  <div class="country-select-error"></div>
-                </div>
-
-                <input
-                  type="email"
-                  name="email"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                  placeholder="Tu correo electrónico"
-                  required
-                />
-
-                <div class="checkbox_text">
-                  <input class="participate-select" type="checkbox" />
-                  <p>Quiero participar en el sorteo</p>
-                </div>
-
-                <div class="prize" class="prize-select">
-                  <select name="prize">
-                    <option selected disabled>
-                      Por favor, elige el premio
-                    </option>
-                    <option value="iPhone 12 Pro">iPhone 12 Pro</option>
-                    <option value="Urban Electric Bike">
-                      Bicicleta Eléctrica Urbana
-                    </option>
-                    <option value="Health insurance plan">
-                      Plan de seguro médico
-                    </option>
-                  </select>
-                  <div class="prize-select-error"></div>
-                </div>
-                <input
-                  type="text"
-                  class="name-select"
-                  name="name"
-                  maxlength="30"
-                  placeholder="Tu nombre"
-                />
-                <input
-                  type="tel"
-                  name="phone"
-                  minlength="6"
-                  pattern="\+\s?[0-9]{6,15}"
-                  placeholder="Número de teléfono"
-                  class="phone-select"
-                />
-
-                <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" -->
-
-                <input type="submit" value="Únete al sorteo" />
-              </form>
+          <div class="fillForm__prize">
+            <div class="fillForm__prize_item">
+              <div class="fillForm__prize_number">1</div>
+              <p class="fillForm__prize_text">
+                iPhone 12 <br />
+                Pro
+              </p>
             </div>
+            <div class="fillForm__prize_item">
+              <div class="fillForm__prize_number">2</div>
+              <p class="fillForm__prize_text">
+                Urban Electric <br />
+                Bike
+              </p>
+            </div>
+            <div class="fillForm__prize_item">
+              <div class="fillForm__prize_number">3</div>
+              <p class="fillForm__prize_text">
+                Health insurance <br />
+                plan
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- forma -->
+        <div class="animate__animated blockform" data-animation="animated animate__fadeInUp">
+          <h3>I would like to be notified when AEtning App is released</h3>
+          <form>
+            <div class="country">
+              <select name="country" class="country-select" required>
+                <option selected disabled>Please, chooze your country</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+                <option value="England">England</option>
+                <option value="Singapore">Singapore</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Spain">Spain</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Hong Kong">Hong Kong</option>
+              </select>
+              <div class="country-select-error"></div>
+            </div>
+
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Your e-mail"
+              required />
+
+            <div class="checkbox_text">
+              <input class="participate-select" type="checkbox" />
+              <p>I want to participate in the prize draw</p>
+            </div>
+
+            <div class="prize">
+              <select name="prize" class="prize-select">
+                <option selected disabled>Please, chooze the prize</option>
+                <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+                <option value="Urban Electric Bike">
+                  Urban Electric Bike
+                </option>
+                <option value="Health insurance plan">
+                  Health insurance plan
+                </option>
+              </select>
+              <div class="prize-select-error"></div>
+            </div>
+            <input type="text" class="name-select" name="name" maxlength="30" placeholder="Your name" />
+            <input type="tel" name="phone" minlength="6" class="phone-select" placeholder="Phone number"
+              pattern="\+\s?[0-9]{6,15}" />
+
+            <input type="submit" value="Join Giveaway" />
+          </form>
+        </div>
+        <!-- forma -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact">
+      <h3>Contáctenos</h3>
+      <div class="campany"><span>AE</span><span>thing</span></div>
+      <p>
+        TODO lo que necesitas para lograr <br />
+        CUALQUIER COSA que quieras
+      </p>
+    </div>
+    <div class="office">
+      <h3>Nuestras oficinas:</h3>
+      <address>
+        46001, Valencia, España <br />
+        90001, Los Ángeles, California, EE. UU.
+      </address>
+      <a href="mailto:info@aething.com"><span>Correo electrónico:</span> info@aething.com</a>
+    </div>
+  </footer>
+
+  <div class="modal" tabindex="-1" role="dialog" id="formModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div class="modal-body">
+          <div class="modal-blockform">
+            <h3>
+              Me gustaría recibir una notificación cuando se lance la
+              aplicación AEtning
+            </h3>
+            <form>
+              <div class="country">
+                <select name="country" class="country-select" required>>
+                  <option selected disabled>Por favor, elija su país></option>
+                  <option value="USA">EE.UU</option>
+                  <option value="Canada">Canadá</option>
+                  <option value="Australia">Australia</option>
+                  <option value="England">Inglaterra</option>
+                  <option value="Singapore">Singapur</option>
+                  <option value="New Zealand">Nueva Zelanda</option>
+                  <option value="Mexico">México</option>
+                  <option value="Spain">España</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Colombia">Colombia</option>
+                  <option value="Hong Kong">Hong Kong</option>
+                </select>
+                <div class="country-select-error"></div>
+              </div>
+
+              <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                placeholder="Tu correo electrónico" required />
+
+              <div class="checkbox_text">
+                <input class="participate-select" type="checkbox" />
+                <p>Quiero participar en el sorteo</p>
+              </div>
+
+              <div class="prize" class="prize-select">
+                <select name="prize">
+                  <option selected disabled>
+                    Por favor, elige el premio
+                  </option>
+                  <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+                  <option value="Urban Electric Bike">
+                    Bicicleta Eléctrica Urbana
+                  </option>
+                  <option value="Health insurance plan">
+                    Plan de seguro médico
+                  </option>
+                </select>
+                <div class="prize-select-error"></div>
+              </div>
+              <input type="text" class="name-select" name="name" maxlength="30" placeholder="Tu nombre" />
+              <input type="tel" name="phone" minlength="6" pattern="\+\s?[0-9]{6,15}" placeholder="Número de teléfono"
+                class="phone-select" />
+
+              <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" -->
+
+              <input type="submit" value="Únete al sorteo" />
+            </form>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./form.js"></script>
-    <script src="./animate.js"></script>
-    <script src="./script.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+  <script src="./form.js"></script>
+  <script src="./animate.js"></script>
+  <script src="./script.js"></script>
+</body>
+
 </html>
