@@ -123,7 +123,7 @@
             ¡Lanzamiento de la aplicación antes de fin de año! ¡Miles de personas en todo el mundo están esperando nuestra aplicación!
           </p>
 
-          <a class="main__btn" data-toggle="modal" data-target="#formModal">¡Notificarme!</a>
+          <a class="main__btn" data-toggle="modal" data-target="#formModal2">¡Notificarme!</a>
           <p class="main-title__footer not-mob">
             ¡Miles de personas en todo el mundo están <br />
             esperando nuestra aplicación!
@@ -588,6 +588,49 @@
       <a href="mailto:info@aething.com"><span>Correo electrónico:</span> info@aething.com</a>
     </div>
   </footer>
+
+  <div class="modal" tabindex="-1" role="dialog" id="formModal2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="close mobile"
+             data-dismiss="modal"
+             aria-label="Close">
+          <img src="./img/close.svg" alt="close" />
+        </div>
+        <button
+                type="button"
+                class="close not-mob"
+                data-dismiss="modal"
+                aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div class="modal-body">
+          <div class="modal-blockform">
+            <h2>Recibir notificación de lanzamiento de la aplicación</h2>
+            <form>
+              <input
+                      type="text"
+                      class="name-select"
+                      name="name"
+                      maxlength="30"
+                      placeholder="Tu nombre"
+              />
+              <input
+                      type="email"
+                      name="email"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                      placeholder="Tu correo electrónico"
+                      required
+              />
+              <input type="submit" class="notify" value="¡Notificarme!" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="modal" tabindex="-1" role="dialog" id="formModal">
     <div class="modal-dialog" role="document">

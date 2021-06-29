@@ -69,7 +69,7 @@ $(document).ready(function () {
 
 
 
-    $("form").submit(function (event) {
+    $("#formModal form").submit(function (event) {
         event.preventDefault();
         const data = $(this).serializeArray();
 
@@ -120,21 +120,80 @@ $(document).ready(function () {
                     In the near future you will</br> receive a confirmation to</br> the specified e-mail.</br></br></br>
                     Thank You!  
                   </p> 
+          <div class="mobile">
+              <div class="title">The message was sent successfully</div>
+              <div class="smile"><img src="./img/smile.svg" alt="smile"></div>
+              <div class="subtitle">Thank you!</div>
+            </div>
         `;
         const messageSp = `
               <p>
                   <span>¡Tu mensaje ha</br>sido enviado</br> exitosamente!</span></br></br>
                     En un futuro próximo,</br> receive a confirmation</br>en el correo electrónico</br>especificado.
-                    
                   </p> 
+          <div class="mobile">
+              <div class="title">El mensaje se envió con éxito </div>
+              <div class="smile"><img src="./img/smile.svg" alt="smile"></div>
+              <div class="subtitle">¡Gracias!</div>
+            </div>
         
         `;
 
 
         fetch('https://jsonplaceholder.typicode.com/posts', {
-                method: 'POST',
-                body: data
+            method: 'POST',
+            body: data
+        })
+            .then(() => {
+                const parent = $(this).parent();
+                parent.addClass('blockform-send');
+                if ($('html').attr('lang') === 'en') {
+                    parent.html(messageEn);
+                } else if ($('html').attr('lang') === 'sp') {
+                    parent.html(messageSp);
+                }
+
             })
+            .catch(() => {
+                console.log('error');
+            });
+
+    });
+
+    $("#formModal2 form").submit(function (event) {
+        event.preventDefault();
+        const data = $(this).serializeArray();
+
+        const messageEn = `
+           <p class="not-mob">
+              <span>Your message has</br> been sent</br> successfully!</span></br></br>
+                In the near future you will</br> receive a confirmation to</br> the specified e-mail.</br></br></br>
+                Thank You!  
+            </p>
+          <div class="mobile">
+              <div class="title">The message was sent successfully</div>
+              <div class="smile"><img src="./img/smile.svg" alt="smile"></div>
+              <div class="subtitle">Thank you!</div>
+            </div>
+        `;
+        const messageSp = `
+              <p class="not-mob">
+                  <span>¡Tu mensaje ha</br>sido enviado</br> exitosamente!</span></br></br>
+                    En un futuro próximo,</br> receive a confirmation</br>en el correo electrónico</br>especificado.
+                  </p> 
+          <div class="mobile">
+              <div class="title">El mensaje se envió con éxito </div>
+              <div class="smile"><img src="./img/smile.svg" alt="smile"></div>
+              <div class="subtitle">¡Gracias!</div>
+            </div>
+        
+        `;
+
+
+        fetch('https://jsonplaceholder.typicode.com/posts', {
+            method: 'POST',
+            body: data
+        })
             .then(() => {
                 const parent = $(this).parent();
                 parent.addClass('blockform-send');
