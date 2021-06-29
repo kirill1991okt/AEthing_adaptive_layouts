@@ -190,6 +190,21 @@ $(document).ready(function () {
         $('.prize__container .slider-wrapper').css('display', 'none');
     })
 
+    $('.blockchain .blockchain__rm').on('click', function() {
+        $('.blockchain .group__bg').addClass('active');
+        $('.blockchain .group').addClass('active');
+    });
+    $('.blockchain .close').on('click', function() {
+        $('.blockchain .group__bg').removeClass('active');
+        $('.blockchain .group').removeClass('active');
+    });
+
+    $('.mobile.burger').on('click', function() {
+        $('.mobile.menu').addClass('active');
+    });
+    $('.mobile.menu .close').on('click', function() {
+        $('.mobile.menu').removeClass('active');
+    });
 });
 
 

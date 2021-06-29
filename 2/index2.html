@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -19,6 +24,7 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
     <link rel="stylesheet" href="./style2.css" />
     <title>AEthing</title>
   </head>
@@ -28,6 +34,38 @@
       <div class="wrapper">
         <div class="logo">
           <img src="./img/aething-stroke.svg" alt="aething-stroke" />
+          <img class="mobile" src="./img/logomob.svg" alt="aething-stroke" />
+        </div>
+        <div class="mobile burger">
+          <img src="./img/burger.svg" alt="menu" />
+        </div>
+        <div class="mobile menu">
+          <div class="close"><img src="./img/close.svg" alt="close" /></div>
+          <img
+            class="mobile logo"
+            src="./img/logomob2.svg"
+            alt="aething-stroke"
+          />
+          <nav>
+            <ul class="list">
+              <li class="list__item">
+                <a href="../1/index1.html" class="list__link">About AEthing </a>
+              </li>
+              <li class="list__item">
+                <a href="../2/index2.html" class="list__link list__link_active"
+                  >Giveaway
+                </a>
+              </li>
+              <li class="list__item">
+                <a href="../3/index3.html" class="list__link">How it works</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="language">
+            <span>Language:</span>
+            <div><a href="./index2.html" class="active">English</a></div>
+            <div><a href="./index2_sp.html">Spanish</a></div>
+          </div>
         </div>
         <nav>
           <ul class="list">
@@ -76,6 +114,14 @@
             >
               Subscribe to get notified about the program release >
             </a>
+            <a
+              data-toggle="modal"
+              data-target="#formModal"
+              class="main-title__link mobile"
+            >
+              Subscribe to get notified about the program release, and join the
+              draw to win one of the prizes listed below!
+            </a>
             <p class="text1">
               Giveaway based on Blockchain technology? Really?
             </p>
@@ -98,9 +144,23 @@
       <section class="participate">
         <div class="wrapper">
           <div class="participate__container">
+            <div class="mobile top">
+              <div class="line"></div>
+              <h2 class="top__title">
+                Giveaway based on Blockchain technology?
+              </h2>
+              <p class="top__subtitle">Really?</p>
+              <p class="top__text">
+                Yes! The prize drawing is carried out on the basis of a
+                blockchain platform and guarantees a fair drawing!
+              </p>
+              <a href="" class="top__undertext">Find out how it works ></a>
+            </div>
             <div class="right">
-              <h2 class="right__title">To participate</h2>
-              <p class="right__subtitle">all you have to do is:</p>
+              <h2 class="right__title">To&nbsp;participate</h2>
+              <p class="right__subtitle">
+                all&nbsp;you&nbsp;have&nbsp;to&nbsp;do&nbsp;is:
+              </p>
             </div>
             <div class="left">
               <div class="left__count">
@@ -238,6 +298,11 @@
                       class="carousel slide"
                       data-ride="carousel"
                     >
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                      </ol>
                       <div class="carousel-inner">
                         <div class="carousel-item active">
                           <img
@@ -245,6 +310,10 @@
                             src="./img/Iphone_slider.svg"
                             alt="First slide"
                           />
+                          <p class="items__text mobile">
+                            iPhone 12 <br />
+                            Pro
+                          </p>
                         </div>
                         <div class="carousel-item">
                           <img
@@ -252,6 +321,10 @@
                             src="./img/ebike_slider.svg"
                             alt="Second slide"
                           />
+                          <p class="items__text mobile">
+                            Urban Electric <br />
+                            Bike
+                          </p>
                         </div>
                         <div class="carousel-item">
                           <img
@@ -259,6 +332,10 @@
                             src="./img/hep_slider.svg"
                             alt="Third slide"
                           />
+                          <p class="items__text mobile">
+                            Health insurance <br />
+                            plan
+                          </p>
                         </div>
                       </div>
                       <a
@@ -297,6 +374,28 @@
       <section class="blockchain">
         <div class="wrapper">
           <div class="blockchain__wrap">
+            <div class="blockchain__top__wrap mobile">
+              <div class="line"></div>
+              <h2 class="blockchain__top__title">
+                The prize draw is built on blockchain technology!
+              </h2>
+              <p class="blockchain__top__subtitle">
+                Send the link to the giveaway you received in the email to your
+                friends and share it in social networks.
+              </p>
+              <p class="blockchain__top__subtitle">
+                You will get a unique blockchain transaction number for each new
+                participant you attract to the draw! The bigger is the number of
+                friends you invite, the higher are your chances of winning!
+              </p>
+              <a
+                class="blockchain__top__btn"
+                data-toggle="modal"
+                data-target="#formModal"
+                >Join Giveaway</a
+              >
+              <div class="line right"></div>
+            </div>
             <h1 class="blockchain__title">
               Why is our giveaway based on blockchain technology?
             </h1>
@@ -305,8 +404,25 @@
               to give people the opportunity to really influence the odds of
               winning!
             </p>
+            <a
+              href="javascript:void(0)"
+              class="blockchain__rm top__undertext mobile"
+              >Read more ></a
+            >
+            <div class="right__bot mobile">
+              <h2 class="right__bot__title">
+                All&nbsp;subscribers&nbsp;can participate&nbsp;in&nbsp;a
+                giveaway&nbsp;event!
+              </h2>
+              <div class="line"></div>
+              <a href="" class="right__bot__subtitle">Join Giveaway ></a>
+            </div>
 
+            <div class="group__bg"></div>
             <div class="group">
+              <div class="close mobile">
+                <img src="./img/close.svg" alt="close" />
+              </div>
               <div class="group__left">
                 <p>
                   The Internet is cluttered with various offers of winning
@@ -318,6 +434,66 @@
                 </p>
               </div>
               <div class="group__middle">
+
+                <div class="slider-wrapper mobile mobile-mob">
+                  <div class="items_slider">
+                    <div
+                            id="carouselExampleControls3"
+                            class="carousel slide"
+                            data-ride="carousel"
+                    >
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleControls3" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleControls3" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleControls3" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleControls3" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleControls3" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleControls3" data-slide-to="5"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="line mobile"></div>
+                          <p>
+                            Is the winner really chosen at random or is the winner known
+                            in advance?
+                          </p>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="line mobile"></div>
+                          <p>
+                            Will the organizers of the giveaway change their minds and
+                            cancel it?
+                          </p>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="line mobile"></div>
+                          <p>
+                            Are my chances to win exactly the same as other people?
+                          </p>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="line mobile"></div>
+                          <p>
+                            Are there really fair prize draws?
+                          </p>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="line mobile"></div>
+                          <p>
+                            I will not be able to influence my odds of winning?
+                          </p>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="line mobile"></div>
+                          <p>
+                            Will the prize really be awarded to the winner?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="group__middle_romb">
                   Is the winner really chosen at random or is the winner known
                   in advance?
@@ -353,6 +529,74 @@
 
       <!-- возможно не так необходимо делать данный блок -->
       <section class="diamont">
+        <h2 class="diamont__title mobile">Want more chanses to win?</h2>
+
+        <div class="slider-wrapper mobile mobile-mob">
+          <div class="items_slider">
+            <div
+                    id="carouselExampleControls2"
+                    class="carousel slide"
+                    data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleControls2" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleControls2" data-slide-to="1"></li>
+                <li data-target="#carouselExampleControls2" data-slide-to="2"></li>
+                <li data-target="#carouselExampleControls2" data-slide-to="3"></li>
+                <li data-target="#carouselExampleControls2" data-slide-to="4"></li>
+                <li data-target="#carouselExampleControls2" data-slide-to="5"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="line mobile"></div>
+                  <p>
+                    Blockchain is a continuous chain of blocks. It contains all
+                    the records about who you invited to participate in our
+                    giveaway.
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <div class="line mobile"></div>
+                  <p>
+                    First, unlike in common databases, you cannot change or delete
+                    these records, you can only add new ones. This ensures that
+                    the data remains unchanged and that the results cannot be
+                    altered.
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <div class="line mobile"></div>
+                  <p>
+                    And secondly, in our giveaway you get the opportunity to
+                    influence your odds of winning!
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <div class="line mobile"></div>
+                  <p>
+                    Your chances to win grow in proportion to the number of
+                    friends you invite to participate in our drawing event.
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <div class="line mobile"></div>
+                  <p>
+                    Each new participant of the giveaway attracted by you
+                    generates a new record in the blockchain.
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <div class="line mobile"></div>
+                  <p>
+                    The more new users you invite, the more numbers participating
+                    in the drawing will you receive.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="diamont__wrap">
           <div class="left">
             <div class="left__container">
@@ -362,6 +606,7 @@
                   src="./img/diamont.svg"
                   alt="diamont"
                 />
+                <div class="line mobile"></div>
                 <p>
                   Blockchain is a continuous chain of blocks. It contains all
                   the records about who you invited to participate in our
@@ -374,6 +619,7 @@
                   src="./img/diamont.svg"
                   alt="diamont"
                 />
+                <div class="line mobile"></div>
                 <p>
                   First, unlike in common databases, you cannot change or delete
                   these records, you can only add new ones. This ensures that
@@ -387,6 +633,7 @@
                   src="./img/diamont.svg"
                   alt="diamont"
                 />
+                <div class="line mobile"></div>
                 <p>
                   And secondly, in our giveaway you get the opportunity to
                   influence your odds of winning!
@@ -403,6 +650,7 @@
                   src="./img/diamont.svg"
                   alt="diamont"
                 />
+                <div class="line mobile"></div>
                 <p>
                   Your chances to win grow in proportion to the number of
                   friends you invite to participate in our drawing event.
@@ -414,6 +662,7 @@
                   src="./img/diamont.svg"
                   alt="diamont"
                 />
+                <div class="line mobile"></div>
                 <p>
                   Each new participant of the giveaway attracted by you
                   generates a new record in the blockchain.
@@ -425,6 +674,7 @@
                   src="./img/diamont.svg"
                   alt="diamont"
                 />
+                <div class="line mobile"></div>
                 <p>
                   The more new users you invite, the more numbers participating
                   in the drawing will you receive.
@@ -442,10 +692,13 @@
       <section class="creating">
         <div class="wrapper">
           <div class="creating__container">
-            <h1 class="title">
-              Just creating a new prize drawing is not enough!
-            </h1>
-            <p class="subtitle">Have you ever thought that?</p>
+            <div class="right">
+              <h1 class="title">
+                Just&nbsp;creating&nbsp;a&nbsp;new prize drawing&nbsp;is
+                not&nbsp;enough!
+              </h1>
+              <p class="subtitle">Have you ever thought that?</p>
+            </div>
 
             <p class="text1">
               In order for users to find out about the event, it is necessary to
@@ -472,6 +725,17 @@
         <!-- <img src="" alt="">  наверное сюда надо собаку-->
         <div class="wrapper">
           <!-- <div class="section-form__img"></div> -->
+
+          <div class="section-form__container mobile">
+            <h1 class="section-form__title">Join our prize draw!</h1>
+            <p class="section-form__subtitle">
+              You want to get a new iphone 12 PRO, or a city electric bike, or
+              health insurance?
+            </p>
+            <a href="javascript:void(0)" class="section-form__link"
+              >Just fill out the participant form</a
+            >
+          </div>
           <div class="section-form__container">
             <h1 class="section-form__title">Fill out the form and join!</h1>
             <p class="section-form__subtitle">
