@@ -2966,6 +2966,10 @@ footer a span:last-child {
     display: none;
   }
 
+  .diamont .slider-wrapper.mobile.mobile-mob {
+    display: none;
+  }
+
   .creating {
     background: #f5f5f5;
     border-radius: 24px;
@@ -3535,10 +3539,98 @@ footer a span:last-child {
     margin-left: 0;
   }
 
+  .blockchain .group.active {
+    padding: 40px 24px;
+  }
+
+  .blockchain .group__left p:nth-child(1) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .blockchain .group__left p:nth-child(2) {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+
+  .blockchain .group__right p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .group__middle .group__middle_romb {
+    display: none;
+  }
+
+  .group__middle .carousel-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .group__middle .line {
+    display: block;
+    width: 74px;
+    height: 1px;
+    background: #5a40de;
+    background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    margin-bottom: 18px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .group__middle p {
+    height: 90px;
+  }
+
+  .group__middle .carousel-indicators {
+    flex-direction: column;
+    top: 0;
+    left: auto;
+    right: -15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .group__middle .carousel-indicators li {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
   /* /blockchain */
+
+  .diamont {
+    background: #F5F5F5;
+    border-radius: 24px 24px 0 0;
+    margin-bottom: -1px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .diamont .slider-wrapper.mobile.mobile-mob {
+    display: block;
+  }
+
+  .diamont .diamont__wrap {
+    display: none;
+  }
+
+  .diamont .carousel-inner {
+    background: #000000;
+    border-radius: 16px;
+    padding: 60px 35px 30px;
+  }
+
+  .diamont .carousel-item p {
+    height: 200px;
+    color: #F5F5F5;
+  }
 
   /* creating */
   .creating {
+    border-radius: 0 0 24px 24px;
     padding: 135px 30px 80px;
   }
 
