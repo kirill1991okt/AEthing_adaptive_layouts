@@ -3377,6 +3377,12 @@ footer a span:last-child {
     margin-top: 65px;
   }
 
+  input.notify[type="submit"]:hover {
+    background: linear-gradient(90.07deg, #6147e2 22.55%, #ffc120 58.08%);
+    transition: 0.3s;
+    color: #000;
+  }
+
   input[type="submit"] {
     font-family: "DunbarText";
     font-style: normal;
@@ -3391,6 +3397,12 @@ footer a span:last-child {
     width: 70%;
     height: auto;
     margin: 0 auto;
+  }
+
+  input[type="submit"]:hover {
+    background: linear-gradient(90.07deg, #6147e2 22.55%, #ffc120 58.08%);
+    transition: 0.3s;
+    color: #000;
   }
 
   .blockform-send .mobile {
