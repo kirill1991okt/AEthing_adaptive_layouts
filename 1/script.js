@@ -170,6 +170,11 @@ $(document).ready(function () {
         event.preventDefault();
         const data = $(this).serializeArray();
 
+        if(!checkName) {
+            $('.name-select', this).css('border', '2px solid red');
+            return false;
+        }
+
         const messageEn = `
            <p class="not-mob">
               <span>Your message has</br> been sent</br> successfully!</span></br></br>

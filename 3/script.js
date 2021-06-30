@@ -171,6 +171,17 @@ $(document).ready(function () {
         event.preventDefault();
         const data = $(this).serializeArray();
 
+        const checkName = data.find((value) => {
+            if (value.name === "name" && value.value) {
+                return true;
+            }
+        });
+
+        if(!checkName) {
+            $('.name-select', this).css('border', '2px solid red');
+            return false;
+        }
+
         const messageEn = `
            <p class="not-mob">
               <span>Your message has</br> been sent</br> successfully!</span></br></br>
