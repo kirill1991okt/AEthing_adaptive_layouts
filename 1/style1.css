@@ -126,7 +126,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
 }
 
@@ -144,7 +144,7 @@ body {
 }
 
 body::after {
-  content: '';
+  content: "";
   background-image: url(./img/madmen.png);
   background-position: center;
   background-attachment: fixed;
@@ -234,7 +234,7 @@ nav .list__item a {
 
 nav .list__item a::after,
 nav .list__item a.list__link_active::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -298,7 +298,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .language .popup div a::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -457,7 +457,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .main-title__link::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -486,9 +486,9 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .main__btn:hover {
-  background-color: #a25406;
-  transition: 0.3s;
-  color: #ffffff;
+  background: linear-gradient(90.07deg, #6147e2 22.55%, #ffc120 58.08%);
+  transition: 0.4s;
+  color: #000;
 }
 
 .main-title__footer {
@@ -534,7 +534,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   top: -140px;
   left: -155px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -545,7 +545,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   top: -128px;
   left: -139px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -590,7 +590,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   top: -150px;
   right: -120px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -601,7 +601,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   top: -138px;
   right: -104px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -649,7 +649,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   top: -150px;
   right: -120px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -660,7 +660,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   top: -138px;
   right: -104px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -709,7 +709,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .main-items::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -152px;
   width: 335px;
@@ -822,7 +822,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   top: -108px;
   left: -165px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -833,7 +833,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   top: -96px;
   left: -149px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -870,7 +870,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .AEthing__users .get__link::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -895,7 +895,7 @@ nav .list__item a.list__link_active:focus::after {
   top: -108px;
   right: -165px;
   left: auto;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -908,7 +908,7 @@ nav .list__item a.list__link_active:focus::after {
   top: -96px;
   right: -149px;
   left: auto;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -929,7 +929,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   top: -71px;
   right: -146px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -940,7 +940,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   top: -59px;
   right: -133px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -1009,7 +1009,7 @@ nav .list__item a.list__link_active:focus::after {
 } */
 
 .get .get__left::before {
-  content: '';
+  content: "";
   width: 335px;
   height: 517px;
   border: 15px solid #f9bf85;
@@ -1116,7 +1116,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   top: -250px;
   left: -223px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -1127,7 +1127,7 @@ nav .list__item a.list__link_active:focus::after {
   position: absolute;
   top: -241px;
   left: -211px;
-  content: '';
+  content: "";
   background-color: #000000;
 }
 
@@ -1238,7 +1238,7 @@ nav .list__item a.list__link_active:focus::after {
   width: 100%;
 }
 
-.modal-blockform input[type='checkbox'] {
+.modal-blockform input[type="checkbox"] {
   width: 24px;
   height: 24px;
   margin-left: 10px;
@@ -1251,7 +1251,7 @@ nav .list__item a.list__link_active:focus::after {
   appearance: none;
 }
 
-select[name='country'] {
+select[name="country"] {
   background-color: #7c6f3d;
   border-radius: 17px;
   color: #fefefe;
@@ -1269,17 +1269,17 @@ form .country::after {
   position: absolute;
   top: 11px;
   right: 15px;
-  content: '>';
+  content: ">";
   color: #fefefe;
   font-size: 14px;
   font-weight: 600;
 }
 
-select[name='country']:focus {
+select[name="country"]:focus {
   outline: none;
 }
 
-input[type='email'] {
+input[type="email"] {
   background-color: #7c6f3d;
   border-radius: 17px;
   padding-top: 11px;
@@ -1291,14 +1291,14 @@ input[type='email'] {
   text-align: center;
 }
 
-input[type='email']::placeholder {
+input[type="email"]::placeholder {
   color: #fefefe;
   font-size: 14px;
   text-align: center;
   line-height: 1;
 }
 
-input[type='email']:focus::-webkit-input-placeholder {
+input[type="email"]:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
@@ -1316,7 +1316,7 @@ form .prize {
   margin-bottom: 13px;
 }
 
-select[name='prize'] {
+select[name="prize"] {
   background-color: #7c6f3d;
   border-radius: 17px;
   color: #fefefe;
@@ -1325,7 +1325,7 @@ select[name='prize'] {
   cursor: pointer;
 }
 
-select[name='prize']:focus {
+select[name="prize"]:focus {
   outline: none;
 }
 
@@ -1333,13 +1333,13 @@ form .prize::after {
   position: absolute;
   top: 11px;
   right: 26px;
-  content: '>';
+  content: ">";
   color: #fefefe;
   font-size: 14px;
   font-weight: 600;
 }
 
-input[type='text'] {
+input[type="text"] {
   background-color: #7c6f3d;
   border-radius: 17px;
   text-align: center;
@@ -1350,16 +1350,16 @@ input[type='text'] {
   margin-bottom: 12px;
 }
 
-input[type='text']::placeholder {
+input[type="text"]::placeholder {
   color: #fefefe;
   font-size: 14px;
 }
 
-input[type='text']:focus::-webkit-input-placeholder {
+input[type="text"]:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input[type='tel'] {
+input[type="tel"] {
   background-color: #7c6f3d;
   border-radius: 17px;
   text-align: center;
@@ -1370,16 +1370,16 @@ input[type='tel'] {
   margin-bottom: 23px;
 }
 
-input[type='tel']::placeholder {
+input[type="tel"]::placeholder {
   color: #fefefe;
   font-size: 14px;
 }
 
-input[type='tel']:focus::-webkit-input-placeholder {
+input[type="tel"]:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input[type='submit'] {
+input[type="submit"] {
   background-color: #e38522;
   border-radius: 17px;
   color: #fefefe;
@@ -1392,7 +1392,7 @@ input[type='submit'] {
   cursor: pointer;
 }
 
-input[type='submit']:hover {
+input[type="submit"]:hover {
   background-color: #a25406;
   transition: 0.3s;
 }
@@ -1520,7 +1520,7 @@ footer a span:last-child {
 }
 
 .blockform-send:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1555,7 +1555,7 @@ footer a span:last-child {
 
 .bg-white nav .list__item a::after,
 .bg-white nav .list__item a.list__link_active::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -1591,7 +1591,7 @@ footer a span:last-child {
 }
 
 .bg-white .language span::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -1640,7 +1640,7 @@ footer a span:last-child {
 }
 
 .bg-white .language .popup div a::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -1834,7 +1834,7 @@ footer a span:last-child {
   }
 
   nav .list__item a {
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -1853,7 +1853,7 @@ footer a span:last-child {
   }
 
   .mobile.menu .language:before {
-    content: '';
+    content: "";
     display: block;
     width: 80px;
     height: 1px;
@@ -1874,7 +1874,7 @@ footer a span:last-child {
   }
 
   .mobile.menu .language span {
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -1889,7 +1889,7 @@ footer a span:last-child {
   }
 
   .mobile.menu .language a {
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -1913,7 +1913,7 @@ footer a span:last-child {
   }
 
   .main:before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 0;
@@ -1947,7 +1947,7 @@ footer a span:last-child {
   }
 
   .main-title__header {
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -1958,7 +1958,7 @@ footer a span:last-child {
   }
 
   .main-title__first {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 64px;
@@ -1973,7 +1973,7 @@ footer a span:last-child {
   }
 
   .main-title__second {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 64px;
@@ -1981,7 +1981,7 @@ footer a span:last-child {
   }
 
   .main-title__subtitle {
-    font-family: 'DunbarLow';
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -1991,7 +1991,7 @@ footer a span:last-child {
   }
 
   .main-title__footer {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -2006,7 +2006,7 @@ footer a span:last-child {
   }
 
   .main__btn {
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -2063,7 +2063,7 @@ footer a span:last-child {
   }
 
   .use-mob__useful .use-mob__title {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2074,7 +2074,7 @@ footer a span:last-child {
   }
 
   .use-mob__useful .use-mob__subtitle {
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2107,7 +2107,7 @@ footer a span:last-child {
   }
 
   .use-mob__mobApp::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -70px;
     left: 0;
@@ -2119,7 +2119,7 @@ footer a span:last-child {
   }
 
   .use-mob__mobApp::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -110px;
     left: -90px;
@@ -2138,7 +2138,7 @@ footer a span:last-child {
   }
 
   .use-mob__mobApp .use-mob__title {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2149,7 +2149,7 @@ footer a span:last-child {
   }
 
   .use-mob__mobApp .use-mob__subtitle {
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2181,7 +2181,7 @@ footer a span:last-child {
   }
 
   .use-mob .subscribers::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -90px;
     right: 30px;
@@ -2193,7 +2193,7 @@ footer a span:last-child {
   }
 
   .use-mob .subscribers p {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2206,7 +2206,7 @@ footer a span:last-child {
   .use-mob .subscribers a {
     display: block;
     position: relative;
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2217,7 +2217,7 @@ footer a span:last-child {
   }
 
   .use-mob .subscribers a::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -20px;
     right: 30px;
@@ -2238,6 +2238,16 @@ footer a span:last-child {
     display: none;
   }
 
+  .carousel {
+    display: none;
+  }
+
+  /* .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    display: none;
+  } */
+
   .main-items_mobile {
     display: block;
     background: #000000;
@@ -2249,7 +2259,7 @@ footer a span:last-child {
   }
 
   .main-items__title_mobile {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2310,7 +2320,7 @@ footer a span:last-child {
   .right__wrap p {
     max-width: 220px;
     height: 180px;
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -2356,7 +2366,7 @@ footer a span:last-child {
   }
 
   .AEthing__users::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 10px;
     right: -90px;
@@ -2374,7 +2384,7 @@ footer a span:last-child {
   }
 
   .AEthing__users .AEthing__title {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2386,7 +2396,7 @@ footer a span:last-child {
 
   .AEthing__users .AEthing__subtitle {
     max-width: 410px;
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2423,7 +2433,7 @@ footer a span:last-child {
   }
 
   .AEthing__business::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -70px;
     right: 0;
@@ -2435,7 +2445,7 @@ footer a span:last-child {
   }
 
   .AEthing__business::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -100px;
     left: -90px;
@@ -2454,7 +2464,7 @@ footer a span:last-child {
 
   .AEthing__business .AEthing__title {
     max-width: 340px;
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2466,7 +2476,7 @@ footer a span:last-child {
   }
 
   .AEthing__business .AEthing__subtitle {
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2496,7 +2506,7 @@ footer a span:last-child {
     position: relative;
     max-width: 500px;
     padding-left: 70px;
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2508,7 +2518,7 @@ footer a span:last-child {
   }
 
   .AEthing__wrapper .get__link_text-mobile::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -90px;
     right: 60px;
@@ -2523,7 +2533,7 @@ footer a span:last-child {
   .AEthing__wrapper .get__link_text-mobile a {
     display: block;
     position: relative;
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2534,7 +2544,7 @@ footer a span:last-child {
   }
 
   .AEthing__wrapper .get__link_text-mobile a::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -20px;
     left: 70px;
@@ -2572,7 +2582,7 @@ footer a span:last-child {
   .get .get__title {
     width: auto;
     max-width: 460px;
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2594,7 +2604,7 @@ footer a span:last-child {
 
   .get .get__right-items-wrapper .get__right-item p {
     position: relative;
-    font-family: 'DunbarLow';
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2605,7 +2615,7 @@ footer a span:last-child {
   }
 
   .get__right-items-wrapper .get__right-item p::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -20px;
     left: 103px;
@@ -2664,12 +2674,12 @@ footer a span:last-child {
     display: block;
     margin-left: 0;
     padding: 0;
-    max-width: 80%;
+    max-width: 100%;
   }
 
   .section-form__title {
     text-align: left;
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2681,7 +2691,7 @@ footer a span:last-child {
 
   .section-form__subtitle {
     text-align: left;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -2691,7 +2701,7 @@ footer a span:last-child {
   }
 
   .section-form__link {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2704,7 +2714,7 @@ footer a span:last-child {
   }
 
   .fillForm::after {
-    content: '';
+    content: "";
     display: block;
     width: 90px;
     height: 45px;
@@ -2730,7 +2740,7 @@ footer a span:last-child {
   }
 
   footer::before {
-    content: '';
+    content: "";
     display: block;
     width: 74px;
     height: 1px;
@@ -2763,7 +2773,7 @@ footer a span:last-child {
   }
 
   footer .campany span {
-    font-family: 'DunbarLow';
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2773,8 +2783,8 @@ footer a span:last-child {
   }
 
   footer p {
-    width: 50%;
-    font-family: 'DunbarLow';
+    width: 55%;
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2787,7 +2797,7 @@ footer a span:last-child {
   footer .office {
     width: auto;
     margin: 0 auto;
-    font-family: 'DunbarLow';
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2796,7 +2806,7 @@ footer a span:last-child {
   }
 
   footer .office h3 {
-    font-family: 'DunbarLow';
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2808,7 +2818,7 @@ footer a span:last-child {
   }
 
   footer address {
-    font-family: 'DunbarLow';
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2820,7 +2830,7 @@ footer a span:last-child {
   }
 
   footer a {
-    font-family: 'DunbarLow';
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2830,7 +2840,7 @@ footer a span:last-child {
   }
 
   footer a span:last-child {
-    font-family: 'DunbarLow';
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2871,7 +2881,7 @@ footer a span:last-child {
   }
 
   .modal-blockform h2 {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -2881,7 +2891,7 @@ footer a span:last-child {
   }
 
   .modal-blockform h3 {
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -2890,9 +2900,9 @@ footer a span:last-child {
     text-align: center;
   }
 
-  .modal-blockform select[name='country'],
-  .modal-blockform select[name='prize'] {
-    font-family: 'DunbarLow';
+  .modal-blockform select[name="country"],
+  .modal-blockform select[name="prize"] {
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -2905,10 +2915,10 @@ footer a span:last-child {
     border: 1px solid transparent;
   }
 
-  .modal-blockform input[type='email'],
-  .modal-blockform input[type='text'],
-  .modal-blockform input[type='tel'] {
-    font-family: 'Josefin Sans', sans-serif;
+  .modal-blockform input[type="email"],
+  .modal-blockform input[type="text"],
+  .modal-blockform input[type="tel"] {
+    font-family: "Josefin Sans", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -2920,11 +2930,11 @@ footer a span:last-child {
     padding-bottom: 9px;
   }
 
-  .modal-blockform select[name='country']:target,
-  .modal-blockform select[name='prize']:target,
-  .modal-blockform input[type='email']:focus,
-  .modal-blockform input[type='text']:focus,
-  .modal-blockform input[type='tel']:focus {
+  .modal-blockform select[name="country"]:target,
+  .modal-blockform select[name="prize"]:target,
+  .modal-blockform input[type="email"]:focus,
+  .modal-blockform input[type="text"]:focus,
+  .modal-blockform input[type="tel"]:focus {
     border: 1px solid #ffc120;
   }
 
@@ -2932,9 +2942,9 @@ footer a span:last-child {
     margin-bottom: 0;
   }
 
-  .modal-blockform input[type='email']::placeholder,
-  .modal-blockform input[type='text']::placeholder,
-  .modal-blockform input[type='tel']::placeholder {
+  .modal-blockform input[type="email"]::placeholder,
+  .modal-blockform input[type="text"]::placeholder,
+  .modal-blockform input[type="tel"]::placeholder {
     color: #000;
   }
 
@@ -2942,12 +2952,12 @@ footer a span:last-child {
     display: none;
   }
 
-  input.notify[type='submit'] {
+  input.notify[type="submit"] {
     margin-top: 65px;
   }
 
-  input[type='submit'] {
-    font-family: 'DunbarText';
+  input[type="submit"] {
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -2967,7 +2977,7 @@ footer a span:last-child {
   }
 
   .blockform-send .mobile .title {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -2984,7 +2994,7 @@ footer a span:last-child {
   }
 
   .blockform-send .mobile .subtitle {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -3019,6 +3029,7 @@ footer a span:last-child {
   .mobile.burger {
     top: 22px;
     right: 25px;
+    z-index: 100;
   }
 
   .mobile.menu {
@@ -3197,6 +3208,10 @@ footer a span:last-child {
     display: none;
   }
 
+  .carousel {
+    display: block;
+  }
+
   .carousel-indicators {
     bottom: auto;
     top: -50px;
@@ -3369,7 +3384,7 @@ footer a span:last-child {
   /* section-form */
 
   .fillForm {
-    padding: 75px 90px 120px;
+    padding: 75px 35px 120px;
     margin-left: -10px;
     margin-right: -10px;
   }
@@ -3413,6 +3428,7 @@ footer a span:last-child {
 
   footer p {
     width: 100%;
+    max-width: 225px;
     font-size: 18px;
     line-height: 24px;
   }
