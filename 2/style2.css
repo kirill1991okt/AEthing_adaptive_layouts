@@ -2177,6 +2177,11 @@ footer a span:last-child {
     color: #000;
   }
 
+  nav .list__item a:hover {
+    color: #ffc120;
+    transition: 0.3s ease-in-out;
+  }
+
   nav .list__item a.list__link_active {
     background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
