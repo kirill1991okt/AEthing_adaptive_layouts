@@ -1713,6 +1713,10 @@ footer a span:last-child {
 
 /* TABS */
 @media (max-width: 768px) {
+  .bg-white {
+    display: none;
+  }
+
   .line {
     display: block;
 
@@ -1769,14 +1773,14 @@ footer a span:last-child {
   }
 
   .mobile.burger {
-    position: absolute;
-    top: -12px;
-    right: -12px;
+    position: fixed;
+    top: 44px;
+    right: 47px;
+    z-index: 9999;
     background: #fff;
     border-radius: 100%;
     width: 75px;
     height: 75px;
-    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1784,13 +1788,13 @@ footer a span:last-child {
 
   .mobile.menu {
     display: none;
-    position: absolute;
+    position: fixed;
     background: #fff;
-    z-index: 11;
+    z-index: 10000;
     /*top: -28px;*/
     /*right: -28px;*/
-    top: -12px;
-    right: -12px;
+    top: 44px;
+    right: 47px;
     border-radius: 24px 0 0 24px;
     padding: 40px;
     width: 60%;
@@ -2660,7 +2664,7 @@ footer a span:last-child {
     display: block;
     margin-left: 0;
     padding: 0;
-    max-width: 500px;
+    max-width: 80%;
   }
 
   .section-form__title {
@@ -2789,7 +2793,6 @@ footer a span:last-child {
     font-size: 24px;
     line-height: 32px;
     text-align: center;
-    margin-bottom: 130px;
   }
 
   footer .office h3 {
@@ -3001,7 +3004,7 @@ footer a span:last-child {
 
 @media (max-width: 460px) {
   body {
-    padding: 21px 10px;
+    padding: 10px 10px;
     background: none;
   }
 
@@ -3009,8 +3012,15 @@ footer a span:last-child {
     display: block;
   }
 
+  .mobile.burger {
+    top: 22px;
+    right: 25px;
+  }
+
   .mobile.menu {
-    width: 100%;
+    width: 85%;
+    top: 22px;
+    right: 25px;
   }
 
   /* header */
