@@ -1450,7 +1450,7 @@ footer a span:last-child {
   .mobile.burger {
     position: fixed;
     top: 44px;
-    right: 47px;
+    right: 80px;
     z-index: 9999;
     background: #fff;
     border-radius: 100%;
@@ -1592,6 +1592,12 @@ footer a span:last-child {
     background-color: #171819;
   }
 
+  .main__btn:hover {
+    background: linear-gradient(90.07deg, #6147e2 22.55%, #ffc120 58.08%);
+    transition: 0.3s;
+    color: #000;
+  }
+
   .main:before {
     content: "";
     display: block;
@@ -1648,9 +1654,14 @@ footer a span:last-child {
     text-align: center;
     text-transform: uppercase;
     color: #ffc120;
-    background: none;
+
+    background: linear-gradient(to right, #6147e2 25%, #ffc120 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    /* background: none;
     -webkit-background-clip: initial;
-    -webkit-text-fill-color: initial;
+    -webkit-text-fill-color: initial; */
     margin-bottom: 30px;
   }
 
@@ -2259,7 +2270,7 @@ footer a span:last-child {
     display: block;
     margin-left: 0;
     padding: 0;
-    max-width: 80%;
+    max-width: 100%;
   }
 
   .section-form__title {
@@ -2270,7 +2281,7 @@ footer a span:last-child {
     font-size: 48px;
     line-height: 56px;
     color: #ffc120;
-    width: 70%;
+    width: 89%;
     margin-bottom: 60px;
   }
 
@@ -2443,7 +2454,7 @@ footer a span:last-child {
   .modal-content {
     margin: 10px;
     width: calc(100% - 20px);
-    background: #F5F5F5;
+    background: #f5f5f5;
   }
 
   .modal .close:not(.not-mob) {
@@ -2460,11 +2471,11 @@ footer a span:last-child {
 
   .modal-blockform {
     width: 100%;
-    background: #F5F5F5;
+    background: #f5f5f5;
   }
 
   .modal-blockform h2 {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -2474,7 +2485,7 @@ footer a span:last-child {
   }
 
   .modal-blockform h3 {
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -2485,7 +2496,7 @@ footer a span:last-child {
 
   .modal-blockform select[name="country"],
   .modal-blockform select[name="prize"] {
-    font-family: 'DunbarLow';
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -2518,7 +2529,7 @@ footer a span:last-child {
   .modal-blockform input[type="email"]:focus,
   .modal-blockform input[type="text"]:focus,
   .modal-blockform input[type="tel"]:focus {
-    border: 1px solid #FFC120;
+    border: 1px solid #ffc120;
   }
 
   form .prize {
@@ -2560,7 +2571,7 @@ footer a span:last-child {
   }
 
   .blockform-send .mobile .title {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -2577,7 +2588,7 @@ footer a span:last-child {
   }
 
   .blockform-send .mobile .subtitle {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -2616,6 +2627,12 @@ footer a span:last-child {
 
   .main {
     margin: 0 10px 0 10px;
+  }
+
+  .main__btn:hover {
+    background: linear-gradient(90.07deg, #6147e2 22.55%, #ffc120 58.08%);
+    transition: 0.3s;
+    color: #000;
   }
 
   .main:before {
@@ -2824,9 +2841,9 @@ footer a span:last-child {
   /* section-form */
 
   .fillForm {
-    padding: 75px 90px 120px;
-    margin-left: 0;
-    margin-right: 0;
+    padding: 75px 35px 120px;
+    margin-left: -10px;
+    margin-right: -10px;
   }
 
   .section-form__title {
@@ -2858,8 +2875,8 @@ footer a span:last-child {
 
   footer {
     padding: 45px 0px 150px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: -10px;
+    margin-right: -10px;
   }
 
   footer .campany span {
@@ -2875,6 +2892,7 @@ footer a span:last-child {
   }
 
   footer .office {
+    width: 100%;
     font-size: 18px;
     line-height: 24px;
   }
@@ -2885,6 +2903,8 @@ footer a span:last-child {
   }
 
   footer address {
+    width: 50%;
+    margin: 0 auto;
     font-size: 18px;
     line-height: 24px;
   }

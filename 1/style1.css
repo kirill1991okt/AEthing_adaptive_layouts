@@ -486,9 +486,9 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .main__btn:hover {
-  background: linear-gradient(90.07deg, #6147e2 22.55%, #ffc120 58.08%);
-  transition: 0.4s;
-  color: #000;
+  background-color: #a25406;
+  transition: 0.3s;
+  color: #ffffff;
 }
 
 .main-title__footer {
@@ -1929,6 +1929,12 @@ footer a span:last-child {
     filter: brightness(70%);
   }
 
+  .main__btn:hover {
+    background: linear-gradient(90.07deg, #6147e2 22.55%, #ffc120 58.08%);
+    transition: 0.3s;
+    color: #000;
+  }
+
   .main__img,
   .main__white_square,
   .main__purple_square {
@@ -3053,6 +3059,12 @@ footer a span:last-child {
     margin-bottom: 10px;
   }
 
+  .main__btn:hover {
+    background: linear-gradient(90.07deg, #6147e2 22.55%, #ffc120 58.08%);
+    transition: 0.3s;
+    color: #000;
+  }
+
   .main:before {
     top: 40px;
     width: 341px;
@@ -3445,6 +3457,8 @@ footer a span:last-child {
   }
 
   footer address {
+    width: 55%;
+    margin: 0 auto;
     font-size: 18px;
     line-height: 24px;
   }
