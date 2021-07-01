@@ -68,10 +68,17 @@ $(document).ready(function () {
     });
 
 
-    $('.mobile.burger').on('click', function() {
+    $('.mobile.burger').on('click', function(e) {
+        e.stopPropagation();
         $('.mobile.menu').addClass('active');
     });
     $('.mobile.menu .close').on('click', function() {
+        $('.mobile.menu').removeClass('active');
+    });
+    $('.mobile.menu').on('click', function(e) {
+        e.stopPropagation();
+    });
+    $('body').on('click', function() {
         $('.mobile.menu').removeClass('active');
     });
 

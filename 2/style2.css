@@ -2109,7 +2109,7 @@ footer a span:last-child {
   .mobile.burger {
     position: fixed;
     top: 44px;
-    right: 47px;
+    right: 56px;
     z-index: 9999;
     background: #fff;
     border-radius: 100%;
@@ -2128,7 +2128,7 @@ footer a span:last-child {
     /*top: -28px;*/
     /*right: -28px;*/
     top: 44px;
-    right: 47px;
+    right: 56px;
     border-radius: 24px 0 0 24px;
     padding: 40px;
     width: 60%;
@@ -3455,14 +3455,16 @@ footer a span:last-child {
   }
 
   .mobile.burger {
+    width: 60px;
+    height: 60px;
     top: 22px;
-    right: 25px;
+    right: 22px;
   }
 
   .mobile.menu {
     width: 85%;
     top: 22px;
-    right: 25px;
+    right: 22px;
   }
 
   .mobile.menu nav {
