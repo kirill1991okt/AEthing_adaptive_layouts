@@ -3623,6 +3623,7 @@ footer a span:last-child {
     font-size: 18px;
     line-height: 24px;
   }
+  
 
   .left__count .left__count_wrap:nth-child(2) {
     top: 250px;
@@ -3633,8 +3634,20 @@ footer a span:last-child {
     top: 475px;
   }
 
+  .left__count .left__count_wrap:nth-child(1) .left__count_description {
+    width: auto;
+  }
+
+  .left__count .left__count_wrap:nth-child(1) .left__count_description {
+    width: auto;
+  }
+
+  .left__count .left__count_wrap:nth-child(2) .left__count_description {
+    width: auto;
+  }
+
   .left__count .left__count_wrap:nth-child(3) .left__count_description {
-    width: 180px;
+    width: auto;
   }
 
   .participate .right:after {
@@ -3864,6 +3877,7 @@ footer a span:last-child {
   .diamont .carousel-item p {
     height: 200px;
     color: #f5f5f5;
+    text-align: center;
   }
 
   /* creating */
