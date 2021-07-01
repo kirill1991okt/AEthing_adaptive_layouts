@@ -1004,7 +1004,7 @@ nav .list__item a.list__link_active:focus::after {
   background-color: #000000;
   padding-top: 104px;
   padding-bottom: 136px;
-  margin-left: 10px;
+  margin-right: 10px;
   z-index: 10;
 }
 
