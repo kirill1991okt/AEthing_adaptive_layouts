@@ -991,7 +991,7 @@ nav .list__item a.list__link_active:focus::after {
 
 .diamont__wrap {
   display: flex;
-  column-gap: 10px;
+  /* column-gap: 10px; */
 }
 
 .diamont__wrap .left {
@@ -1004,6 +1004,7 @@ nav .list__item a.list__link_active:focus::after {
   background-color: #000000;
   padding-top: 104px;
   padding-bottom: 136px;
+  margin-left: 10px;
   z-index: 10;
 }
 
