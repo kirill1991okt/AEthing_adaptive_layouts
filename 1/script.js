@@ -70,15 +70,26 @@ $(document).ready(function () {
     $('.mobile.burger').on('click', function(e) {
         e.stopPropagation();
         $('.mobile.menu').addClass('active');
+        $('.mobile.menu').removeClass('close__active');
+        $('.bg__menu').addClass('active');
+        $('.bg__menu').removeClass('close__active');
     });
     $('.mobile.menu .close').on('click', function() {
+        $('.mobile.menu').addClass('close__active');
         $('.mobile.menu').removeClass('active');
+        $('.bg__menu').addClass('close__active');
+        $('.bg__menu').removeClass('active');
     });
     $('.mobile.menu').on('click', function(e) {
         e.stopPropagation();
     });
     $('body').on('click', function() {
-        $('.mobile.menu').removeClass('active');
+        if($('.mobile.menu').hasClass('active')) {
+            $('.mobile.menu').addClass('close__active');
+            $('.mobile.menu').removeClass('active');
+            $('.bg__menu').addClass('close__active');
+            $('.bg__menu').removeClass('active');
+        }
     });
 
 
