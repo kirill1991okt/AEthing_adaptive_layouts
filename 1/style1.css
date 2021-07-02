@@ -3149,17 +3149,18 @@ footer a span:last-child {
     height: auto;
     font-size: 42px;
     line-height: 46px;
-    /* margin-bottom: 0; */
+    margin-bottom: 30px;
   }
 
   .main-title__footer {
     font-size: 18px;
     line-height: 28px;
     width: 100%;
+    margin-bottom: 40px;
   }
 
   .main-title__subtitle {
-    width: 95%;
+    width: 60%;
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 100px;
