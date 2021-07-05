@@ -258,10 +258,12 @@ $(document).ready(function () {
     $('.blockchain .blockchain__rm').on('click', function() {
         $('.blockchain .group__bg').addClass('active');
         $('.blockchain .group').addClass('active');
+        $('.blockchain').css('z-index', 101);
     });
     $('.blockchain .close').on('click', function() {
         $('.blockchain .group__bg').removeClass('active');
         $('.blockchain .group').removeClass('active');
+        $('.blockchain').css('z-index', 90);
     });
 
 

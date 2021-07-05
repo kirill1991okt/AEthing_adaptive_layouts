@@ -3684,7 +3684,7 @@ footer a span:last-child {
     height: 60px;
     top: 22px;
     right: 22px;
-    z-index: 100;
+    z-index: 101;
   }
 
   .mobile.menu {
@@ -4076,18 +4076,18 @@ footer a span:last-child {
   }
 
   .group__middle .carousel-indicators {
-    flex-direction: column;
-    top: 0;
-    left: auto;
-    right: -15px;
-    margin-left: 0;
-    margin-right: 0;
+    /*flex-direction: column;*/
+    top: -30px;
+    /*left: auto;*/
+    /*right: -15px;*/
+    /*margin-left: 0;*/
+    /*margin-right: 0;*/
   }
 
-  .group__middle .carousel-indicators li {
-    margin-top: 3px;
-    margin-bottom: 3px;
-  }
+  /*.group__middle .carousel-indicators li {*/
+  /*  margin-top: 3px;*/
+  /*  margin-bottom: 3px;*/
+  /*}*/
 
   /* /blockchain */
 
