@@ -2189,7 +2189,6 @@ footer a span:last-child {
     background: #f5f5f5;
     padding: 70px 58px 210px 58px;
     border-radius: 24px;
-    overflow: inherit;
   }
 
   .use-mob__img {
@@ -2520,7 +2519,6 @@ footer a span:last-child {
     padding: 100px 55px 210px 55px;
     border-radius: 24px;
     background: #ffc02038;
-    overflow: inherit;
   }
 
   .AEthing__img_left {
