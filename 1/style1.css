@@ -1751,41 +1751,15 @@ footer a span:last-child {
   }
 }
 
-/* TABS */
-@media (max-width: 768px) {
-  /* .use-mob__mobApp {
-    position: relative;
-    width: 424px;
-    
-    margin-top: 210px;
-    margin-left: 101px;
+/* TABS LANDSCAPE */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .get .get__right-items-wrapper .get__right-item {
+    max-width: 285px;
   }
-
-  .use-mob .subscribers {
-    position: relative;
-    width: 559px;
-    background-color: #5a40de;
-    border-radius: 100%;
-    padding: 57px 129px 67px 130px;
-    margin-left: 260px;
-    box-shadow: 18px -18px 5px -5px rgb(0 0 0 / 10%);
-  }
-
-  .main-items::before {
-    display: none;
-  }
-
-  .get__right-items-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 82px;
-    column-gap: 40px;
-  } */
 }
 
 /* TABS */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .bg-white {
     display: none;
   }
@@ -3230,7 +3204,7 @@ footer a span:last-child {
 
 /* MOBILE */
 
-@media (max-width: 460px) {
+@media (max-width: 767px) {
   body {
     padding: 10px 10px;
     background: none;

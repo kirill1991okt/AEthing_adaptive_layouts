@@ -2140,8 +2140,13 @@ footer a span:last-child {
   }
 }
 
+/* TABS LANDSCAPE */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
 /* TABS */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .bg-white {
     display: none;
   }
@@ -3674,7 +3679,7 @@ footer a span:last-child {
 /* /footer */
 
 /* MOBILE */
-@media (max-width: 460px) {
+@media (max-width: 767px) {
   body {
     padding: 10px 10px;
   }
