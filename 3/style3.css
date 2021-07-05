@@ -1676,7 +1676,9 @@ footer a span:last-child {
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
   }
 
   .mobile.menu .language:before {
@@ -1734,7 +1736,9 @@ footer a span:last-child {
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
   }
   /* /header */
 
@@ -1813,7 +1817,9 @@ footer a span:last-child {
 
     background: linear-gradient(to right, #6147e2 35%, #ffc120 65%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
     text-transform: uppercase;
     /* background: none;
     -webkit-background-clip: initial;
@@ -2160,9 +2166,10 @@ footer a span:last-child {
     line-height: 120px;
     background: rgb(97, 71, 226);
     background: linear-gradient(90.07deg, #6147e2 22.55%, #ffc120 58.08%);
-
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
   }
 
   .container__text {
@@ -2458,7 +2465,9 @@ footer a span:last-child {
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
   }
 
   .fillForm::after {
@@ -2762,7 +2771,9 @@ footer a span:last-child {
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
   }
 }
 /* /footer */

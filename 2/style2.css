@@ -370,7 +370,9 @@ nav .list__item a.list__link_active:focus::after {
   background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
   background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
 
   text-transform: uppercase;
 
@@ -2306,7 +2308,9 @@ footer a span:last-child {
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
   }
 
   .mobile.menu .language:before {
@@ -2364,7 +2368,9 @@ footer a span:last-child {
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
   }
 
   .main {
@@ -2542,7 +2548,9 @@ footer a span:last-child {
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
     margin-bottom: 57px;
   }
 
@@ -2850,7 +2858,9 @@ footer a span:last-child {
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
     margin-bottom: 90px;
     margin-left: auto;
     margin-right: 0;
@@ -3041,7 +3051,9 @@ footer a span:last-child {
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
     text-align: center;
     margin-bottom: 80px;
   }
@@ -3187,7 +3199,9 @@ footer a span:last-child {
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
     font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
@@ -3265,7 +3279,9 @@ footer a span:last-child {
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
   }
 
   .blockform {
@@ -3560,7 +3576,9 @@ footer a span:last-child {
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
   }
 }
 
@@ -3907,7 +3925,9 @@ footer a span:last-child {
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
     margin-left: 0;
   }
 

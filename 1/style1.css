@@ -457,13 +457,14 @@ nav .list__item a.list__link_active:focus::after {
   color: #ffffff;
   font-size: 72px;
   font-weight: 900;
-
   background: #5a40de;
   background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
   background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
   background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
 
   text-transform: uppercase;
   /* transition: cubic-bezier(0.19, 1, 0.22, 1); */
@@ -1970,7 +1971,9 @@ footer a span:last-child {
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
   }
 
   .mobile.menu .language:before {
@@ -2029,7 +2032,9 @@ footer a span:last-child {
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
   }
 
   .main {
@@ -2099,9 +2104,14 @@ footer a span:last-child {
     text-align: center;
     text-transform: uppercase;
     color: #ffc120;
-    background: none;
-    -webkit-background-clip: initial;
-    -webkit-text-fill-color: initial;
+    background: #5a40de;
+    background: -webkit-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
     margin-bottom: 0;
   }
 
@@ -2402,7 +2412,9 @@ footer a span:last-child {
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
     text-align: center;
     margin-bottom: 80px;
   }
@@ -2844,7 +2856,9 @@ footer a span:last-child {
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
   }
 
   .fillForm::after {
@@ -3150,7 +3164,9 @@ footer a span:last-child {
     background: -moz-linear-gradient(to right, #5a40de 0%, #f58317 100%);
     background: linear-gradient(to right, #5a40de 0%, #f58317 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
   }
 }
 
