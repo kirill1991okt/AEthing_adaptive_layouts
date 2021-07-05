@@ -1902,7 +1902,7 @@ footer a span:last-child {
     right: 0;
     border-radius: 24px 0 0 24px;
     padding: 40px;
-    width: 60%;
+    width: 450px;
     flex-direction: column;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
@@ -2861,6 +2861,7 @@ footer a span:last-child {
     margin-left: 0;
     padding: 0;
     max-width: 100%;
+    z-index: 10;
   }
 
   .section-form__title {
@@ -2905,6 +2906,8 @@ footer a span:last-child {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
+    z-index: 10;
+    display: block;
   }
 
   .fillForm::after {
@@ -2916,6 +2919,7 @@ footer a span:last-child {
     position: absolute;
     right: 90px;
     bottom: 190px;
+    z-index: 9;
   }
 
   /* /fillForm */
@@ -3089,11 +3093,11 @@ footer a span:last-child {
   }
 
   .modal-blockform h3 {
-    font-family: "DunbarText";
+    font-family: 'DunbarTall';
     font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
     margin-bottom: 60px;
     text-align: center;
   }
@@ -3251,7 +3255,7 @@ footer a span:last-child {
   }
 
   .mobile.menu {
-    width: 85%;
+    width: 240px;
     top: 22px;
   }
 
@@ -3644,7 +3648,7 @@ footer a span:last-child {
   /* section-form */
 
   .fillForm {
-    padding: 75px 35px 120px;
+    padding: 75px 35px 60px;
     margin-left: -10px;
     margin-right: -10px;
   }
@@ -3665,6 +3669,7 @@ footer a span:last-child {
   .section-form__link {
     font-size: 32px;
     line-height: 40px;
+    padding-bottom: 60px;
   }
 
   .fillForm::after {
@@ -3723,10 +3728,16 @@ footer a span:last-child {
   /* /footer */
 
   .modal {
+    display: block !important;
     -webkit-animation-duration: 1s; /* whatever timing you want */
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+
+  .modal.modal__close {
     -webkit-animation-name: modalOut;
     animation-name: modalOut;
   }

@@ -289,6 +289,13 @@ $(document).ready(function () {
             $('.bg__menu').removeClass('active');
         }
     });
+
+    $(".modal .close:not(.not-mob)").on('click', function() {
+        $(this).parents('.modal').addClass('modal__close');
+        setTimeout(function() {
+            $(this).parents('.modal').removeClass('modal__close');
+        }, 1000);
+    });
 });
 
 
