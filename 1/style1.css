@@ -1875,7 +1875,7 @@ footer a span:last-child {
     top: 44px;
     right: 0;
     border-radius: 24px 0 0 24px;
-    padding: 40px;
+    padding: 40px 20px;
     width: 450px;
     flex-direction: column;
     -webkit-transform: translateX(100%);

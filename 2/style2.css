@@ -2239,7 +2239,7 @@ footer a span:last-child {
     top: 44px;
     right: 0;
     border-radius: 24px 0 0 24px;
-    padding: 40px;
+    padding: 40px 20px;
     width: 450px;
     flex-direction: column;
     -webkit-transform: translateX(100%);
@@ -3632,6 +3632,10 @@ footer a span:last-child {
     background: linear-gradient(90.07deg, #6147e2 22.55%, #ffc120 58.08%);
     transition: 0.3s;
     color: #000;
+  }
+
+  .blockform-send:after {
+    display: none;
   }
 
   .blockform-send .mobile {

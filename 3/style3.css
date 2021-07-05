@@ -1611,7 +1611,7 @@ footer a span:last-child {
     top: 44px;
     right: 0;
     border-radius: 24px 0 0 24px;
-    padding: 40px;
+    padding: 40px 20px;
     width: 450px;
     flex-direction: column;
     -webkit-transform: translateX(100%);
@@ -2428,12 +2428,13 @@ footer a span:last-child {
   /* fillForm */
 
   .fillForm {
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: -1px;
     background: #000;
     padding: 75px 90px 190px;
     position: relative;
+    width: 100%;
   }
 
   .fillForm::before {
@@ -2529,13 +2530,14 @@ footer a span:last-child {
 
   /* footer */
   footer {
-    margin-left: -10px;
-    margin-right: -10px;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: -21px;
     background: #000;
     padding: 45px 90px 150px;
     position: relative;
     flex-direction: column;
+    width: 100%;
   }
 
   footer::before {
@@ -3114,8 +3116,6 @@ footer a span:last-child {
 
   .fillForm {
     padding: 75px 35px 60px;
-    margin-left: -10px;
-    margin-right: -10px;
   }
 
   .section-form__title {
@@ -3148,8 +3148,6 @@ footer a span:last-child {
 
   footer {
     padding: 45px 0px 150px;
-    margin-left: -10px;
-    margin-right: -10px;
   }
 
   footer .campany span {
