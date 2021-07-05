@@ -408,6 +408,7 @@
                 name="email"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 required
+                autocomplete="off"
               />
 
               <div class="checkbox_text">
@@ -426,13 +427,14 @@
                 </select>
                 <div class="prize-select-error"></div>
               </div>
-              <input type="text" placeholder="Tu nombre" class="name-select" />
+              <input type="text" placeholder="Tu nombre" class="name-select" autocomplete="off"/>
               <input
                 type="tel"
                 minlength="6"
                 placeholder="Número de teléfono"
                 class="phone-select"
                 pattern="\+\s?[0-9]{6,15}"
+                autocomplete="off"
               />
 
               <input type="submit" value="Únete al sorteo" />
@@ -481,7 +483,7 @@
 
           <div class="modal-body">
             <div class="modal-blockform">
-              <h2>Receive App release notification</h2>
+              <h2>Recibir notificación de lanzamiento de la aplicación</h2>
               <form>
                 <input
                   type="text"
@@ -489,6 +491,7 @@
                   name="name"
                   maxlength="30"
                   placeholder="Your name"
+                  autocomplete="off"
                 />
                 <input
                   type="email"
@@ -496,6 +499,7 @@
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                   placeholder="Your e-mail"
                   required
+                  autocomplete="off"
                 />
                 <input type="submit" class="notify" value="Notify me" />
               </form>
@@ -522,8 +526,7 @@
           <div class="modal-body">
             <div class="modal-blockform">
               <h3>
-                Me gustaría recibir una notificación cuando se lance la
-                aplicación AEtning
+                ¡Participa en el sorteo!
               </h3>
               <form>
                 <div class="country">
@@ -550,6 +553,7 @@
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                   placeholder="Tu correo electrónico"
                   required
+                  autocomplete="off"
                 />
 
                 <div class="checkbox_text">
@@ -578,6 +582,7 @@
                   name="name"
                   maxlength="30"
                   placeholder="Tu nombre"
+                  autocomplete="off"
                 />
                 <input
                   type="tel"
@@ -586,6 +591,7 @@
                   pattern="\+\s?[0-9]{6,15}"
                   placeholder="Número de teléfono"
                   class="phone-select"
+                  autocomplete="off"
                 />
 
                 <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" -->

@@ -93,6 +93,13 @@ $(document).ready(function () {
         }
     });
 
+    $(".modal .close:not(.not-mob)").on('click', function() {
+        $(this).parents('.modal').addClass('modal__close');
+        setTimeout(function() {
+            $(this).parents('.modal').removeClass('modal__close');
+        }, 1000);
+    });
+
 
     $("#formModal form").submit(function (event) {
         event.preventDefault();
