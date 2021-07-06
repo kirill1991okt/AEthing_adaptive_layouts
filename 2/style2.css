@@ -2146,7 +2146,6 @@ footer a span:last-child {
 
 /* TABS LANDSCAPE */
 @media (min-width: 769px) and (max-width: 1024px) {
-
 }
 
 /* TABS */
@@ -3545,7 +3544,7 @@ footer a span:last-child {
   }
 
   .modal-blockform h3 {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -4046,18 +4045,24 @@ footer a span:last-child {
   .blockchain .group__left p:nth-child(1) {
     font-size: 32px;
     line-height: 40px;
-    margin-bottom: 20px;
+    text-align: left;
+    margin-bottom: 40px;
   }
 
   .blockchain .group__left p:nth-child(2) {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 40px;
+    text-align: left;
+    margin-bottom: 80px;
   }
 
   .blockchain .group__right p {
+    font-family: "DunbarText";
+    font-style: normal;
+    font-weight: normal;
     font-size: 18px;
     line-height: 24px;
+    text-align: left;
   }
 
   .group__middle .group__middle_romb {
@@ -4087,6 +4092,12 @@ footer a span:last-child {
   }
 
   .group__middle p {
+    font-family: "DunbarText";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
     height: 90px;
   }
 
