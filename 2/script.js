@@ -50,8 +50,22 @@ $(document).ready(function () {
     });
 
 
-    $('.participate-select').prop('checked', false);
-    let participate = false;
+    let participate;
+    if($(document).width() < 1050) {
+        $('.participate-select').prop('checked', true);
+        if ($('.participate-select').is(':checked')) {
+            participate = true;
+            $('.phone-select', form).prop('required', true);
+            $('.name-select', form).prop('required', true);
+        } else {
+            $('.phone-select', form).prop('required', false);
+            $('.name-select', form).prop('required', false);
+            participate = false;
+        }
+    } else {
+        $('.participate-select').prop('checked', false);
+        participate = false;
+    }
 
     $('.participate-select').on("change", function () {
         form = $(this).parents('form');
