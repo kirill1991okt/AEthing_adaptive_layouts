@@ -1678,7 +1678,8 @@ input[type="tel"]:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="button"] {
   background-color: #e38522;
   border-radius: 17px;
   color: #fefefe;
@@ -1691,7 +1692,8 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+input[type="button"]:hover {
   background-color: #a25406;
   transition: 0.3s;
 }
@@ -1876,7 +1878,8 @@ input[type="tel"]:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="button"] {
   background-color: #e38522;
   border-radius: 17px;
   color: #fefefe;
@@ -1889,7 +1892,8 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+input[type="button"]:hover {
   background-color: #a25406;
   transition: 0.3s;
 }
@@ -3612,7 +3616,8 @@ footer a span:last-child {
     color: #000;
   }
 
-  input[type="submit"] {
+  input[type="submit"],
+  input[type="button"] {
     font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
@@ -3628,7 +3633,8 @@ footer a span:last-child {
     margin: 0 auto;
   }
 
-  input[type="submit"]:hover {
+  input[type="submit"]:hover,
+  input[type="button"]:hover {
     background: linear-gradient(90.07deg, #6147e2 22.55%, #ffc120 58.08%);
     transition: 0.3s;
     color: #000;
