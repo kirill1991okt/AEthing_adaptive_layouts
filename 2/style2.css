@@ -2222,7 +2222,7 @@ footer a span:last-child {
     position: fixed;
     top: 44px;
     right: 56px;
-    z-index: 9999;
+    z-index: 101;
     background: #fff;
     border-radius: 100%;
     width: 75px;
@@ -3026,6 +3026,10 @@ footer a span:last-child {
     color: #000;
     margin-bottom: 50px;
     opacity: 1;
+  }
+
+  .blockchain .slider-wrapper {
+    display: none;
   }
 
   .blockchain .group__middle {
@@ -4040,10 +4044,12 @@ footer a span:last-child {
 
   .blockchain .group.active {
     padding: 15px 24px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .blockchain .group__left p:nth-child(1) {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 40px;
     text-align: left;
     margin-bottom: 40px;
@@ -4063,6 +4069,10 @@ footer a span:last-child {
     font-size: 18px;
     line-height: 24px;
     text-align: left;
+  }
+
+  .blockchain .slider-wrapper {
+    display: block;
   }
 
   .group__middle .group__middle_romb {
