@@ -751,7 +751,7 @@ nav .list__item a.list__link_active:focus::after {
   z-index: 10;
 }
 
-/* .use-mob .subscribers a::after {
+.use-mob .subscribers a::after {
   content: "";
   display: block;
   position: absolute;
@@ -760,7 +760,7 @@ nav .list__item a.list__link_active:focus::after {
   height: 1px;
   background-color: #ffffff;
   transition: width 0.3s ease-out;
-} */
+}
 
 .use-mob .subscribers a:hover::after,
 .use-mob .subscribers a:focus::after {
@@ -1256,7 +1256,7 @@ nav .list__item a.list__link_active:focus::after {
 
 .get__right .btn {
   width: 260px;
-  padding: 9px 75px;
+  padding: 9px 45px;
   height: 36px;
   color: #ffffff;
   font-size: 17px;
@@ -3067,7 +3067,7 @@ footer a span:last-child {
   }
 
   .modal-blockform h3 {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 32px;

@@ -76,7 +76,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
 }
 
@@ -142,7 +142,7 @@ nav .list__item a {
 
 nav .list__item a::after,
 nav .list__item a.list__link_active::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -206,7 +206,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .language .popup div a::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -358,7 +358,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .main-title__link1::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -464,6 +464,7 @@ nav .list__item a.list__link_active:focus::after {
 .work .work__container {
   width: 100%;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   /* gap: 10px; */
 }
@@ -503,7 +504,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .container__items .container__item::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 20px;
   width: 50px;
@@ -517,7 +518,7 @@ nav .list__item a.list__link_active:focus::after {
 .container__text {
   opacity: 0.7019607843137254;
   color: #161515;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   margin-right: 35px;
 }
@@ -573,7 +574,7 @@ main .link a {
 }
 
 main .link a::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -726,7 +727,7 @@ main .link a {
 }
 
 .fillForm::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -878,7 +879,7 @@ main .link a {
   width: 100%;
 }
 
-.blockform input[type='checkbox'] {
+.blockform input[type="checkbox"] {
   width: 24px;
   height: 24px;
   margin-left: 10px;
@@ -891,7 +892,7 @@ main .link a {
   appearance: none;
 }
 
-select[name='country'] {
+select[name="country"] {
   background-color: #6a6a6a;
   border-radius: 17px;
   color: #fefefe;
@@ -909,17 +910,17 @@ form .country::after {
   position: absolute;
   top: 11px;
   right: 15px;
-  content: '>';
+  content: ">";
   color: #fefefe;
   font-size: 14px;
   font-weight: 600;
 }
 
-select[name='country']:focus {
+select[name="country"]:focus {
   outline: none;
 }
 
-input[type='email'] {
+input[type="email"] {
   background-color: #6a6a6a;
   border-radius: 17px;
   padding-top: 11px;
@@ -931,14 +932,14 @@ input[type='email'] {
   text-align: center;
 }
 
-input[type='email']::placeholder {
+input[type="email"]::placeholder {
   color: #fefefe;
   font-size: 14px;
   text-align: center;
   line-height: 1;
 }
 
-input[type='email']:focus::-webkit-input-placeholder {
+input[type="email"]:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
@@ -956,7 +957,7 @@ form .prize {
   margin-bottom: 13px;
 }
 
-select[name='prize'] {
+select[name="prize"] {
   background-color: #6a6a6a;
   border-radius: 17px;
   color: #fefefe;
@@ -965,7 +966,7 @@ select[name='prize'] {
   cursor: pointer;
 }
 
-select[name='prize']:focus {
+select[name="prize"]:focus {
   outline: none;
 }
 
@@ -973,13 +974,13 @@ form .prize::after {
   position: absolute;
   top: 11px;
   right: 26px;
-  content: '>';
+  content: ">";
   color: #fefefe;
   font-size: 14px;
   font-weight: 600;
 }
 
-input[type='text'] {
+input[type="text"] {
   background-color: #6a6a6a;
   border-radius: 17px;
   text-align: center;
@@ -990,16 +991,16 @@ input[type='text'] {
   margin-bottom: 12px;
 }
 
-input[type='text']::placeholder {
+input[type="text"]::placeholder {
   color: #fefefe;
   font-size: 14px;
 }
 
-input[type='text']:focus::-webkit-input-placeholder {
+input[type="text"]:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input[type='tel'] {
+input[type="tel"] {
   background-color: #6a6a6a;
   border-radius: 17px;
   text-align: center;
@@ -1010,17 +1011,17 @@ input[type='tel'] {
   margin-bottom: 23px;
 }
 
-input[type='tel']::placeholder {
+input[type="tel"]::placeholder {
   color: #fefefe;
   font-size: 14px;
 }
 
-input[type='tel']:focus::-webkit-input-placeholder {
+input[type="tel"]:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input[type='submit'],
-input[type='button'] {
+input[type="submit"],
+input[type="button"] {
   background-color: #e38522;
   border-radius: 17px;
   color: #fefefe;
@@ -1033,8 +1034,8 @@ input[type='button'] {
   cursor: pointer;
 }
 
-input[type='submit']:hover,
-input[type='button']:hover {
+input[type="submit"]:hover,
+input[type="button"]:hover {
   background-color: #a25406;
   transition: 0.3s;
 }
@@ -1079,7 +1080,7 @@ input[type='button']:hover {
   width: 100%;
 }
 
-.modal-blockform input[type='checkbox'] {
+.modal-blockform input[type="checkbox"] {
   width: 24px;
   height: 24px;
   margin-left: 10px;
@@ -1092,7 +1093,7 @@ input[type='button']:hover {
   appearance: none;
 }
 
-.modal-blockform select[name='country'] {
+.modal-blockform select[name="country"] {
   background-color: #6a6a6a;
   border-radius: 17px;
   color: #fefefe;
@@ -1110,17 +1111,17 @@ form .country::after {
   position: absolute;
   top: 11px;
   right: 15px;
-  content: '>';
+  content: ">";
   color: #fefefe;
   font-size: 14px;
   font-weight: 600;
 }
 
-select[name='country']:focus {
+select[name="country"]:focus {
   outline: none;
 }
 
-.modal-blockform input[type='email'] {
+.modal-blockform input[type="email"] {
   background-color: #6a6a6a;
   border-radius: 17px;
   padding-top: 11px;
@@ -1132,14 +1133,14 @@ select[name='country']:focus {
   text-align: center;
 }
 
-input[type='email']::placeholder {
+input[type="email"]::placeholder {
   color: #fefefe;
   font-size: 14px;
   text-align: center;
   line-height: 1;
 }
 
-input[type='email']:focus::-webkit-input-placeholder {
+input[type="email"]:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
@@ -1157,7 +1158,7 @@ form .prize {
   margin-bottom: 13px;
 }
 
-.modal-blockform select[name='prize'] {
+.modal-blockform select[name="prize"] {
   background-color: #6a6a6a;
   border-radius: 17px;
   color: #fefefe;
@@ -1166,7 +1167,7 @@ form .prize {
   cursor: pointer;
 }
 
-select[name='prize']:focus {
+select[name="prize"]:focus {
   outline: none;
 }
 
@@ -1174,13 +1175,13 @@ form .prize::after {
   position: absolute;
   top: 11px;
   right: 26px;
-  content: '>';
+  content: ">";
   color: #fefefe;
   font-size: 14px;
   font-weight: 600;
 }
 
-.modal-blockform input[type='text'] {
+.modal-blockform input[type="text"] {
   background-color: #6a6a6a;
   border-radius: 17px;
   text-align: center;
@@ -1191,16 +1192,16 @@ form .prize::after {
   margin-bottom: 12px;
 }
 
-input[type='text']::placeholder {
+input[type="text"]::placeholder {
   color: #fefefe;
   font-size: 14px;
 }
 
-input[type='text']:focus::-webkit-input-placeholder {
+input[type="text"]:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-.modal-blockform input[type='tel'] {
+.modal-blockform input[type="tel"] {
   background-color: #6a6a6a;
   border-radius: 17px;
   text-align: center;
@@ -1211,17 +1212,17 @@ input[type='text']:focus::-webkit-input-placeholder {
   margin-bottom: 23px;
 }
 
-input[type='tel']::placeholder {
+input[type="tel"]::placeholder {
   color: #fefefe;
   font-size: 14px;
 }
 
-input[type='tel']:focus::-webkit-input-placeholder {
+input[type="tel"]:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input[type='submit'],
-input[type='button'] {
+input[type="submit"],
+input[type="button"] {
   background-color: #e38522;
   border-radius: 17px;
   color: #fefefe;
@@ -1234,8 +1235,8 @@ input[type='button'] {
   cursor: pointer;
 }
 
-input[type='submit']:hover,
-input[type='button']:hover {
+input[type="submit"]:hover,
+input[type="button"]:hover {
   background-color: #a25406;
   transition: 0.3s;
 }
@@ -1365,7 +1366,7 @@ footer a span:last-child {
 }
 
 .blockform-send:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1400,7 +1401,7 @@ footer a span:last-child {
 
 .bg-white nav .list__item a::after,
 .bg-white nav .list__item a.list__link_active::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -1436,7 +1437,7 @@ footer a span:last-child {
 }
 
 .bg-white .language span::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -1485,7 +1486,7 @@ footer a span:last-child {
 }
 
 .bg-white .language .popup div a::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 0;
@@ -1674,7 +1675,7 @@ footer a span:last-child {
   }
 
   nav .list__item a {
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -1704,7 +1705,7 @@ footer a span:last-child {
   }
 
   .mobile.menu .language:before {
-    content: '';
+    content: "";
     display: block;
     width: 80px;
     height: 1px;
@@ -1729,7 +1730,7 @@ footer a span:last-child {
   }
 
   .mobile.menu .language span {
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -1744,7 +1745,7 @@ footer a span:last-child {
   }
 
   .mobile.menu .language a {
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -1791,7 +1792,7 @@ footer a span:last-child {
   }
 
   .main:before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 0;
@@ -1827,7 +1828,7 @@ footer a span:last-child {
   }
 
   .main-title__header {
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -1838,7 +1839,7 @@ footer a span:last-child {
   }
 
   .main-title__first {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 64px;
@@ -1860,7 +1861,7 @@ footer a span:last-child {
   }
 
   .main-title .text1 {
-    font-family: 'DunbarLow';
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -1871,7 +1872,7 @@ footer a span:last-child {
   }
 
   .main__btn {
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -1886,7 +1887,7 @@ footer a span:last-child {
   }
 
   .main-title .text2 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -1919,7 +1920,7 @@ footer a span:last-child {
   }
 
   .right .right__title {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -1929,7 +1930,7 @@ footer a span:last-child {
   }
 
   .right .right__title::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 70px;
     left: 58px;
@@ -1956,7 +1957,7 @@ footer a span:last-child {
   }
 
   .left__count .left__count_wrap:nth-child(1):before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 60px;
@@ -1966,7 +1967,7 @@ footer a span:last-child {
   }
 
   .left__count .left__count_wrap:nth-child(2):before {
-    content: '';
+    content: "";
     position: absolute;
     top: 45px;
     left: 60px;
@@ -1976,7 +1977,7 @@ footer a span:last-child {
   }
 
   .left__count .left__count_wrap:nth-child(3):before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 55px;
@@ -1991,7 +1992,7 @@ footer a span:last-child {
 
   .left__count .left__count_description {
     width: 307px;
-    font-family: 'DunbarLow';
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2030,7 +2031,7 @@ footer a span:last-child {
     margin-top: 130px;
     margin-bottom: 180px;
     max-width: 542px;
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2071,7 +2072,7 @@ footer a span:last-child {
   }
 
   .work .right__bot .right__bot__title {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2082,7 +2083,7 @@ footer a span:last-child {
   }
 
   .work .title::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -130px;
     right: -50px;
@@ -2095,7 +2096,7 @@ footer a span:last-child {
   }
 
   .work .title::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -20px;
     right: 0px;
@@ -2252,7 +2253,7 @@ footer a span:last-child {
     position: relative;
     max-width: 462px;
     display: inline-block;
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2264,7 +2265,7 @@ footer a span:last-child {
   }
 
   main .link a::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -130px;
     left: -90px;
@@ -2277,7 +2278,7 @@ footer a span:last-child {
   }
 
   main .link a::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -20px;
     left: 0px;
@@ -2321,7 +2322,7 @@ footer a span:last-child {
   }
 
   .conditions .square::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -40px;
     left: 65px;
@@ -2338,7 +2339,7 @@ footer a span:last-child {
 
   .conditions .square__title {
     position: relative;
-    font-family: 'DunbarText';
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2349,7 +2350,7 @@ footer a span:last-child {
 
   .conditions .square__title span {
     display: block;
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2361,7 +2362,7 @@ footer a span:last-child {
 
   .conditions .square__subtitle {
     width: auto;
-    font-family: 'DunbarLow';
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2488,7 +2489,7 @@ footer a span:last-child {
 
   .section-form__title {
     text-align: left;
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2500,7 +2501,7 @@ footer a span:last-child {
 
   .section-form__subtitle {
     text-align: left;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -2510,7 +2511,7 @@ footer a span:last-child {
   }
 
   .section-form__link {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2531,7 +2532,7 @@ footer a span:last-child {
   }
 
   .fillForm::after {
-    content: '';
+    content: "";
     display: block;
     width: 90px;
     height: 45px;
@@ -2557,7 +2558,7 @@ footer a span:last-child {
   }
 
   footer::before {
-    content: '';
+    content: "";
     display: block;
     width: 74px;
     height: 1px;
@@ -2594,7 +2595,7 @@ footer a span:last-child {
   }
 
   footer .campany span {
-    font-family: 'DunbarLow';
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2605,7 +2606,7 @@ footer a span:last-child {
 
   footer p {
     width: 50%;
-    font-family: 'DunbarLow';
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2618,7 +2619,7 @@ footer a span:last-child {
   footer .office {
     width: auto;
     margin: 0 auto;
-    font-family: 'DunbarLow';
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2627,7 +2628,7 @@ footer a span:last-child {
   }
 
   footer .office h3 {
-    font-family: 'DunbarLow';
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2639,7 +2640,7 @@ footer a span:last-child {
   }
 
   footer address {
-    font-family: 'DunbarLow';
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2651,7 +2652,7 @@ footer a span:last-child {
   }
 
   footer a {
-    font-family: 'DunbarLow';
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2661,7 +2662,7 @@ footer a span:last-child {
   }
 
   footer a span:last-child {
-    font-family: 'DunbarLow';
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2702,7 +2703,7 @@ footer a span:last-child {
   }
 
   .modal-blockform h2 {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -2712,7 +2713,7 @@ footer a span:last-child {
   }
 
   .modal-blockform h3 {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -2721,9 +2722,9 @@ footer a span:last-child {
     text-align: center;
   }
 
-  .modal-blockform select[name='country'],
-  .modal-blockform select[name='prize'] {
-    font-family: 'DunbarLow';
+  .modal-blockform select[name="country"],
+  .modal-blockform select[name="prize"] {
+    font-family: "DunbarLow";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -2736,10 +2737,10 @@ footer a span:last-child {
     border: 1px solid transparent;
   }
 
-  .modal-blockform input[type='email'],
-  .modal-blockform input[type='text'],
-  .modal-blockform input[type='tel'] {
-    font-family: 'Josefin Sans', sans-serif;
+  .modal-blockform input[type="email"],
+  .modal-blockform input[type="text"],
+  .modal-blockform input[type="tel"] {
+    font-family: "Josefin Sans", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -2751,11 +2752,11 @@ footer a span:last-child {
     padding-bottom: 9px;
   }
 
-  .modal-blockform select[name='country']:target,
-  .modal-blockform select[name='prize']:target,
-  .modal-blockform input[type='email']:focus,
-  .modal-blockform input[type='text']:focus,
-  .modal-blockform input[type='tel']:focus {
+  .modal-blockform select[name="country"]:target,
+  .modal-blockform select[name="prize"]:target,
+  .modal-blockform input[type="email"]:focus,
+  .modal-blockform input[type="text"]:focus,
+  .modal-blockform input[type="tel"]:focus {
     border: 1px solid #ffc120;
   }
 
@@ -2763,9 +2764,9 @@ footer a span:last-child {
     margin-bottom: 0;
   }
 
-  .modal-blockform input[type='email']::placeholder,
-  .modal-blockform input[type='text']::placeholder,
-  .modal-blockform input[type='tel']::placeholder {
+  .modal-blockform input[type="email"]::placeholder,
+  .modal-blockform input[type="text"]::placeholder,
+  .modal-blockform input[type="tel"]::placeholder {
     color: #000;
   }
 
@@ -2773,19 +2774,19 @@ footer a span:last-child {
     display: none;
   }
 
-  input.notify[type='submit'] {
+  input.notify[type="submit"] {
     margin-top: 65px;
   }
 
-  input.notify[type='submit']:hover {
+  input.notify[type="submit"]:hover {
     background: linear-gradient(90.07deg, #6147e2 22.55%, #ffc120 58.08%);
     transition: 0.3s;
     color: #000;
   }
 
-  input[type='submit'],
-  input[type='button'] {
-    font-family: 'DunbarText';
+  input[type="submit"],
+  input[type="button"] {
+    font-family: "DunbarText";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -2800,8 +2801,8 @@ footer a span:last-child {
     margin: 0 auto;
   }
 
-  input[type='submit']:hover,
-  input[type='button']:hover {
+  input[type="submit"]:hover,
+  input[type="button"]:hover {
     background: linear-gradient(90.07deg, #6147e2 22.55%, #ffc120 58.08%);
     transition: 0.3s;
     color: #000;
@@ -2812,7 +2813,7 @@ footer a span:last-child {
   }
 
   .blockform-send .mobile .title {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -2829,7 +2830,7 @@ footer a span:last-child {
   }
 
   .blockform-send .mobile .subtitle {
-    font-family: 'DunbarTall';
+    font-family: "DunbarTall";
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -3006,7 +3007,7 @@ footer a span:last-child {
   }
 
   .work .title::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -60px;
     right: -15px;
@@ -3074,7 +3075,7 @@ footer a span:last-child {
   }
 
   main .link a::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -80px;
     left: -45px;
