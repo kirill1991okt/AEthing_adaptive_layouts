@@ -293,10 +293,13 @@ nav .list__item a.list__link_active:focus::after {
 
 /* main */
 
+main {
+  overflow: hidden;
+}
+
 .main {
   position: relative;
   background-color: #191919;
-  overflow: hidden;
 }
 
 .main__img {

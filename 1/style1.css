@@ -385,10 +385,13 @@ nav .list__item a.list__link_active:focus::after {
   width: 100%;
 }
 
+main {
+  overflow: hidden;
+}
+
 .main {
   background-color: #191919;
   position: relative;
-  overflow: hidden;
 }
 
 .main__img {
@@ -1762,6 +1765,8 @@ footer a span:last-child {
 
 /* TABS */
 @media (max-width: 1024px) {
+  ютще
+
   .bg-white {
     display: none;
   }
@@ -2050,6 +2055,10 @@ footer a span:last-child {
     border-radius: 100%;
     background-size: cover;
     filter: brightness(70%);
+  }
+
+  .main__btn.not-mob {
+    display: none;
   }
 
   .main__btn:hover {
