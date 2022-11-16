@@ -150,7 +150,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
 }
 
@@ -172,7 +172,7 @@ a:hover {
 }
 
 header {
-  padding-top: 8px;
+  padding-top: 12px;
   background-color: #171819;
 }
 
@@ -210,7 +210,7 @@ nav .list__item a {
 
 nav .list__item a::after,
 nav .list__item a.list__link_active::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 0;
@@ -274,7 +274,7 @@ nav .list__item a.list__link_active:focus::after {
 }
 
 .language .popup div a::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 0;
@@ -303,7 +303,7 @@ main {
 }
 
 .main__img {
-  background-image: url(./img/girl_1_bg.jpg);
+  background-image: url(../img/girl_1_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0px 0px;
@@ -406,7 +406,7 @@ main {
 }
 
 .main-title__link::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 0;
@@ -465,7 +465,7 @@ main {
 }
 
 .main-title__link1::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 0;
@@ -685,13 +685,13 @@ main {
 }
 
 .darkblock::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background: url("./img/img3.svg");
+  background: url('../img/img3.svg');
   border-radius: 20px;
   opacity: 0.4;
   z-index: -1;
@@ -823,7 +823,7 @@ main {
   position: absolute;
   top: 13px;
   left: 19px;
-  content: " ";
+  content: ' ';
   height: 14px;
   width: 2px;
   background-color: #8082d1;
@@ -1003,7 +1003,7 @@ main {
   position: absolute;
   top: 51px;
   left: -22px;
-  content: "";
+  content: '';
   width: 0;
   height: 0;
   border-style: solid;
@@ -1015,7 +1015,7 @@ main {
   position: absolute;
   top: 0px;
   right: -70px;
-  content: "";
+  content: '';
   width: 0;
   height: 0;
   border-style: solid;
@@ -1040,11 +1040,11 @@ main {
 }
 
 .group__middle .group__middle_romb:before {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url(./img/square.png);
+  background-image: url(../img/square.png);
   background-position: center center;
   background-size: 100%;
   z-index: -1;
@@ -1085,13 +1085,13 @@ main {
 }
 
 .diamont__wrap .left::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: url(./img/img3-GA.png);
+  background-image: url(../img/img3-GA.png);
   background-attachment: fixed;
   background-size: cover;
   background-position-y: 50%;
@@ -1113,13 +1113,13 @@ main {
 }
 
 .diamont__wrap .right::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: url(./img/img3-GA_revers.png);
+  background-image: url(../img/img3-GA_revers.png);
   background-attachment: fixed;
   background-size: cover;
   background-position-y: 100%;
@@ -1214,7 +1214,7 @@ main {
 }
 
 .right__link::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 0;
@@ -1293,7 +1293,7 @@ main {
 }
 
 .creating__link::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 0;
@@ -1321,7 +1321,7 @@ main {
 }
 
 .section-form__img {
-  background-image: url(./img/dog.jpg);
+  background-image: url(../img/dog.jpg);
   background-size: 840px 1330px;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
@@ -1479,7 +1479,7 @@ main {
 }
 
 .blockform-send:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -1502,7 +1502,7 @@ main {
   width: 100%;
 }
 
-.blockform input[type="checkbox"] {
+.blockform input[type='checkbox'] {
   width: 24px;
   height: 24px;
   margin-left: 10px;
@@ -1528,7 +1528,7 @@ main {
   color: white !important;
 }
 
-select[name="country"] {
+select[name='country'] {
   background-color: #7c6f3d;
   border-radius: 17px;
   color: #fefefe;
@@ -1570,17 +1570,17 @@ form .country::after {
   position: absolute;
   top: 11px;
   right: 15px;
-  content: ">";
+  content: '>';
   color: #fefefe;
   font-size: 14px;
   font-weight: 600;
 }
 
-select[name="country"]:focus {
+select[name='country']:focus {
   outline: none;
 }
 
-input[type="email"] {
+input[type='email'] {
   background-color: #7c6f3d;
   border-radius: 17px;
   padding-top: 11px;
@@ -1592,14 +1592,14 @@ input[type="email"] {
   text-align: center;
 }
 
-input[type="email"]::placeholder {
+input[type='email']::placeholder {
   color: #fefefe;
   font-size: 14px;
   text-align: center;
   line-height: 1;
 }
 
-input[type="email"]:focus::-webkit-input-placeholder {
+input[type='email']:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
@@ -1617,7 +1617,7 @@ form .prize {
   margin-bottom: 13px;
 }
 
-select[name="prize"] {
+select[name='prize'] {
   background-color: #7c6f3d;
   border-radius: 17px;
   color: #fefefe;
@@ -1626,7 +1626,7 @@ select[name="prize"] {
   cursor: pointer;
 }
 
-select[name="prize"]:focus {
+select[name='prize']:focus {
   outline: none;
 }
 
@@ -1634,13 +1634,13 @@ form .prize::after {
   position: absolute;
   top: 11px;
   right: 26px;
-  content: ">";
+  content: '>';
   color: #fefefe;
   font-size: 14px;
   font-weight: 600;
 }
 
-input[type="text"] {
+input[type='text'] {
   background-color: #7c6f3d;
   border-radius: 17px;
   text-align: center;
@@ -1651,16 +1651,16 @@ input[type="text"] {
   margin-bottom: 12px;
 }
 
-input[type="text"]::placeholder {
+input[type='text']::placeholder {
   color: #fefefe;
   font-size: 14px;
 }
 
-input[type="text"]:focus::-webkit-input-placeholder {
+input[type='text']:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input[type="tel"] {
+input[type='tel'] {
   background-color: #7c6f3d;
   border-radius: 17px;
   text-align: center;
@@ -1671,17 +1671,17 @@ input[type="tel"] {
   margin-bottom: 23px;
 }
 
-input[type="tel"]::placeholder {
+input[type='tel']::placeholder {
   color: #fefefe;
   font-size: 14px;
 }
 
-input[type="tel"]:focus::-webkit-input-placeholder {
+input[type='tel']:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input[type="submit"],
-input[type="button"] {
+input[type='submit'],
+input[type='button'] {
   background-color: #e38522;
   border-radius: 17px;
   color: #fefefe;
@@ -1694,8 +1694,8 @@ input[type="button"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover,
-input[type="button"]:hover {
+input[type='submit']:hover,
+input[type='button']:hover {
   background-color: #a25406;
   transition: 0.3s;
 }
@@ -1739,7 +1739,7 @@ input[type="button"]:hover {
   width: 100%;
 }
 
-.modal-blockform input[type="checkbox"] {
+.modal-blockform input[type='checkbox'] {
   width: 24px;
   height: 24px;
   margin-left: 10px;
@@ -1752,7 +1752,7 @@ input[type="button"]:hover {
   appearance: none;
 }
 
-select[name="country"] {
+select[name='country'] {
   background-color: #7c6f3d;
   border-radius: 17px;
   color: #fefefe;
@@ -1770,17 +1770,17 @@ form .country::after {
   position: absolute;
   top: 11px;
   right: 15px;
-  content: ">";
+  content: '>';
   color: #fefefe;
   font-size: 14px;
   font-weight: 600;
 }
 
-select[name="country"]:focus {
+select[name='country']:focus {
   outline: none;
 }
 
-input[type="email"] {
+input[type='email'] {
   background-color: #7c6f3d;
   border-radius: 17px;
   padding-top: 11px;
@@ -1792,14 +1792,14 @@ input[type="email"] {
   text-align: center;
 }
 
-input[type="email"]::placeholder {
+input[type='email']::placeholder {
   color: #fefefe;
   font-size: 14px;
   text-align: center;
   line-height: 1;
 }
 
-input[type="email"]:focus::-webkit-input-placeholder {
+input[type='email']:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
@@ -1817,7 +1817,7 @@ form .prize {
   margin-bottom: 13px;
 }
 
-select[name="prize"] {
+select[name='prize'] {
   background-color: #7c6f3d;
   border-radius: 17px;
   color: #fefefe;
@@ -1826,7 +1826,7 @@ select[name="prize"] {
   cursor: pointer;
 }
 
-select[name="prize"]:focus {
+select[name='prize']:focus {
   outline: none;
 }
 
@@ -1834,13 +1834,13 @@ form .prize::after {
   position: absolute;
   top: 11px;
   right: 26px;
-  content: ">";
+  content: '>';
   color: #fefefe;
   font-size: 14px;
   font-weight: 600;
 }
 
-input[type="text"] {
+input[type='text'] {
   background-color: #7c6f3d;
   border-radius: 17px;
   text-align: center;
@@ -1851,16 +1851,16 @@ input[type="text"] {
   margin-bottom: 12px;
 }
 
-input[type="text"]::placeholder {
+input[type='text']::placeholder {
   color: #fefefe;
   font-size: 14px;
 }
 
-input[type="text"]:focus::-webkit-input-placeholder {
+input[type='text']:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input[type="tel"] {
+input[type='tel'] {
   background-color: #7c6f3d;
   border-radius: 17px;
   text-align: center;
@@ -1871,17 +1871,17 @@ input[type="tel"] {
   margin-bottom: 23px;
 }
 
-input[type="tel"]::placeholder {
+input[type='tel']::placeholder {
   color: #fefefe;
   font-size: 14px;
 }
 
-input[type="tel"]:focus::-webkit-input-placeholder {
+input[type='tel']:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-input[type="submit"],
-input[type="button"] {
+input[type='submit'],
+input[type='button'] {
   background-color: #e38522;
   border-radius: 17px;
   color: #fefefe;
@@ -1894,8 +1894,8 @@ input[type="button"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover,
-input[type="button"]:hover {
+input[type='submit']:hover,
+input[type='button']:hover {
   background-color: #a25406;
   transition: 0.3s;
 }
@@ -1905,7 +1905,7 @@ input[type="button"]:hover {
 .spainForm {
   width: 324px;
   height: 620px;
-  background-image: url(./img/girl_1_bg-tr.jpg);
+  background-image: url(../img/girl_1_bg-tr.jpg);
   background-size: cover;
 }
 
@@ -1996,7 +1996,7 @@ footer a span:last-child {
 
 .bg-white nav .list__item a::after,
 .bg-white nav .list__item a.list__link_active::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 0;
@@ -2032,7 +2032,7 @@ footer a span:last-child {
 }
 
 .bg-white .language span::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 0;
@@ -2081,7 +2081,7 @@ footer a span:last-child {
 }
 
 .bg-white .language .popup div a::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 0;
@@ -2157,7 +2157,7 @@ footer a span:last-child {
   }
 
   .main-title__link::after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     left: 0;
@@ -2309,7 +2309,7 @@ footer a span:last-child {
   }
 
   nav .list__item a {
-    font-family: "DunbarText";
+    font-family: 'DunbarText';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2339,7 +2339,7 @@ footer a span:last-child {
   }
 
   .mobile.menu .language:before {
-    content: "";
+    content: '';
     display: block;
     width: 80px;
     height: 1px;
@@ -2364,7 +2364,7 @@ footer a span:last-child {
   }
 
   .mobile.menu .language span {
-    font-family: "DunbarText";
+    font-family: 'DunbarText';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2379,7 +2379,7 @@ footer a span:last-child {
   }
 
   .mobile.menu .language a {
-    font-family: "DunbarText";
+    font-family: 'DunbarText';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2419,13 +2419,13 @@ footer a span:last-child {
   }
 
   .main:before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url(./img/girl_1_bg.jpg);
+    background-image: url(../img/girl_1_bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     width: 420px;
@@ -2453,7 +2453,7 @@ footer a span:last-child {
   }
 
   .main-title__header {
-    font-family: "DunbarText";
+    font-family: 'DunbarText';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2462,7 +2462,7 @@ footer a span:last-child {
   }
 
   .main-title__first {
-    font-family: "DunbarTall";
+    font-family: 'DunbarTall';
     font-style: normal;
     font-weight: 800;
     font-size: 64px;
@@ -2477,7 +2477,7 @@ footer a span:last-child {
   }
 
   .main-title__subtitle {
-    font-family: "DunbarLow";
+    font-family: 'DunbarLow';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2491,7 +2491,7 @@ footer a span:last-child {
   }
 
   .main-title__link.mobile {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -2502,7 +2502,7 @@ footer a span:last-child {
   }
 
   .main__btn {
-    font-family: "DunbarText";
+    font-family: 'DunbarText';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -2549,7 +2549,7 @@ footer a span:last-child {
   }
 
   .participate__container .top .top__title {
-    font-family: "DunbarTall ExBold";
+    font-family: 'DunbarTall ExBold';
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2558,7 +2558,7 @@ footer a span:last-child {
   }
 
   .participate__container .top .top__subtitle {
-    font-family: "DunbarText";
+    font-family: 'DunbarText';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2566,7 +2566,7 @@ footer a span:last-child {
     margin-bottom: 40px;
   }
   .participate__container .top .top__text {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -2576,7 +2576,7 @@ footer a span:last-child {
   }
 
   .participate__container .top .top__undertext {
-    font-family: "DunbarText";
+    font-family: 'DunbarText';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2604,7 +2604,7 @@ footer a span:last-child {
   }
 
   .participate .right:before {
-    content: "";
+    content: '';
     display: block;
     width: 74px;
     height: 1px;
@@ -2620,19 +2620,19 @@ footer a span:last-child {
   }
 
   .participate .right:after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     top: 155px;
     right: 40px;
     width: 59px;
     height: 686px;
-    background: url("./img/linepart.svg") no-repeat;
+    background: url('../img/linepart.svg') no-repeat;
     background-size: 100%;
   }
 
   .right .right__title {
-    font-family: "DunbarTall";
+    font-family: 'DunbarTall';
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2642,7 +2642,7 @@ footer a span:last-child {
   }
 
   .right .right__subtitle {
-    font-family: "DunbarText";
+    font-family: 'DunbarText';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2697,7 +2697,7 @@ footer a span:last-child {
   }
 
   .left__count .left__count_description {
-    font-family: "DunbarLow";
+    font-family: 'DunbarLow';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2749,7 +2749,7 @@ footer a span:last-child {
   }
 
   .prize__container .title {
-    font-family: "DunbarTall";
+    font-family: 'DunbarTall';
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2800,7 +2800,7 @@ footer a span:last-child {
   }
 
   .items .items__text {
-    font-family: "DunbarTall";
+    font-family: 'DunbarTall';
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -2839,7 +2839,7 @@ footer a span:last-child {
   }
 
   .blockchain__top__wrap .blockchain__top__title {
-    font-family: "DunbarTall";
+    font-family: 'DunbarTall';
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2849,7 +2849,7 @@ footer a span:last-child {
   }
 
   .blockchain__top__wrap .blockchain__top__subtitle {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -2859,7 +2859,7 @@ footer a span:last-child {
   }
 
   .blockchain__top__wrap .blockchain__top__btn {
-    font-family: "DunbarText";
+    font-family: 'DunbarText';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -2873,7 +2873,7 @@ footer a span:last-child {
   }
 
   .blockchain__title {
-    font-family: "DunbarTall";
+    font-family: 'DunbarTall';
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2886,7 +2886,7 @@ footer a span:last-child {
   }
 
   .blockchain__subtitle {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -2899,7 +2899,7 @@ footer a span:last-child {
   }
 
   .blockchain .top__undertext {
-    font-family: "DunbarLow";
+    font-family: 'DunbarLow';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -2947,7 +2947,7 @@ footer a span:last-child {
   }
 
   .right__bot .right__bot__title {
-    font-family: "DunbarTall";
+    font-family: 'DunbarTall';
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -2957,7 +2957,7 @@ footer a span:last-child {
   }
 
   .right__bot .right__bot__subtitle {
-    font-family: "DunbarText";
+    font-family: 'DunbarText';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -3020,7 +3020,7 @@ footer a span:last-child {
   }
 
   .blockchain .group__left p:nth-child(1) {
-    font-family: "DunbarTall";
+    font-family: 'DunbarTall';
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -3031,7 +3031,7 @@ footer a span:last-child {
   }
 
   .blockchain .group__left p:nth-child(2) {
-    font-family: "DunbarText";
+    font-family: 'DunbarText';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -3051,7 +3051,7 @@ footer a span:last-child {
   }
 
   .group__middle .group__middle_romb {
-    font-family: "DunbarLow";
+    font-family: 'DunbarLow';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -3066,7 +3066,7 @@ footer a span:last-child {
   }
 
   .blockchain .group__middle_romb:before {
-    content: "";
+    content: '';
     display: block;
     width: 74px;
     height: 1px;
@@ -3092,7 +3092,7 @@ footer a span:last-child {
 
   .blockchain .group__right p {
     opacity: 1;
-    font-family: "DunbarLow";
+    font-family: 'DunbarLow';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -3108,7 +3108,7 @@ footer a span:last-child {
   }
 
   .diamont .diamont__title {
-    font-family: "DunbarTall";
+    font-family: 'DunbarTall';
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -3183,7 +3183,7 @@ footer a span:last-child {
   .left__wrap p,
   .right__wrap p {
     height: 180px;
-    font-family: "DunbarText";
+    font-family: 'DunbarText';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -3218,7 +3218,7 @@ footer a span:last-child {
   }
 
   .right .title {
-    font-family: "DunbarTall";
+    font-family: 'DunbarTall';
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -3231,7 +3231,7 @@ footer a span:last-child {
   }
 
   .right .subtitle {
-    font-family: "DunbarText";
+    font-family: 'DunbarText';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -3246,7 +3246,7 @@ footer a span:last-child {
     margin-left: 65px;
     margin-bottom: 40px;
     text-align: left;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -3259,7 +3259,7 @@ footer a span:last-child {
     margin-left: 65px;
     margin-bottom: 50px;
     text-align: left;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -3280,7 +3280,7 @@ footer a span:last-child {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
-    font-family: "DunbarLow";
+    font-family: 'DunbarLow';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -3294,7 +3294,7 @@ footer a span:last-child {
   }
 
   .creating__link::after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     left: 0;
@@ -3319,11 +3319,11 @@ footer a span:last-child {
   }
 
   .section-form::after {
-    content: "";
+    content: '';
     display: block;
     width: 90px;
     height: 45px;
-    background: url(./img/arrow.svg) no-repeat center;
+    background: url(../img/arrow.svg) no-repeat center;
     position: absolute;
     right: 90px;
     bottom: 190px;
@@ -3348,7 +3348,7 @@ footer a span:last-child {
 
   .section-form__title {
     text-align: left;
-    font-family: "DunbarTall";
+    font-family: 'DunbarTall';
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -3360,7 +3360,7 @@ footer a span:last-child {
 
   .section-form__subtitle {
     text-align: left;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -3370,7 +3370,7 @@ footer a span:last-child {
   }
 
   .section-form__link {
-    font-family: "DunbarTall";
+    font-family: 'DunbarTall';
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -3406,7 +3406,7 @@ footer a span:last-child {
   }
 
   footer::before {
-    content: "";
+    content: '';
     display: block;
     width: 74px;
     height: 1px;
@@ -3443,7 +3443,7 @@ footer a span:last-child {
   }
 
   footer .campany span {
-    font-family: "DunbarLow";
+    font-family: 'DunbarLow';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -3454,7 +3454,7 @@ footer a span:last-child {
 
   footer p {
     width: 55%;
-    font-family: "DunbarLow";
+    font-family: 'DunbarLow';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -3467,7 +3467,7 @@ footer a span:last-child {
   footer .office {
     width: auto;
     margin: 0 auto;
-    font-family: "DunbarLow";
+    font-family: 'DunbarLow';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -3476,7 +3476,7 @@ footer a span:last-child {
   }
 
   footer .office h3 {
-    font-family: "DunbarLow";
+    font-family: 'DunbarLow';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -3488,7 +3488,7 @@ footer a span:last-child {
   }
 
   footer address {
-    font-family: "DunbarLow";
+    font-family: 'DunbarLow';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -3500,7 +3500,7 @@ footer a span:last-child {
   }
 
   footer a {
-    font-family: "DunbarLow";
+    font-family: 'DunbarLow';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -3510,7 +3510,7 @@ footer a span:last-child {
   }
 
   footer a span:last-child {
-    font-family: "DunbarLow";
+    font-family: 'DunbarLow';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -3551,7 +3551,7 @@ footer a span:last-child {
   }
 
   .modal-blockform h2 {
-    font-family: "DunbarTall";
+    font-family: 'DunbarTall';
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -3561,7 +3561,7 @@ footer a span:last-child {
   }
 
   .modal-blockform h3 {
-    font-family: "DunbarTall";
+    font-family: 'DunbarTall';
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -3570,9 +3570,9 @@ footer a span:last-child {
     text-align: center;
   }
 
-  .modal-blockform select[name="country"],
-  .modal-blockform select[name="prize"] {
-    font-family: "DunbarLow";
+  .modal-blockform select[name='country'],
+  .modal-blockform select[name='prize'] {
+    font-family: 'DunbarLow';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -3585,10 +3585,10 @@ footer a span:last-child {
     border: 1px solid transparent;
   }
 
-  .modal-blockform input[type="email"],
-  .modal-blockform input[type="text"],
-  .modal-blockform input[type="tel"] {
-    font-family: "Josefin Sans", sans-serif;
+  .modal-blockform input[type='email'],
+  .modal-blockform input[type='text'],
+  .modal-blockform input[type='tel'] {
+    font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -3600,11 +3600,11 @@ footer a span:last-child {
     padding-bottom: 9px;
   }
 
-  .modal-blockform select[name="country"]:target,
-  .modal-blockform select[name="prize"]:target,
-  .modal-blockform input[type="email"]:focus,
-  .modal-blockform input[type="text"]:focus,
-  .modal-blockform input[type="tel"]:focus {
+  .modal-blockform select[name='country']:target,
+  .modal-blockform select[name='prize']:target,
+  .modal-blockform input[type='email']:focus,
+  .modal-blockform input[type='text']:focus,
+  .modal-blockform input[type='tel']:focus {
     border: 1px solid #ffc120;
   }
 
@@ -3612,9 +3612,9 @@ footer a span:last-child {
     margin-bottom: 0;
   }
 
-  .modal-blockform input[type="email"]::placeholder,
-  .modal-blockform input[type="text"]::placeholder,
-  .modal-blockform input[type="tel"]::placeholder {
+  .modal-blockform input[type='email']::placeholder,
+  .modal-blockform input[type='text']::placeholder,
+  .modal-blockform input[type='tel']::placeholder {
     color: #000;
   }
 
@@ -3622,19 +3622,19 @@ footer a span:last-child {
     display: none;
   }
 
-  input.notify[type="submit"] {
+  input.notify[type='submit'] {
     margin-top: 65px;
   }
 
-  input.notify[type="submit"]:hover {
+  input.notify[type='submit']:hover {
     background: linear-gradient(90.07deg, #6147e2 22.55%, #ffc120 58.08%);
     transition: 0.3s;
     color: #000;
   }
 
-  input[type="submit"],
-  input[type="button"] {
-    font-family: "DunbarText";
+  input[type='submit'],
+  input[type='button'] {
+    font-family: 'DunbarText';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -3649,8 +3649,8 @@ footer a span:last-child {
     margin: 0 auto;
   }
 
-  input[type="submit"]:hover,
-  input[type="button"]:hover {
+  input[type='submit']:hover,
+  input[type='button']:hover {
     background: linear-gradient(90.07deg, #6147e2 22.55%, #ffc120 58.08%);
     transition: 0.3s;
     color: #000;
@@ -3665,7 +3665,7 @@ footer a span:last-child {
   }
 
   .blockform-send .mobile .title {
-    font-family: "DunbarTall";
+    font-family: 'DunbarTall';
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -3682,7 +3682,7 @@ footer a span:last-child {
   }
 
   .blockform-send .mobile .subtitle {
-    font-family: "DunbarTall";
+    font-family: 'DunbarTall';
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -3711,7 +3711,7 @@ footer a span:last-child {
   }
 
   .main-title__link::after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     left: 0;
@@ -3922,7 +3922,7 @@ footer a span:last-child {
   }
 
   .participate .right:after {
-    background: url(./img/Vector\ 2.svg) no-repeat;
+    background: url(../img/Vector\ 2.svg) no-repeat;
     width: 120px;
     height: 608px;
     top: 215px;
@@ -4047,7 +4047,7 @@ footer a span:last-child {
   }
 
   .right__bot .right__bot__subtitle {
-    font-family: "DunbarLow";
+    font-family: 'DunbarLow';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -4087,7 +4087,7 @@ footer a span:last-child {
   }
 
   .blockchain .group__right p {
-    font-family: "DunbarText";
+    font-family: 'DunbarText';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -4126,7 +4126,7 @@ footer a span:last-child {
   }
 
   .group__middle p {
-    font-family: "DunbarText";
+    font-family: 'DunbarText';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -4236,7 +4236,7 @@ footer a span:last-child {
   }
 
   .creating__link::after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     left: 0;
@@ -4371,7 +4371,7 @@ footer a span:last-child {
 
 @media (max-width: 320px) {
   .main-title__link::after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     left: 0;
